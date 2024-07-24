@@ -1,7 +1,7 @@
 {
-  "name": "vite-template-solid",
+  "name": "body-near-and-far",
   "version": "0.0.0",
-  "description": "",
+  "description": "Body: near and far",
   "scripts": {
     "start": "vite",
     "dev": "vite",
