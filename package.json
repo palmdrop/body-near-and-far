@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build",
-    "start": "vinxi start",
+    "preview": "npx live-server .output/public",
     "version": "vinxi version"
   },
   "dependencies": {

@@ -1,6 +1,15 @@
 :root {
-  --font-size: 2rem;
+  /*
   --font-family: 'Courier New', Courier, monospace;
+  */
+  /*
+  --font-family: Helvetica, Arial, sans-serif;
+  */
+  --font-family: 'Courier New', monospace;
+  --font-size: clamp(0.5rem, 3vw, 2.5rem);
+  /*
+  --font-size: 1rem;
+  */
 }
 
 html {
@@ -11,3 +20,45 @@ html {
 body {
   margin: 1em;
 }
+
+.sequences {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sequence {
+  width: 100%;
+}
+
+.section > ul {
+  /*
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  */
+
+  overflow: visible;
+}
+
+.section > ul > li {
+  display: inline;
+  background-color: white;
+  padding-left: 1ch;
+}
+
+.section > ul > li::after {
+  content: "";
+}
+
+.section > ul > li > span {
+  /*
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  */
+  width: 100%;
+  text-align: justify;
+  line-height: 1.15em;
+}
+
+
