@@ -44,12 +44,19 @@ body {
 .section > ul > li {
   display: inline;
   background-color: white;
-  padding-left: 1ch;
 }
 
 .section > ul > li::after {
-  content: "";
+  content: " ";
+  padding-left: 3ch;
 }
+
+/*
+
+  TODO: try grid layout, 3-4 columns in each section, a blank column space when there is a new line
+  TODO: each line has a diff set of words, will create varying offsets...
+*/
+
 
 .section > ul > li > span {
   /*
