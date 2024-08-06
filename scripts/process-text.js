@@ -8,6 +8,14 @@ const SEQUENCE_EARLY_TO_LATE_DATA_PATH = "./src/content/early-to-late.txt";
 const SEQUENCE_EARLY_TO_LATE_OUTPUT_PATH = "./src/data/sequence/early-to-late.ts"
 const SEQUENCE_EARLY_TO_LATE_NAME = "earlyToLateSequence";
 
+const SEQUENCE_NEAR_TO_FAR_DATA_PATH = "./src/content/near-to-far.txt";
+const SEQUENCE_NEAR_TO_FAR_OUTPUT_PATH = "./src/data/sequence/near-to-far.ts"
+const SEQUENCE_NEAR_TO_FAR_NAME = "nearToFarSequence";
+
+const SEQUENCE_LOOP_TO_UNLOOP_DATA_PATH = "./src/content/loop-to-unloop.txt";
+const SEQUENCE_LOOP_TO_UNLOOP_OUTPUT_PATH = "./src/data/sequence/loop-to-unloop.ts"
+const SEQUENCE_LOOP_TO_UNLOOP_NAME = "loopToUnloopSequence";
+
 const toTypescriptObject = (object, name, type, importLine) => {
   return `${importLine}
 export const ${name}: ${type} = ${JSON.stringify(object, null, 2)};`;
@@ -44,38 +52,18 @@ const processSequence = async (name, path, outputPath) => {
 
   const processLine = (rawLine, i) => {
     const trimmedLine = rawLine.trim();
-    if(trimmedLine.length === 0) throw Error(`Cannot process empty line: line ${i}`);
 
-    // TODO: process id and links
     return {
-      type: "line",
       id: undefined,
       content: trimmedLine,
       links: []
     }
   }
 
-  const processBlank = length => {
-    return {
-      type: "space",
-      length
-    }
-  }
-
   const sequence = [];
   let section;
-  let emptyLineCount = 0;
 
-  const addBlank = () => {
-    section
-      .lines
-      .push(
-        processBlank(emptyLineCount)
-      );
-
-    emptyLineCount = 0;
-  }
-
+  let wasEmpty = false;
   for(let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
     const isFirst = i === 0;
@@ -86,26 +74,22 @@ const processSequence = async (name, path, outputPath) => {
       throw Error("First line cannot be empty");
     }
 
-    if(isEmpty) {
-      emptyLineCount++;
-    }
-
-    if(isTitleLine || isFirst) {
-      if(emptyLineCount) {
-        addBlank();
-      }
-
+    if(isTitleLine || isFirst || (!isEmpty && wasEmpty)) {
       section = {
         title: isTitleLine ? line.slice(1).trim() : "",
-        lines: isTitleLine ? [] : [processLine(line, i)]
+        lines: []
       };
 
       sequence.push(section);
+
+      wasEmpty = false;
     }
 
-    if(!isEmpty && !isTitleLine) {
-      if(emptyLineCount) {
-        addBlank();
+    if(!isTitleLine) {
+      if(!line.trim().length) {
+        wasEmpty = true;
+      } else {
+        wasEmpty = false;
       }
 
       section
@@ -135,7 +119,19 @@ const main = async () => {
     SEQUENCE_EARLY_TO_LATE_DATA_PATH,
     SEQUENCE_EARLY_TO_LATE_OUTPUT_PATH
   );
+
+  await processSequence(
+    SEQUENCE_NEAR_TO_FAR_NAME,
+    SEQUENCE_NEAR_TO_FAR_DATA_PATH,
+    SEQUENCE_NEAR_TO_FAR_OUTPUT_PATH
+  );
+
+  await processSequence(
+    SEQUENCE_LOOP_TO_UNLOOP_NAME,
+    SEQUENCE_LOOP_TO_UNLOOP_DATA_PATH,
+    SEQUENCE_LOOP_TO_UNLOOP_OUTPUT_PATH
+  );
 }
 
-main();
+main().catch(console.error);
 

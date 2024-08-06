@@ -1,4 +1,4 @@
-import { Component, For } from "solid-js";
+import { Component, createSignal, For } from "solid-js";
 import { LineEntry, Section, Sequence } from "~/types/sequence";
 
 type Props = {
@@ -6,32 +6,53 @@ type Props = {
 }
 
 export const SequenceRenderer: Component<Props> = ({ sequence }) => {
-
-  const renderLineEntry = (lineEntry: LineEntry) => {
-    if(lineEntry.type === 'space') {
-      return <div style={{
-        height: `${lineEntry.length ** 2}ch`
-      }} />
+  const renderLineEntry = (lineEntry: LineEntry, i: number) => {
+    if(!lineEntry.content.length) {
+      return <></>;
     } else {
-      return <span>{`${lineEntry.content} `}</span>;
+      const words = lineEntry.content.split(" ");
+
+      return (
+        <For each={words}>
+          {word => {
+            const emphasized = word.startsWith("*") && word.endsWith("*");
+            if(emphasized) {
+              word = word.slice(1, -1);
+            }
+
+            return (
+              <span class={`${emphasized ? "emphasized" : ""}`}>
+                {word}{" "}
+              </span>
+            );
+          }}
+        </For>
+      );
     }
   }
 
   const renderSection = (section: Section) => {
-    return <div class="section">
-      <h1>{section.title}</h1>
-      <ul>
+      { /* <h1>{section.title}</h1> */ }
+    return (
+      <ul class="section">
+        <li>
+      <article class="main-block">
+        floating block of glyphs
+      </article>
+        </li>
         <For each={section.lines}>
-          {lineEntry => (
+          {(lineEntry, i) => (
             <li>
-              { renderLineEntry(lineEntry) }
+              { renderLineEntry(lineEntry, i()) }
             </li>
           )}
         </For>
       </ul>
-    </div>
+    );
   }
 
+  // TODO: move lang to HTML and determine how to find hyphenation dict: https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens
+  // TODO: 
   return (
     <ul class="sequence">
       <For each={sequence}>{

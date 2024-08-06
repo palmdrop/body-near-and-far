@@ -3,10 +3,13 @@
   --font-family: 'Courier New', Courier, monospace;
   */
   /*
+  --font-family: 'Courier New', monospace;
+  */
+  /*
   --font-family: Helvetica, Arial, sans-serif;
   */
-  --font-family: 'Courier New', monospace;
-  --font-size: clamp(0.5rem, 3vw, 2.5rem);
+  --font-family: Helvetica, Arial, sans-serif;
+  --font-size: clamp(9px, 3vw, 2.5rem);
   /*
   --font-size: 1rem;
   */
@@ -15,57 +18,88 @@
 html {
   font-size: var(--font-size);
   font-family: var(--font-family);
+
+  font-weight: 100;
 }
 
 body {
   margin: 1em;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .sequences {
   display: grid;
-  gap: 2em;
-  grid-template-columns: repeat(3, 1fr);
+  /*
+  */
+
+  width: 100%;
+  grid-template-columns: repeat(3, 33.3333%);
+
+  text-align: justify;
+
+  /*
+  gap: 0.5ch;
+  */
+  gap: 0.15em;
 }
 
 .sequence {
-  width: 100%;
+  position: relative;
 }
 
-.section > ul {
+.section {
+  text-indent: 2ch;
+  line-height: 1em;
+
   /*
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  word-break: break-all;
   */
+  /* Figure out if there's a better way of doing this... manual word break on syllables? */
+  overflow-wrap: break-word;
+  hyphens: auto;
 
-  overflow: visible;
+  --line-height: 1.2em;
+
+  line-height: var(--line-height);
+  padding-bottom: var(--line-height);
 }
 
-.section > ul > li {
+.section li {
   display: inline;
-  background-color: white;
 }
 
-.section > ul > li::after {
-  content: " ";
-  padding-left: 3ch;
-}
-
-/*
-
-  TODO: try grid layout, 3-4 columns in each section, a blank column space when there is a new line
-  TODO: each line has a diff set of words, will create varying offsets...
-*/
-
-
-.section > ul > li > span {
+.section li:nth-child(odd) {
+  color: rgb(0, 0, 0);
+  font-style: italic;
   /*
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
   */
-  width: 100%;
-  text-align: justify;
-  line-height: 1.15em;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1713em;
+
 }
 
+.section > li > .emphasized {
+  font-family: cursive;
+  font-style: italic;
+}
 
+.main-block {
+  width: 10vw;
+  height: 50vh;
+  float: right;
+
+
+  border: 1px solid black;
+
+  /*
+  --shape: circle(50px);
+  */
+  --shape: polygon(170.67px 291.00px,126.23px 347.56px,139.79px 417.11px,208.92px 466.22px,302.50px 482.97px,343.67px 474.47px,446.33px 452.00px,443.63px 246.82px,389.92px 245.63px,336.50px 235.26px,299.67px 196.53px,259.33px 209.53px,217.00px 254.76px);
+
+  shape-outside: var(--shape);
+  clip-path: var(--shape);
+
+  background-color: red;
+}

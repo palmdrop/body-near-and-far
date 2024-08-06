@@ -6,7 +6,8 @@
     "dev": "vinxi dev",
     "build": "vinxi build",
     "preview": "npx live-server .output/public",
-    "version": "vinxi version"
+    "version": "vinxi version",
+    "process": "node ./scripts/process-text.js"
   },
   "dependencies": {
     "@solidjs/meta": "^0.29.4",

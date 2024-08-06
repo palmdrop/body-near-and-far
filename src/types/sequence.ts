@@ -1,9 +1,4 @@
 export type LineEntry = {
-  type: 'space',
-  length: number
-} | {
-  type: 'line',
-  id?: string,
   content: string,
   links: string[]
 }
