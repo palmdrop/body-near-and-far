@@ -1,25 +1,17 @@
 :root {
-  /*
-  --font-family: 'Courier New', Courier, monospace;
-  */
-  /*
-  --font-family: 'Courier New', monospace;
-  */
-  /*
-  --font-family: Helvetica, Arial, sans-serif;
-  */
+  --font-serif: 'Times New Roman', Times, serif;
+  --font-sans: Helvetica, Arial, sans-serif;
+  --font-accent: 'Brush Script MT', cursive;
+
   --font-family: Helvetica, Arial, sans-serif;
   --font-size: clamp(9px, 3vw, 2.5rem);
-  /*
-  --font-size: 1rem;
-  */
 }
 
 html {
   font-size: var(--font-size);
-  font-family: var(--font-family);
+  font-family: var(--font-sans);
 
-  font-weight: 100;
+  text-transform: uppercase;
 }
 
 body {
@@ -71,16 +63,13 @@ body {
 }
 
 .section li:nth-child(odd) {
-  color: rgb(0, 0, 0);
   font-style: italic;
-  /*
-  */
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 1.1713em;
-
+  font-family: var(--font-serif);
+  font-size: 1.1em;
 }
 
 .section > li > .emphasized {
-  font-family: cursive;
+  font-family: var(--font-accent);
   font-style: italic;
+  font-size: 1.3em;
 }

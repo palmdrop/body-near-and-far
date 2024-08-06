@@ -1,4 +1,5 @@
 import { createSignal } from "solid-js";
+import { Composite } from "~/components/composite/Composite";
 import { FieldRenderer } from "~/components/field/FieldRenderer";
 import { SequenceRenderer } from "~/components/sequence/SequenceRenderer";
 import { bodyField } from "~/data/field/body";
@@ -7,25 +8,15 @@ import { loopToUnloopSequence } from "~/data/sequence/loop-to-unloop";
 import { nearToFarSequence } from "~/data/sequence/near-to-far";
 
 export default function Home() {
-  const [count, setCount] = createSignal(0)
-
-  setInterval(() => {
-    setCount(count() + 1);
-  }, 500);
-
   return (
     <main>
       <FieldRenderer 
         field={bodyField} 
-        delay={500} 
-        subDelay={300}
+        delay={1000} 
+        subDelay={500}
         setTitle={true}
       />
-      { /*
-      <article class="main-block">
-        floating block of glyphs
-      </article>
-      */ }
+      <Composite lines={["abc", "cde", "efg"]} />
       <div class="sequences">
         <SequenceRenderer
           sequence={earlyToLateSequence}
