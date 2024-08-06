@@ -35,11 +35,6 @@ export const SequenceRenderer: Component<Props> = ({ sequence }) => {
       { /* <h1>{section.title}</h1> */ }
     return (
       <ul class="section">
-        <li>
-      <article class="main-block">
-        floating block of glyphs
-      </article>
-        </li>
         <For each={section.lines}>
           {(lineEntry, i) => (
             <li>
@@ -51,8 +46,6 @@ export const SequenceRenderer: Component<Props> = ({ sequence }) => {
     );
   }
 
-  // TODO: move lang to HTML and determine how to find hyphenation dict: https://developer.mozilla.org/en-US/docs/Web/CSS/hyphens
-  // TODO: 
   return (
     <ul class="sequence">
       <For each={sequence}>{
