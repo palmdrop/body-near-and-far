@@ -1,11 +1,9 @@
 import { Component, For } from "solid-js";
-import { Field } from "~/types/field";
-import { FieldRenderer } from "../field/FieldRenderer";
 
 type Props = {
-  field: Field,
   lines: string[],
-  fieldDelay: number
+  fieldWord: string,
+  index: string
 }
 
 export const Composite: Component<Props> = (props) => {
@@ -14,12 +12,12 @@ export const Composite: Component<Props> = (props) => {
       <For each={props.lines}>
         {line => <p>{line}</p>}
       </For>
-      <FieldRenderer 
-        field={props.field} 
-        delay={props.fieldDelay} 
-        subDelay={props.fieldDelay / 2}
-        setTitle={true}
-      />
+      <p class="field">
+        { props.fieldWord }
+      </p>
+      <p class="index">
+        { props.index }
+      </p>
     </article>
   );
 }

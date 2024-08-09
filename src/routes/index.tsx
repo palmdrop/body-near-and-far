@@ -1,4 +1,5 @@
-import { createMemo, createSignal, onCleanup } from "solid-js";
+import { Title } from "@solidjs/meta";
+import { createEffect, createMemo, createSignal, onCleanup } from "solid-js";
 import { Filter } from "~/assets/MorphFilter";
 import { Composite } from "~/components/composite/Composite";
 import { SequenceRenderer } from "~/components/sequence/SequenceRenderer";
@@ -7,7 +8,9 @@ import { earlyToLateSequence } from "~/data/sequence/early-to-late";
 import { loopToUnloopSequence } from "~/data/sequence/loop-to-unloop";
 import { nearToFarSequence } from "~/data/sequence/near-to-far";
 import { Sequence } from "~/types/sequence";
+import { createFieldIterator } from "~/utils/field";
 import { getLine } from "~/utils/sequence";
+import { indicesToUrlHash, parseIndicesFromString } from "~/utils/url";
 
 const createLineInterval = (sequence: Sequence, interval: number) => {
   const [index, setIndex] = createSignal(0);
@@ -39,7 +42,23 @@ export default function Root() {
   const { index: nearToFarIndex, line: nearToFarLine } = createLineInterval(nearToFarSequence, sequenceSpeed);
   const { index: loopToUnloopIndex, line: loopToUnloopLine } = createLineInterval(loopToUnloopSequence, sequenceSpeed);
 
-  const callbackTest = (element: HTMLLIElement, root: HTMLUListElement) => {
+  const { 
+    word: fieldWord, 
+    inSubField, 
+    index: fieldIndex 
+  } = createFieldIterator(bodyField, 0, fieldSpeed, fieldSpeed / 2);
+
+  const fieldLine = createMemo(
+    () => inSubField() ? 
+      `[ ${fieldWord()} ]` 
+      : fieldWord()
+  );
+
+  const index = createMemo(
+    () => `${earlyToLateIndex()}.${nearToFarIndex()}.${loopToUnloopIndex()} (${fieldIndex()})`
+  );
+
+  const sequenceChangeCallback = (element: HTMLLIElement, root: HTMLUListElement) => {
     root.scrollTo({
       left: 0,
       top: Math.max(0, element.offsetTop - root.clientHeight / 2),
@@ -47,31 +66,37 @@ export default function Root() {
     });
   }
 
+  createEffect(() => {
+    const hash = indicesToUrlHash(earlyToLateIndex(), nearToFarIndex(), loopToUnloopIndex(), fieldIndex());
+    window.location.hash = hash;
+  });
+
   return (
     <main>
+      <Title>{`${fieldWord()?.toUpperCase()} | Nära och långt från kroppen`}</Title> 
       <Filter />
       <div class="center-piece">
         <Composite 
-          field={bodyField}
-          fieldDelay={fieldSpeed}
           lines={[earlyToLateLine(), nearToFarLine(), loopToUnloopLine()]} 
+          index={index()}
+          fieldWord={fieldLine()}
         />
       </div>
       <div class="sequences">
         <SequenceRenderer
           sequence={earlyToLateSequence}
           activeIndex={earlyToLateIndex}
-          activeElementCallback={callbackTest}
+          activeElementCallback={sequenceChangeCallback}
         />
         <SequenceRenderer
           sequence={nearToFarSequence}
           activeIndex={nearToFarIndex}
-          activeElementCallback={callbackTest}
+          activeElementCallback={sequenceChangeCallback}
         />
         <SequenceRenderer
           sequence={loopToUnloopSequence}
           activeIndex={loopToUnloopIndex}
-          activeElementCallback={callbackTest}
+          activeElementCallback={sequenceChangeCallback}
         />
       </div>
     </main>

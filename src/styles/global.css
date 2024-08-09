@@ -91,12 +91,22 @@ main {
   align-self: flex-end;
 }
 
-.composite p:last-child {
+.composite .field {
   text-wrap: nowrap;
   width: 100%;
 
   font-family: var(--font-accent);
+  flex: 0;
 }
+
+.composite .index {
+  font-family: var(--font-sans);
+  text-align: right;
+  align-self: flex-end;
+  font-size: 0.5em;
+
+  flex: 0;
+} 
 
 .sequences {
   display: grid;
