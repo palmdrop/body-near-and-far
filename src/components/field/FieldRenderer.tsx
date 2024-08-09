@@ -80,9 +80,9 @@ export const FieldRenderer: Component<Props> = ({
   });
 
   return (
-    <span>
+    <p>
       <Show when={setTitle}>
-        <Title>{word()}</Title> 
+        <Title>{word()?.toUpperCase()}</Title> 
       </Show>
       <Show when={inSubField()}>
         {"[ "}
@@ -91,6 +91,6 @@ export const FieldRenderer: Component<Props> = ({
       <Show when={inSubField()}>
         {" ]"}
       </Show>
-    </span>
+    </p>
   );
 }

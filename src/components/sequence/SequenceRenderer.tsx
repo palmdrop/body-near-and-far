@@ -1,11 +1,21 @@
-import { Component, createSignal, For } from "solid-js";
+import { Accessor, Component, createEffect, createMemo, For } from "solid-js";
 import { LineEntry, Section, Sequence } from "~/types/sequence";
+import { getMaxIndex } from "~/utils/sequence";
 
 type Props = {
-  sequence: Sequence
+  sequence: Sequence,
+  activeIndex: Accessor<number>,
+  activeElementCallback: (element: HTMLLIElement, root: HTMLUListElement) => void
 }
 
-export const SequenceRenderer: Component<Props> = ({ sequence }) => {
+export const SequenceRenderer: Component<Props> = (props) => {
+  const maxIndex = getMaxIndex(props.sequence)
+
+  let root: HTMLUListElement | undefined;
+  const lines: (HTMLLIElement | undefined)[] = Array
+    .from<HTMLLIElement | undefined>({ length: maxIndex + 1 })
+    .fill(undefined);
+
   const renderLineEntry = (lineEntry: LineEntry, i: number) => {
     if(!lineEntry.content.length) {
       return <></>;
@@ -21,7 +31,9 @@ export const SequenceRenderer: Component<Props> = ({ sequence }) => {
             }
 
             return (
-              <span class={`${emphasized ? "emphasized" : ""}`}>
+              <span 
+                class={`${emphasized ? "emphasized" : ""} ${props.activeIndex() === lineEntry.index ? "active" : ""}`}
+              >
                 {word}{" "}
               </span>
             );
@@ -32,12 +44,13 @@ export const SequenceRenderer: Component<Props> = ({ sequence }) => {
   }
 
   const renderSection = (section: Section) => {
-      { /* <h1>{section.title}</h1> */ }
     return (
       <ul class="section">
         <For each={section.lines}>
           {(lineEntry, i) => (
-            <li>
+            <li
+              ref={element => lines[lineEntry.index] = element}
+            >
               { renderLineEntry(lineEntry, i()) }
             </li>
           )}
@@ -46,9 +59,14 @@ export const SequenceRenderer: Component<Props> = ({ sequence }) => {
     );
   }
 
+  createEffect(() => {
+    const element = lines[props.activeIndex()];
+    props.activeElementCallback(element!, root!);
+  });
+
   return (
-    <ul class="sequence">
-      <For each={sequence}>{
+    <ul class="sequence" ref={root}>
+      <For each={props.sequence}>{
         section => (
           <li>
             {renderSection(section)}

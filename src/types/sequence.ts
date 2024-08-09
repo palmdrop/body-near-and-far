@@ -1,6 +1,7 @@
 export type LineEntry = {
   content: string,
   links: string[]
+  index: number,
 }
 
 export type Section = {

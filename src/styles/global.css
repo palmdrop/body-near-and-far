@@ -5,6 +5,8 @@
 
   --font-family: Helvetica, Arial, sans-serif;
   --font-size: clamp(9px, 3vw, 2.5rem);
+
+  --edge-margin: 0.5em;
 }
 
 html {
@@ -15,10 +17,85 @@ html {
 }
 
 body {
-  margin: 1em;
+  margin: var(--edge-margin);
   max-width: 100vw;
-  overflow-x: hidden;
-  overflow-y: auto;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  filter: url(#threshold) blur(1px) contrast(150%)
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.center-piece {
+  position: fixed;
+  /*
+  background-color: black;
+  color: white;
+  */
+  background-color: white;
+  border: 2px solid red;
+
+  font-style: italic;
+
+  top: 50%;
+  left: 50%;
+
+  font-size: max(1em, 16px);
+
+  width: min(15em, 100vw);
+  height: min(13em, 100vh);
+
+  transform: translate(-50%, -50%);
+
+  z-index: 1;
+  padding: 1em;
+
+  border-radius: 5px;
+}
+
+.composite {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+
+  height: 100%;
+
+  font-family: var(--font-sans);
+}
+
+.composite > * {
+  display: block;
+  flex: 1;
+}
+
+.composite p {
+  text-align: left;
+  width: 70%;
+
+  /*
+  overflow-wrap: break-word;
+  hyphens: auto;
+  */
+}
+
+.composite p:nth-child(even) {
+  text-align: right;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  align-self: flex-end;
+}
+
+.composite p:last-child {
+  text-wrap: nowrap;
+  width: 100%;
+
+  font-family: var(--font-accent);
 }
 
 .sequences {
@@ -33,22 +110,22 @@ body {
 
   /*
   gap: 0.5ch;
-  */
   gap: 0.15em;
+  */
 }
 
 .sequence {
   position: relative;
+  overflow: auto;
+
+  height: 100%;
+  max-height: calc(100vh - var(--edge-margin) * 2);
 }
 
 .section {
   text-indent: 2ch;
   line-height: 1em;
 
-  /*
-  word-break: break-all;
-  */
-  /* Figure out if there's a better way of doing this... manual word break on syllables? */
   overflow-wrap: break-word;
   hyphens: auto;
 
@@ -56,10 +133,24 @@ body {
 
   line-height: var(--line-height);
   padding-bottom: var(--line-height);
+
+  /*
+  color: white;
+  text-shadow: 3px 3px 2px rgb(125, 125, 125);
+  */
 }
 
 .section li {
   display: inline;
+}
+
+.section span {
+  text-shadow: 0px 0px 0px white;
+  transition: 200ms;
+}
+
+.section .active {
+  text-shadow: 0px 0px 5px black;
 }
 
 .section li:nth-child(odd) {

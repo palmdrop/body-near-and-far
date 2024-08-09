@@ -50,24 +50,26 @@ const processSequence = async (name, path, outputPath) => {
   const data = await fs.readFile(path, "utf8");
   const lines = data.split("\n");
 
-  const processLine = (rawLine, i) => {
+  const processLine = (rawLine, index) => {
     const trimmedLine = rawLine.trim();
 
     return {
       id: undefined,
       content: trimmedLine,
-      links: []
+      links: [],
+      index
     }
   }
 
   const sequence = [];
   let section;
+  let index = -1;
 
   let wasEmpty = false;
   for(let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
     const isFirst = i === 0;
-    const isEmpty = line.length === 0;
+    const isEmpty = !line.length;
     const isTitleLine = !isEmpty && line.startsWith("#");
 
     if(isEmpty && isFirst) {
@@ -86,16 +88,17 @@ const processSequence = async (name, path, outputPath) => {
     }
 
     if(!isTitleLine) {
-      if(!line.trim().length) {
+      if(isEmpty) {
         wasEmpty = true;
       } else {
         wasEmpty = false;
+        index++;
       }
 
       section
         .lines
         .push(
-          processLine(line, i)
+          processLine(line, isEmpty ? -1 : index)
         );
     }
   }
