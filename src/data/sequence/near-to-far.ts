@@ -4,379 +4,232 @@ export const nearToFarSequence: Sequence = [
     "title": "",
     "lines": [
       {
-        "content": "ett öga i ryggraden",
-        "links": [],
+        "content": "ögat i ryggraden",
+        "links": [
+          "öga",
+          "ryggrad"
+        ],
         "index": 0
       },
       {
-        "content": "stamcellernas gyttja",
-        "links": [],
+        "content": "stamcellsgyttjans blick",
+        "links": [
+          "stamcell",
+          "gyttja",
+          "blick"
+        ],
         "index": 1
       },
       {
         "content": "vakar och alstrar",
-        "links": [],
+        "links": [
+          "vaka",
+          "alstra"
+        ],
         "index": 2
       },
       {
-        "content": "biofundamentets gödsel",
-        "links": [],
+        "content": "över biofundamentets gödsel",
+        "links": [
+          "biofundament",
+          "gödsel"
+        ],
         "index": 3
       },
       {
-        "content": "hormonförteelser",
-        "links": [],
+        "content": "hormonföreteelser",
+        "links": [
+          "hormon",
+          "företeelse",
+          "händelse"
+        ],
         "index": 4
       },
       {
-        "content": "återberört fundament",
-        "links": [],
+        "content": "återbesöker stammen",
+        "links": [
+          "återbesök",
+          "loop",
+          "feedback",
+          "stam"
+        ],
         "index": 5
       },
       {
-        "content": "strålar ut ur benen",
-        "links": [],
+        "content": "ristar och karvar",
+        "links": [
+          "rista",
+          "karva",
+          "jack",
+          "märke"
+        ],
         "index": 6
       },
       {
-        "content": "",
-        "links": [],
-        "index": -1
-      }
-    ]
-  },
-  {
-    "title": "",
-    "lines": [
-      {
-        "content": "(jack i skelettet",
-        "links": [],
+        "content": "slickar årsringar",
+        "links": [
+          "slicka",
+          "tunga",
+          "årsring"
+        ],
         "index": 7
       },
       {
-        "content": "markerar det första",
-        "links": [],
+        "content": "skriver i barken",
+        "links": [
+          "skriv",
+          "ord",
+          "tecken",
+          "bark"
+        ],
         "index": 8
       },
       {
-        "content": "atombombstestet",
-        "links": [],
+        "content": "lager av barkvalk",
+        "links": [
+          "lager",
+          "bark",
+          "valk",
+          "skinn"
+        ],
         "index": 9
       },
       {
-        "content": "sitter i skenbenet",
-        "links": [],
+        "content": "som strålar ut ur",
+        "links": [
+          "stråle"
+        ],
         "index": 10
       },
       {
-        "content": "och med spillran",
+        "content": "",
         "links": [],
+        "index": -1
+      }
+    ]
+  },
+  {
+    "title": "",
+    "lines": [
+      {
+        "content": "med jack ur skelettet",
+        "links": [
+          "jack",
+          "skelett",
+          "ben"
+        ],
         "index": 11
       },
       {
-        "content": "kokar vi buljong",
-        "links": [],
+        "content": "ett märke",
+        "links": [
+          "märke",
+          "språk",
+          "tecken"
+        ],
         "index": 12
       },
       {
-        "content": "nästa jack en skål",
-        "links": [],
+        "content": "för varje atombombstest",
+        "links": [
+          "atombombstest",
+          "explosion",
+          "våld"
+        ],
         "index": 13
       },
       {
-        "content": "fylleslag för oss",
-        "links": [],
+        "content": "omsorgsfullt ristat",
+        "links": [
+          "omsorg",
+          "rista",
+          "karva"
+        ],
         "index": 14
       },
       {
-        "content": "en räfflad generation",
-        "links": [],
+        "content": "i skenbenet",
+        "links": [
+          "skenben",
+          "ben",
+          "skelett"
+        ],
         "index": 15
       },
       {
-        "content": "våra kroppar minns",
-        "links": [],
+        "content": "spillran behåller vi",
+        "links": [
+          "spillra"
+        ],
         "index": 16
       },
       {
-        "content": "alla förfäders brott)",
-        "links": [],
+        "content": "kokar till buljong",
+        "links": [
+          "koka",
+          "äta",
+          "buljong"
+        ],
         "index": 17
       },
       {
-        "content": "",
-        "links": [],
-        "index": -1
-      }
-    ]
-  },
-  {
-    "title": "",
-    "lines": [
-      {
-        "content": "ben ut till kött",
-        "links": [],
+        "content": "nästa jack blir en skål",
+        "links": [
+          "jack",
+          "skål",
+          "bägare"
+        ],
         "index": 18
       },
       {
-        "content": "där stressen gror",
-        "links": [],
+        "content": "fermenterad soppa",
+        "links": [
+          "fermentera",
+          "soppa"
+        ],
         "index": 19
       },
       {
-        "content": "mjölksyra och skräck",
-        "links": [],
+        "content": "fylleslag för oss",
+        "links": [
+          "fylleslag"
+        ],
         "index": 20
       },
       {
-        "content": "i tjuröga i vårt",
-        "links": [],
+        "content": "räfflade rävkullen",
+        "links": [
+          "räffla",
+          "räv",
+          "kull"
+        ],
         "index": 21
       },
       {
-        "content": "bäcken format",
-        "links": [],
+        "content": "skålar och skålar",
+        "links": [
+          "skåla"
+        ],
         "index": 22
       },
       {
-        "content": "för hästrygg",
-        "links": [],
+        "content": "kropparna minns",
+        "links": [
+          "kropp",
+          "minne"
+        ],
         "index": 23
       },
       {
-        "content": "och hundpäls",
-        "links": [],
+        "content": "våra förfäders malmbrott",
+        "links": [
+          "förfäder",
+          "förälder",
+          "gruva",
+          "malm",
+          "brott"
+        ],
         "index": 24
-      },
-      {
-        "content": "som passar i handen",
-        "links": [],
-        "index": 25
-      },
-      {
-        "content": "piska och morot",
-        "links": [],
-        "index": 26
-      },
-      {
-        "content": "till din skinnerbox",
-        "links": [],
-        "index": 27
-      },
-      {
-        "content": "höljet runt kroppen",
-        "links": [],
-        "index": 28
-      },
-      {
-        "content": "tillbaka in i kroppen",
-        "links": [],
-        "index": 29
-      },
-      {
-        "content": "bärklustret sug",
-        "links": [],
-        "index": 30
-      },
-      {
-        "content": "*slavsquatens* knän",
-        "links": [],
-        "index": 31
-      },
-      {
-        "content": "dansen runt bål",
-        "links": [],
-        "index": 32
-      },
-      {
-        "content": "trygg i luktrum",
-        "links": [],
-        "index": 33
-      },
-      {
-        "content": "blöt hund",
-        "links": [],
-        "index": 34
-      },
-      {
-        "content": "kokt spik",
-        "links": [],
-        "index": 35
-      },
-      {
-        "content": "grillkött",
-        "links": [],
-        "index": 36
-      },
-      {
-        "content": "bränt hår",
-        "links": [],
-        "index": 37
-      },
-      {
-        "content": "pyr pyr pyr",
-        "links": [],
-        "index": 38
-      },
-      {
-        "content": "feromonsoppa",
-        "links": [],
-        "index": 39
-      },
-      {
-        "content": "till bäckengung",
-        "links": [],
-        "index": 40
-      },
-      {
-        "content": "våta drömmens",
-        "links": [],
-        "index": 41
-      },
-      {
-        "content": "första vittnesmål",
-        "links": [],
-        "index": 42
-      },
-      {
-        "content": "en språklös kungörelse",
-        "links": [],
-        "index": 43
-      },
-      {
-        "content": "och ännu mer med språk",
-        "links": [],
-        "index": 44
-      },
-      {
-        "content": "fingrar för att rista",
-        "links": [],
-        "index": 45
-      },
-      {
-        "content": "kippa ben",
-        "links": [],
-        "index": 46
-      },
-      {
-        "content": "ärrets första ord",
-        "links": [],
-        "index": 47
-      },
-      {
-        "content": "mammut och gamut",
-        "links": [],
-        "index": 48
-      },
-      {
-        "content": "golgatha och moloch",
-        "links": [],
-        "index": 49
-      },
-      {
-        "content": "i grottaket",
-        "links": [],
-        "index": 50
-      },
-      {
-        "content": "det sunkiga haket",
-        "links": [],
-        "index": 51
-      },
-      {
-        "content": "i din biomes mesh",
-        "links": [],
-        "index": 52
-      },
-      {
-        "content": "alkoholen porlar",
-        "links": [],
-        "index": 53
-      },
-      {
-        "content": "ner för genernas",
-        "links": [],
-        "index": 54
-      },
-      {
-        "content": "ojämna mark",
-        "links": [],
-        "index": 55
-      },
-      {
-        "content": "in i käften",
-        "links": [],
-        "index": 56
-      },
-      {
-        "content": "käka jord",
-        "links": [],
-        "index": 57
-      },
-      {
-        "content": "fortsätt gräv",
-        "links": [],
-        "index": 58
-      },
-      {
-        "content": "i nästa glänta",
-        "links": [],
-        "index": 59
-      },
-      {
-        "content": "är svampstället",
-        "links": [],
-        "index": 60
-      },
-      {
-        "content": "hoppas och vet",
-        "links": [],
-        "index": 61
-      },
-      {
-        "content": "i stig på stig",
-        "links": [],
-        "index": 62
-      },
-      {
-        "content": "innerstadens *desire* *path*",
-        "links": [],
-        "index": 63
-      },
-      {
-        "content": "mycelinmotorväg till",
-        "links": [],
-        "index": 64
-      },
-      {
-        "content": "baklås och fallucka",
-        "links": [],
-        "index": 65
-      },
-      {
-        "content": "detta går och maler",
-        "links": [],
-        "index": 66
-      },
-      {
-        "content": "marknadens inre liv",
-        "links": [],
-        "index": 67
-      },
-      {
-        "content": "molochs ägg",
-        "links": [],
-        "index": 68
-      },
-      {
-        "content": "växer bäst i",
-        "links": [],
-        "index": 69
-      },
-      {
-        "content": "grå massa",
-        "links": [],
-        "index": 70
       },
       {
         "content": "",
@@ -389,59 +242,598 @@ export const nearToFarSequence: Sequence = [
     "title": "",
     "lines": [
       {
-        "content": "kroppen måste",
-        "links": [],
+        "content": "ben till kött",
+        "links": [
+          "ben",
+          "kött"
+        ],
+        "index": 25
+      },
+      {
+        "content": "göder stressen",
+        "links": [
+          "göda",
+          "gödsel",
+          "stress"
+        ],
+        "index": 26
+      },
+      {
+        "content": "skräck och mjölksyra",
+        "links": [
+          "skräck",
+          "mjölksyra"
+        ],
+        "index": 27
+      },
+      {
+        "content": "koagulerande protein",
+        "links": [
+          "koagulera",
+          "protein"
+        ],
+        "index": 28
+      },
+      {
+        "content": "tjurögat över elden",
+        "links": [
+          "tjur",
+          "eld"
+        ],
+        "index": 29
+      },
+      {
+        "content": "du äter",
+        "links": [
+          "äta",
+          "mat"
+        ],
+        "index": 30
+      },
+      {
+        "content": "formar ditt bäcken",
+        "links": [
+          "bäcken"
+        ],
+        "index": 31
+      },
+      {
+        "content": "för hästrygg",
+        "links": [
+          "häst",
+          "rygg",
+          "ryggrad"
+        ],
+        "index": 32
+      },
+      {
+        "content": "handen för hundpäls",
+        "links": [
+          "hand",
+          "hund",
+          "päls"
+        ],
+        "index": 33
+      },
+      {
+        "content": "morot och piska",
+        "links": [
+          "morot",
+          "piska"
+        ],
+        "index": 34
+      },
+      {
+        "content": "handtaget till",
+        "links": [
+          "handtag",
+          "hand"
+        ],
+        "index": 35
+      },
+      {
+        "content": "min *skinner-box*",
+        "links": [
+          "skinner",
+          "skinner-box",
+          "betingning"
+        ],
+        "index": 36
+      },
+      {
+        "content": "hinnan runt kroppen",
+        "links": [
+          "hinnan",
+          "kropp"
+        ],
+        "index": 37
+      },
+      {
+        "content": "tillbaka in",
+        "links": [
+          "loop",
+          "återkoppla"
+        ],
+        "index": 38
+      },
+      {
+        "content": "i kroppen",
+        "links": [
+          "kropp"
+        ],
+        "index": 39
+      },
+      {
+        "content": "med sug från bärklustret",
+        "links": [
+          "sug",
+          "bär"
+        ],
+        "index": 40
+      },
+      {
+        "content": "*slav* squattens* knän",
+        "links": [
+          "slav-squat",
+          "knä"
+        ],
+        "index": 41
+      },
+      {
+        "content": "dansen runt bål",
+        "links": [
+          "dans",
+          "bål"
+        ],
+        "index": 42
+      },
+      {
+        "content": "det tryggaste luktrummet",
+        "links": [
+          "trygg",
+          "lukt",
+          "rum"
+        ],
+        "index": 43
+      },
+      {
+        "content": "kokt spik",
+        "links": [
+          "koka",
+          "spik",
+          "soppa",
+          "mat"
+        ],
+        "index": 44
+      },
+      {
+        "content": "blöt hund",
+        "links": [
+          "väta",
+          "vatten",
+          "hund"
+        ],
+        "index": 45
+      },
+      {
+        "content": "grillkött",
+        "links": [
+          "grill",
+          "grilla",
+          "kött",
+          "mat"
+        ],
+        "index": 46
+      },
+      {
+        "content": "bränt hår",
+        "links": [
+          "eld",
+          "bränt",
+          "hår"
+        ],
+        "index": 47
+      },
+      {
+        "content": "pyr pyr pyr",
+        "links": [
+          "pyra"
+        ],
+        "index": 48
+      },
+      {
+        "content": "feromonsoppa",
+        "links": [
+          "feromon",
+          "soppa"
+        ],
+        "index": 49
+      },
+      {
+        "content": "gungar bäckenet",
+        "links": [
+          "gung",
+          "bäcken",
+          "rytm",
+          "sex"
+        ],
+        "index": 50
+      },
+      {
+        "content": "du vaknar",
+        "links": [
+          "sömn",
+          "vaken"
+        ],
+        "index": 51
+      },
+      {
+        "content": "av en våt dröm",
+        "links": [
+          "våt",
+          "vatten",
+          "dröm",
+          "sex"
+        ],
+        "index": 52
+      },
+      {
+        "content": "ett första språklöst vittnesmål",
+        "links": [
+          "språk",
+          "tecken",
+          "mönster",
+          "vittnesmål"
+        ],
+        "index": 53
+      },
+      {
+        "content": "detta är kött",
+        "links": [
+          "kött"
+        ],
+        "index": 54
+      },
+      {
+        "content": "kött på kött",
+        "links": [
+          "kött"
+        ],
+        "index": 55
+      },
+      {
+        "content": "späckat med tecken",
+        "links": [
+          "späck",
+          "tecken",
+          "mönster"
+        ],
+        "index": 56
+      },
+      {
+        "content": "fingrar som ristar",
+        "links": [
+          "finger",
+          "rista",
+          "karva"
+        ],
+        "index": 57
+      },
+      {
+        "content": "ben hackar och hackas",
+        "links": [
+          "ben",
+          "skelett",
+          "hacka",
+          "rista"
+        ],
+        "index": 58
+      },
+      {
+        "content": "ärrets första ord",
+        "links": [
+          "ärr",
+          "ord"
+        ],
+        "index": 59
+      },
+      {
+        "content": "mammut och gamut",
+        "links": [
+          "mammut",
+          "gamut"
+        ],
+        "index": 60
+      },
+      {
+        "content": "moloch och golgata",
+        "links": [
+          "moloch",
+          "golgata"
+        ],
+        "index": 61
+      },
+      {
+        "content": "i grottaket",
+        "links": [
+          "grotta",
+          "grottak"
+        ],
+        "index": 62
+      },
+      {
+        "content": "borden i sunkhaket",
+        "links": [
+          "bord",
+          "sunkhak",
+          "bar"
+        ],
+        "index": 63
+      },
+      {
+        "content": "i din *genomes* nät",
+        "links": [
+          "genome",
+          "nät"
+        ],
+        "index": 64
+      },
+      {
+        "content": "porlar alkohol",
+        "links": [
+          "porl",
+          "ström",
+          "flöde",
+          "alkohol"
+        ],
+        "index": 65
+      },
+      {
+        "content": "glasklar bergsbäck",
+        "links": [
+          "glas",
+          "tydlig",
+          "berg",
+          "bäck",
+          "bergsbäck"
+        ],
+        "index": 66
+      },
+      {
+        "content": "nedför genernas",
+        "links": [
+          "gen"
+        ],
+        "index": 67
+      },
+      {
+        "content": "ojämna mark",
+        "links": [
+          "ojämn",
+          "mark"
+        ],
+        "index": 68
+      },
+      {
+        "content": "rakt in i käften",
+        "links": [
+          "käft",
+          "återkoppla",
+          "loop"
+        ],
+        "index": 69
+      },
+      {
+        "content": "tuggar jord",
+        "links": [
+          "tand",
+          "jord"
+        ],
+        "index": 70
+      },
+      {
+        "content": "gräver vidare",
+        "links": [
+          "gräva"
+        ],
         "index": 71
       },
       {
-        "content": "explodera utåt",
-        "links": [],
+        "content": "drar i spaken",
+        "links": [
+          "spak"
+        ],
         "index": 72
+      },
+      {
+        "content": "en gång till",
+        "links": [
+          "återkoppla",
+          "loop"
+        ],
+        "index": 73
+      },
+      {
+        "content": "hör pengaklirret",
+        "links": [
+          "ljud",
+          "pengar",
+          "betingning",
+          "skinner-box"
+        ],
+        "index": 74
+      },
+      {
+        "content": "i nästa glänta",
+        "links": [
+          "glänta"
+        ],
+        "index": 75
+      },
+      {
+        "content": "finns svampstället",
+        "links": [
+          "svamp",
+          "mat"
+        ],
+        "index": 76
+      },
+      {
+        "content": "du vet det",
+        "links": [
+          ""
+        ],
+        "index": 77
+      },
+      {
+        "content": "på nästa stig",
+        "links": [
+          "stig",
+          "väg",
+          "flöde"
+        ],
+        "index": 78
+      },
+      {
+        "content": "korsa en *desire* *path*",
+        "links": [
+          "stig",
+          "desire-path"
+        ],
+        "index": 79
+      },
+      {
+        "content": "i innerstadens",
+        "links": [
+          "stad"
+        ],
+        "index": 80
+      },
+      {
+        "content": "ta en Uber längs",
+        "links": [
+          "Uber",
+          "gig"
+        ],
+        "index": 81
+      },
+      {
+        "content": "mycelinmotorvägen",
+        "links": [
+          "mycelin",
+          "motorväg",
+          "fåra",
+          "skåra"
+        ],
+        "index": 82
+      },
+      {
+        "content": "ner i baklåset",
+        "links": [
+          "baklås",
+          "deadlock",
+          "fälla"
+        ],
+        "index": 83
+      },
+      {
+        "content": "sitt där nere",
+        "links": [
+          ""
+        ],
+        "index": 84
+      },
+      {
+        "content": "grubbla över",
+        "links": [
+          "tänka"
+        ],
+        "index": 85
+      },
+      {
+        "content": "markandens inre liv",
+        "links": [
+          "marknad"
+        ],
+        "index": 86
+      },
+      {
+        "content": "molochs ägg",
+        "links": [
+          "moloch",
+          "ägg"
+        ],
+        "index": 87
+      },
+      {
+        "content": "växer bäst",
+        "links": [
+          ""
+        ],
+        "index": 88
+      },
+      {
+        "content": "i grå massa",
+        "links": [
+          "grå-massa",
+          "hjärna"
+        ],
+        "index": 89
+      },
+      {
+        "content": "",
+        "links": [],
+        "index": -1
+      }
+    ]
+  },
+  {
+    "title": "",
+    "lines": [
+      {
+        "content": "kroppen exploderar",
+        "links": [],
+        "index": 90
       },
       {
         "content": "projiceras bortåt",
         "links": [],
-        "index": 73
+        "index": 91
       },
       {
-        "content": "kränga tillbaka",
+        "content": "kränger tillbaka",
         "links": [],
-        "index": 74
+        "index": 92
       },
       {
-        "content": "loopa runt",
+        "content": "i en vid båge",
         "links": [],
-        "index": 75
+        "index": 93
       },
       {
-        "content": "med huvud",
+        "content": "kör upp huvud",
         "links": [],
-        "index": 76
+        "index": 94
       },
       {
-        "content": "upp i anus",
+        "content": "i anus",
         "links": [],
-        "index": 77
+        "index": 95
       },
       {
-        "content": "och stirra ut",
+        "content": "stirra ut",
         "links": [],
-        "index": 78
+        "index": 96
       },
       {
-        "content": "ur din gapande",
+        "content": "ur din gapande käft",
         "links": [],
-        "index": 79
+        "index": 97
       },
       {
-        "content": "käft",
+        "content": "som gammelfarfar sa",
         "links": [],
-        "index": 80
-      },
-      {
-        "content": "(som grekerna sa)",
-        "links": [],
-        "index": 81
+        "index": 98
       },
       {
         "content": "",
@@ -456,682 +848,672 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "cykeln surrar",
         "links": [],
-        "index": 82
-      },
-      {
-        "content": "i mina sporer",
-        "links": [],
-        "index": 83
-      },
-      {
-        "content": "oro som kacklar",
-        "links": [],
-        "index": 84
-      },
-      {
-        "content": "bakom och i",
-        "links": [],
-        "index": 85
-      },
-      {
-        "content": "alla ord",
-        "links": [],
-        "index": 86
-      },
-      {
-        "content": "i socialt",
-        "links": [],
-        "index": 87
-      },
-      {
-        "content": "spänningsfält",
-        "links": [],
-        "index": 88
-      },
-      {
-        "content": "strålar in",
-        "links": [],
-        "index": 89
-      },
-      {
-        "content": "i andra kroppar",
-        "links": [],
-        "index": 90
-      },
-      {
-        "content": "vävs in",
-        "links": [],
-        "index": 91
-      },
-      {
-        "content": "i relation",
-        "links": [],
-        "index": 92
-      },
-      {
-        "content": "och objekt",
-        "links": [],
-        "index": 93
-      },
-      {
-        "content": "småbarnsfamiljens",
-        "links": [],
-        "index": 94
-      },
-      {
-        "content": "som trepunktsstruktur",
-        "links": [],
-        "index": 95
-      },
-      {
-        "content": "hemliga älskare",
-        "links": [],
-        "index": 96
-      },
-      {
-        "content": "i varje knull",
-        "links": [],
-        "index": 97
-      },
-      {
-        "content": "ett jack i kuk",
-        "links": [],
-        "index": 98
-      },
-      {
-        "content": "smegma på burk",
-        "links": [],
         "index": 99
       },
       {
-        "content": "i våra bylten",
+        "content": "i våra sporer",
         "links": [],
         "index": 100
       },
       {
-        "content": "de tynger",
+        "content": "kacklande ord",
         "links": [],
         "index": 101
       },
       {
-        "content": "hinnan över torget",
+        "content": "bakom andra ord",
         "links": [],
         "index": 102
       },
       {
-        "content": "i burktelefonen",
+        "content": "fastsurrade i",
         "links": [],
         "index": 103
       },
       {
-        "content": "folie i trappuppgången",
+        "content": "sociala spänningsfält",
         "links": [],
         "index": 104
       },
       {
-        "content": "underbygger allt njut",
+        "content": "med skarp stråle",
         "links": [],
         "index": 105
       },
       {
-        "content": "signalsubstansindustri",
+        "content": "tar det sig in",
         "links": [],
         "index": 106
       },
       {
-        "content": "kortsluter och blir",
+        "content": "i andra kroppar",
         "links": [],
         "index": 107
       },
       {
-        "content": "till guld",
+        "content": "väver in sig själv",
         "links": [],
         "index": 108
       },
       {
-        "content": "med nog distans",
+        "content": "i relation",
         "links": [],
         "index": 109
       },
       {
-        "content": "lever industri",
+        "content": "och objekt",
         "links": [],
         "index": 110
       },
       {
-        "content": "och institution",
+        "content": "småbarnsfamiljens",
         "links": [],
         "index": 111
       },
       {
-        "content": "kvar i körteln",
+        "content": "trepunktsstruktur",
         "links": [],
         "index": 112
       },
       {
-        "content": "polisstatkörteln",
+        "content": "med hemliga älskare",
         "links": [],
         "index": 113
       },
       {
-        "content": "batongjacket",
+        "content": "i alla våra knull",
         "links": [],
         "index": 114
       },
       {
-        "content": "en generation",
+        "content": "ett jack i kuken",
         "links": [],
         "index": 115
       },
       {
-        "content": "med överviga handleder",
+        "content": "smegma på burk",
         "links": [],
         "index": 116
       },
       {
-        "content": "immuna mot smärtgrepp",
+        "content": "fyll ditt bylte",
         "links": [],
         "index": 117
       },
       {
-        "content": "ger efter för",
+        "content": "bre ut hinnan",
         "links": [],
         "index": 118
       },
       {
-        "content": "ny ordning",
+        "content": "över torget",
         "links": [],
         "index": 119
       },
       {
-        "content": "kroppens organ för",
+        "content": "lyssna i burktelefon",
         "links": [],
         "index": 120
       },
       {
-        "content": "stadssanktionerat krig",
+        "content": "dra handen över",
         "links": [],
         "index": 121
       },
       {
-        "content": "ekonomiska murar",
+        "content": "folie i trappuppgången",
         "links": [],
         "index": 122
       },
       {
-        "content": "synliga från ISS",
+        "content": "det underbygger alla njut",
         "links": [],
         "index": 123
       },
       {
-        "content": "med sina kosmiska",
+        "content": "signalsubstansindustri",
         "links": [],
         "index": 124
       },
       {
-        "content": "flaskpostprojekt",
+        "content": "kortsluter med guld",
         "links": [],
         "index": 125
       },
       {
-        "content": "att tro på kroppens",
+        "content": "bygger fabrik",
         "links": [],
         "index": 126
       },
       {
-        "content": "fortlevnad i kartan",
+        "content": "och institution",
         "links": [],
         "index": 127
       },
       {
-        "content": "inbäddad i tidskapseln",
+        "content": "lever i körteln",
         "links": [],
         "index": 128
       },
       {
-        "content": "med sång och språk",
+        "content": "polisstatskörteln",
         "links": [],
         "index": 129
       },
       {
-        "content": "vår utvecklade rytm",
+        "content": "batongjacket hos generationen",
         "links": [],
         "index": 130
       },
       {
-        "content": "swing och baktakt",
+        "content": "med överrörliga handleder",
         "links": [],
         "index": 131
       },
       {
-        "content": "hjärta och andning",
+        "content": "immun mot smärtgrepp",
         "links": [],
         "index": 132
       },
       {
-        "content": "smyga och gå och",
+        "content": "men ny ordning förblir",
         "links": [],
         "index": 133
       },
       {
-        "content": "jogga och kuta",
+        "content": "kroppen bygger organ",
         "links": [],
         "index": 134
       },
       {
-        "content": "lämna och återvända",
+        "content": "för stadssanktionerad krigföring",
         "links": [],
         "index": 135
       },
       {
-        "content": "havsbränningar och",
+        "content": "och ekonomiska konstellationer",
         "links": [],
         "index": 136
       },
       {
-        "content": "menscykler och",
+        "content": "synliga från ISS",
         "links": [],
         "index": 137
       },
       {
-        "content": "vargtimmen och",
+        "content": "med sitt kosmiska",
         "links": [],
         "index": 138
       },
       {
-        "content": "blodmånen i vår musik",
+        "content": "flaskpostprojekt",
         "links": [],
         "index": 139
       },
       {
-        "content": "runt en blomväv",
+        "content": "sekulär tro",
         "links": [],
         "index": 140
       },
       {
-        "content": "folkdräkt över höfter",
+        "content": "på kroppens fortlevnad",
         "links": [],
         "index": 141
       },
       {
-        "content": "cirkeldans och skrål",
+        "content": "i *blueprints* och DNA-kartor",
         "links": [],
         "index": 142
       },
       {
-        "content": "runt tusen altare",
+        "content": "och dikt och sång",
         "links": [],
         "index": 143
       },
       {
-        "content": "gud i rörelsen",
+        "content": "arkiv och inspelningar",
         "links": [],
         "index": 144
       },
       {
-        "content": "i dansen och maskinen",
+        "content": "swing och baktakt",
         "links": [],
         "index": 145
       },
       {
-        "content": "gud i vår kropp",
+        "content": "hjärtslag och andning",
         "links": [],
         "index": 146
       },
       {
-        "content": "vår kropp i gud",
+        "content": "smyga och gå",
         "links": [],
         "index": 147
       },
       {
-        "content": "i katedralens tak",
+        "content": "jogga och kuta",
         "links": [],
         "index": 148
       },
       {
-        "content": "dess massiva arv",
+        "content": "anlända och avgå",
         "links": [],
         "index": 149
       },
       {
-        "content": "av upprepade rörelser",
+        "content": "havsbränning och menscykler",
         "links": [],
         "index": 150
       },
       {
-        "content": "återbesökta texter",
+        "content": "vargtimmen och blodmånen",
         "links": [],
         "index": 151
       },
       {
-        "content": "tolkning på tolkning",
+        "content": "i vår musik",
         "links": [],
         "index": 152
       },
       {
-        "content": "tolkade tolkningar",
+        "content": "folkdräkter över höfter",
         "links": [],
         "index": 153
       },
       {
-        "content": "översatt översättning",
+        "content": "cirkeldans och skrål",
         "links": [],
         "index": 154
       },
       {
-        "content": "korsreferenser och",
+        "content": "runt runt runt",
         "links": [],
         "index": 155
       },
       {
-        "content": "detaljstudier",
+        "content": "tusen altare",
         "links": [],
         "index": 156
       },
       {
-        "content": "i ideologisk renhet",
+        "content": "gud kurar i rörelsen",
         "links": [],
         "index": 157
       },
       {
-        "content": "en konstruerad form",
+        "content": "dans och maskin",
         "links": [],
         "index": 158
       },
       {
-        "content": "som strålar ur kroppen",
+        "content": "gud i vår kropp",
         "links": [],
         "index": 159
       },
       {
-        "content": "strålar in i teglet",
+        "content": "vår kropp i gud",
         "links": [],
         "index": 160
       },
       {
-        "content": "radierar ut igen",
+        "content": "i katedralstaket",
         "links": [],
         "index": 161
       },
       {
-        "content": "i falsk verklighet",
+        "content": "arvet av staplad sten",
         "links": [],
         "index": 162
       },
       {
-        "content": "falsk falskhet",
+        "content": "upprepade rörelser",
         "links": [],
         "index": 163
       },
       {
-        "content": "oäkta äkthet",
+        "content": "texter vi återbesöker",
         "links": [],
         "index": 164
       },
       {
-        "content": "äkta oäkthet",
+        "content": "tolkar och tolkar",
         "links": [],
         "index": 165
       },
       {
-        "content": "otrogen oskuld",
+        "content": "tolkning på tolkning",
         "links": [],
         "index": 166
       },
       {
-        "content": "trogen skuld",
+        "content": "tolkade tolkning",
         "links": [],
         "index": 167
       },
       {
-        "content": "skamlös skam",
+        "content": "översatt översättning",
         "links": [],
         "index": 168
       },
       {
-        "content": "skamlig skamlöshet",
+        "content": "cirkulära referenser",
         "links": [],
         "index": 169
       },
       {
-        "content": "ett ryck och tryck",
+        "content": "detaljstudier i ideologisk renhet",
         "links": [],
         "index": 170
       },
       {
-        "content": "under tummens nyck",
+        "content": "vi drejar fram formen",
         "links": [],
         "index": 171
       },
       {
-        "content": "tyglad och halstrad",
+        "content": "som strålar från kroppen",
         "links": [],
         "index": 172
       },
       {
-        "content": "i skärm i skärm",
+        "content": "rätt in i teglet",
         "links": [],
         "index": 173
       },
       {
-        "content": "hjärnans spårade veck",
+        "content": "radierar ut igen",
         "links": [],
         "index": 174
       },
       {
-        "content": "algoritmiskt kartlagda",
+        "content": "i ny verklighet",
         "links": [],
         "index": 175
       },
       {
-        "content": "varje mental hulling",
+        "content": "äkta oäkthet",
         "links": [],
         "index": 176
       },
       {
-        "content": "fokuserad mot",
+        "content": "oäkta äkthet",
         "links": [],
         "index": 177
       },
       {
-        "content": "skärningspunkten",
+        "content": "falsk falskhet",
         "links": [],
         "index": 178
       },
       {
-        "content": "singularitet i loop",
+        "content": "otrogen oskuld",
         "links": [],
         "index": 179
       },
       {
-        "content": "min-max-min-maxxing",
+        "content": "skamlös skam",
         "links": [],
         "index": 180
       },
       {
-        "content": "av återvunna begär",
+        "content": "skamlig skamlöshet",
         "links": [],
         "index": 181
       },
       {
-        "content": "alltid den andre",
+        "content": "oskyldig skuld",
         "links": [],
         "index": 182
       },
       {
-        "content": "ditt är mitt och",
+        "content": "ryck efter ryck",
         "links": [],
         "index": 183
       },
       {
-        "content": "mitt är ditt och",
+        "content": "dans efter tummens nyck",
         "links": [],
         "index": 184
       },
       {
-        "content": "alltid den andre",
+        "content": "halstrad över glödande",
         "links": [],
         "index": 185
       },
       {
-        "content": "kroppen som snurrar",
+        "content": "skärmeld",
         "links": [],
         "index": 186
       },
       {
-        "content": "i en glastub",
+        "content": "skärmen i skärmen",
         "links": [],
         "index": 187
       },
       {
-        "content": "medsols och motsols",
+        "content": "spårar alla konturlinjer",
         "links": [],
         "index": 188
       },
       {
-        "content": "solguden i luren",
+        "content": "hjärnans alla veck",
         "links": [],
         "index": 189
       },
       {
-        "content": "snubblar och slungas",
+        "content": "algoritmiskt lergods",
         "links": [],
         "index": 190
       },
       {
-        "content": "ut i perfekt båge",
+        "content": "upphängd med hullingar",
         "links": [],
         "index": 191
       },
       {
-        "content": "omloppsbana runt",
+        "content": "fokuserad mot skärningspunkten",
         "links": [],
         "index": 192
       },
       {
-        "content": "öga på komplex kris",
+        "content": "din egna singularitet",
         "links": [],
         "index": 193
       },
       {
-        "content": "hyperobjektets löfte",
+        "content": "minmax-minmaxxing",
         "links": [],
         "index": 194
       },
       {
-        "content": "om Molochs käft",
+        "content": "av återvunna begär",
         "links": [],
         "index": 195
       },
       {
-        "content": "en liten demon",
+        "content": "alltid den andre",
         "links": [],
         "index": 196
       },
       {
-        "content": "i varje vår knopp",
+        "content": "ditt är mitt",
         "links": [],
         "index": 197
       },
       {
-        "content": "känner paradigmskiftet",
+        "content": "mitt är ditt",
         "links": [],
         "index": 198
       },
       {
-        "content": "projiceras ut på",
+        "content": "alltid den andre",
         "links": [],
         "index": 199
       },
       {
-        "content": "trappans kalla betong",
+        "content": "medsols och motsols",
         "links": [],
         "index": 200
       },
       {
-        "content": "grus mellan tänderna",
+        "content": "solgud i luren",
         "links": [],
         "index": 201
       },
       {
-        "content": "gnisslar i sömnen",
+        "content": "svara inte",
         "links": [],
         "index": 202
       },
       {
-        "content": "vrider och vänder",
+        "content": "svara då",
         "links": [],
         "index": 203
       },
       {
-        "content": "i bakhuvudets ägg",
+        "content": "låter oss slungas",
         "links": [],
         "index": 204
       },
       {
-        "content": "ängeln i Moloch",
+        "content": "i en lång loop",
         "links": [],
         "index": 205
       },
       {
-        "content": "gråblått knaster",
+        "content": "vid omloppsbana",
         "links": [],
         "index": 206
       },
       {
-        "content": "inbakat och lovande",
+        "content": "perspektiv på vittringen",
         "links": [],
         "index": 207
       },
       {
-        "content": "obotlig framtid",
+        "content": "hyperobjektens guru",
         "links": [],
         "index": 208
       },
       {
-        "content": "inkapslad i strålning",
+        "content": "viskar sina löften",
         "links": [],
         "index": 209
       },
       {
-        "content": "nästa och sista arv",
+        "content": "Molochs käft",
         "links": [],
         "index": 210
       },
       {
-        "content": "bakgrundsstrålning",
+        "content": "demon i varje kropp",
         "links": [],
         "index": 211
       },
       {
-        "content": "i kulturen och",
+        "content": "paradigmskiftet",
         "links": [],
         "index": 212
       },
       {
-        "content": "i rymden",
+        "content": "som strålar ut",
         "links": [],
         "index": 213
       },
       {
-        "content": "värmedödens sista",
+        "content": "på trappans betong",
         "links": [],
         "index": 214
       },
       {
-        "content": "berörningspunkt",
+        "content": "grus mellan tänderna",
         "links": [],
         "index": 215
       },
       {
-        "content": "kroppens anslutning",
+        "content": "gnisslar i sömnen",
         "links": [],
         "index": 216
       },
       {
-        "content": "till rymdens slut",
+        "content": "vrider och vänder",
         "links": [],
         "index": 217
+      },
+      {
+        "content": "håller alla vakna",
+        "links": [],
+        "index": 218
+      },
+      {
+        "content": "klagar på bakhuvudets ägg",
+        "links": [],
+        "index": 219
+      },
+      {
+        "content": "yrar om ängeln i Moloch",
+        "links": [],
+        "index": 220
+      },
+      {
+        "content": "gråblått knaster",
+        "links": [],
+        "index": 221
+      },
+      {
+        "content": "man måste tro dig",
+        "links": [],
+        "index": 222
+      },
+      {
+        "content": "inbakad och trolovad",
+        "links": [],
+        "index": 223
+      },
+      {
+        "content": "till obotlig framtid",
+        "links": [],
+        "index": 224
+      },
+      {
+        "content": "kapsla in det i",
+        "links": [],
+        "index": 225
+      },
+      {
+        "content": "den kulturella strålningen",
+        "links": [],
+        "index": 226
+      },
+      {
+        "content": "näst-näst-näst-näst-",
+        "links": [],
+        "index": 227
+      },
+      {
+        "content": "sista arvet",
+        "links": [],
+        "index": 228
+      },
+      {
+        "content": "marknaden och i rymden",
+        "links": [],
+        "index": 229
+      },
+      {
+        "content": "värmedödens sista",
+        "links": [],
+        "index": 230
+      },
+      {
+        "content": "beröringspunkt",
+        "links": [],
+        "index": 231
+      },
+      {
+        "content": "spetsen på din kropp",
+        "links": [],
+        "index": 232
       },
       {
         "content": "",
@@ -1144,124 +1526,134 @@ export const nearToFarSequence: Sequence = [
     "title": "",
     "lines": [
       {
-        "content": "utvecklad och",
-        "links": [],
-        "index": 218
-      },
-      {
-        "content": "dallrande spänd",
-        "links": [],
-        "index": 219
-      },
-      {
-        "content": "med fjärilsrevben",
-        "links": [],
-        "index": 220
-      },
-      {
-        "content": "över kontinent",
-        "links": [],
-        "index": 221
-      },
-      {
-        "content": "efter kontinent",
-        "links": [],
-        "index": 222
-      },
-      {
-        "content": "tänjd synaps",
-        "links": [],
-        "index": 223
-      },
-      {
-        "content": "ger efter för",
-        "links": [],
-        "index": 224
-      },
-      {
-        "content": "spänningen",
-        "links": [],
-        "index": 225
-      },
-      {
-        "content": "och suger ihop sig",
-        "links": [],
-        "index": 226
-      },
-      {
-        "content": "kollapsar allt inåt",
-        "links": [],
-        "index": 227
-      },
-      {
-        "content": "kroppen sväljer allt",
-        "links": [],
-        "index": 228
-      },
-      {
-        "content": "bäddar in sig i allt",
-        "links": [],
-        "index": 229
-      },
-      {
-        "content": "efter att ha svällt",
-        "links": [],
-        "index": 230
-      },
-      {
-        "content": "ett stort andetag",
-        "links": [],
-        "index": 231
-      },
-      {
-        "content": "andningsövningens",
-        "links": [],
-        "index": 232
-      },
-      {
-        "content": "utlösning i vattnet",
+        "content": "vecklar ut oss",
         "links": [],
         "index": 233
       },
       {
-        "content": "bland trampande",
+        "content": "spänner upp oss",
         "links": [],
         "index": 234
       },
       {
-        "content": "ben på ben på ben",
+        "content": "dallrande på fjärilsrevben",
         "links": [],
         "index": 235
       },
       {
-        "content": "med jack och skåror",
+        "content": "vidsträckt över vidden",
         "links": [],
         "index": 236
       },
       {
-        "content": "ärrade smalben",
+        "content": "tänjer på synapsen",
         "links": [],
         "index": 237
       },
       {
-        "content": "spår i ryggkotorna",
+        "content": "tur den är av gummi",
         "links": [],
         "index": 238
       },
       {
-        "content": "mot märgens vätska",
+        "content": "som ger efter för",
         "links": [],
         "index": 239
       },
       {
-        "content": "vänder sig blicken",
+        "content": "spänningen",
         "links": [],
         "index": 240
       },
       {
-        "content": "",
+        "content": "drar ihop sig",
         "links": [],
-        "index": -1
+        "index": 241
+      },
+      {
+        "content": "suger och kollapsar",
+        "links": [],
+        "index": 242
+      },
+      {
+        "content": "kroppen sväljer allt",
+        "links": [],
+        "index": 243
+      },
+      {
+        "content": "jord och satellit",
+        "links": [],
+        "index": 244
+      },
+      {
+        "content": "alla UFO-sonder",
+        "links": [],
+        "index": 245
+      },
+      {
+        "content": "bäddas ihop ordentligt",
+        "links": [],
+        "index": 246
+      },
+      {
+        "content": "inkludera allt",
+        "links": [],
+        "index": 247
+      },
+      {
+        "content": "efter att ha svällt",
+        "links": [],
+        "index": 248
+      },
+      {
+        "content": "andats så stort",
+        "links": [],
+        "index": 249
+      },
+      {
+        "content": "mässat mantran",
+        "links": [],
+        "index": 250
+      },
+      {
+        "content": "fått utlösning",
+        "links": [],
+        "index": 251
+      },
+      {
+        "content": "i vattnet",
+        "links": [],
+        "index": 252
+      },
+      {
+        "content": "bland trampande ben",
+        "links": [],
+        "index": 253
+      },
+      {
+        "content": "ben och ben",
+        "links": [],
+        "index": 254
+      },
+      {
+        "content": "med jack och skåror",
+        "links": [],
+        "index": 255
+      },
+      {
+        "content": "ärrade spår i ryggkotor",
+        "links": [],
+        "index": 256
+      },
+      {
+        "content": "vi skrapar mot märgen",
+        "links": [],
+        "index": 257
+      },
+      {
+        "content": "i såsen vänder blicken",
+        "links": [],
+        "index": 258
       }
     ]
   }

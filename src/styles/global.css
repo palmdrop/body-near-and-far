@@ -6,7 +6,7 @@
   --font-family: Helvetica, Arial, sans-serif;
   --font-size: clamp(9px, 3vw, 2.5rem);
 
-  --edge-margin: 0.5em;
+  --edge-margin: 0.0em;
 }
 
 html {
@@ -94,6 +94,8 @@ main {
 .composite .field {
   text-wrap: nowrap;
   width: 100%;
+
+  padding-bottom: 0.1em;
 
   font-family: var(--font-accent);
   flex: 0;

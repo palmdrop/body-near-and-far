@@ -53,10 +53,24 @@ const processSequence = async (name, path, outputPath) => {
   const processLine = (rawLine, index) => {
     const trimmedLine = rawLine.trim();
 
+    const [
+      content,
+      links
+     ] = trimmedLine
+      .split("(")
+      .map(part => part.trim())
+      .map(part => {
+        if(part.endsWith(")")) {
+          return part.slice(0, -1)
+        }
+
+        return part;
+      });
+
     return {
       id: undefined,
-      content: trimmedLine,
-      links: [],
+      content,
+      links: links?.split(",")?.map(link => link.trim()) ?? [],
       index
     }
   }
