@@ -21,6 +21,8 @@ const toTypescriptObject = (object, name, type, importLine) => {
 export const ${name}: ${type} = ${JSON.stringify(object, null, 2)};`;
 }
 
+const linksCount = new Map();
+
 const processField = async (name, path, outputPath) => {
   const data = await fs.readFile(path, "utf8");
   const lines = data.split("\n");
@@ -54,8 +56,8 @@ const processSequence = async (name, path, outputPath) => {
     const trimmedLine = rawLine.trim();
 
     const [
-      content,
-      links
+      contentPart,
+      linksPart
      ] = trimmedLine
       .split("(")
       .map(part => part.trim())
@@ -67,10 +69,24 @@ const processSequence = async (name, path, outputPath) => {
         return part;
       });
 
+    const links = linksPart
+      ?.split(",")
+      .map(link => link.trim()) 
+      .filter(link => !!link.length) 
+      ?? [];
+
+    links.forEach(link => {
+      if(!linksCount.has(link)) {
+        linksCount.set(link, 0);
+      }
+
+      linksCount.set(link, linksCount.get(link) + 1);
+    })
+
     return {
       id: undefined,
-      content,
-      links: links?.split(",")?.map(link => link.trim()) ?? [],
+      content: contentPart,
+      links,
       index
     }
   }
@@ -128,7 +144,7 @@ const main = async () => {
     FIELD_BODY_NAME, 
     FIELD_BODY_DATA_PATH, 
     FIELD_BODY_OUTPUT_PATH
-  )
+  );
 
   // Sequence (early to late)
   await processSequence(
@@ -150,5 +166,18 @@ const main = async () => {
   );
 }
 
-main().catch(console.error);
+main()
+  .then(() => {
+    console.log(
+      JSON.stringify(
+        [...linksCount.entries()]
+          // .sort((a, b) => b[1] - a[1])
+          .sort((a, b) => a[0].localeCompare(b[0], "sv"))
+          .map(([link, count]) => `${link}: ${count}`),
+        null,
+        2
+      )
+    );
+  })
+  .catch(console.error);
 

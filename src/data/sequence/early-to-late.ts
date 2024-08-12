@@ -5,212 +5,379 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "en sista stöt",
-        "links": [],
+        "links": [
+          "stöt",
+          "slut"
+        ],
         "index": 0
       },
       {
         "content": "du i den utstötta massan",
-        "links": [],
+        "links": [
+          "utstött",
+          "massa"
+        ],
         "index": 1
       },
       {
         "content": "din sammanhållna kropp",
-        "links": [],
+        "links": [
+          "intakt",
+          "sammanhållen"
+        ],
         "index": 2
       },
       {
         "content": "dunsar ner",
-        "links": [],
+        "links": [
+          "duns"
+        ],
         "index": 3
       },
       {
         "content": "i det nedstampade gräset",
-        "links": [],
+        "links": [
+          "gräs",
+          "nött"
+        ],
         "index": 4
       },
       {
         "content": "kvider och kippar",
-        "links": [],
+        "links": [
+          "kvida",
+          "kippa",
+          "andas",
+          "andhämtning"
+        ],
         "index": 5
       },
       {
         "content": "knut runt navelsträngen",
-        "links": [],
+        "links": [
+          "knut",
+          "navel",
+          "navelsträng"
+        ],
         "index": 6
       },
       {
         "content": "kvävd och befriad",
-        "links": [],
+        "links": [
+          "kvävd",
+          "befriad",
+          "frihet",
+          "syre"
+        ],
         "index": 7
       },
       {
         "content": "kväker och skriker",
-        "links": [],
+        "links": [
+          "kväka",
+          "groda",
+          "skrik"
+        ],
         "index": 8
       },
       {
         "content": "i bländande förvirring",
-        "links": [],
+        "links": [
+          "blända",
+          "bländad",
+          "förvirrad"
+        ],
         "index": 9
       },
       {
         "content": "obönhörlig smärta och kyla",
-        "links": [],
+        "links": [
+          "obönhörlig",
+          "smärta",
+          "kyla"
+        ],
         "index": 10
       },
       {
         "content": "ditt eget lätes oljud",
-        "links": [],
+        "links": [
+          "läte",
+          "oljud",
+          "röst"
+        ],
         "index": 11
       },
       {
         "content": "skallrar i strupen",
-        "links": [],
+        "links": [
+          "skallra",
+          "strupe",
+          "hals"
+        ],
         "index": 12
       },
       {
         "content": "raspar och tar emot",
-        "links": [],
+        "links": [
+          "motstånd",
+          "ojämn"
+        ],
         "index": 13
       },
       {
         "content": "skär genom sorlet",
-        "links": [],
+        "links": [
+          "skära",
+          "sorl",
+          "prat",
+          "social"
+        ],
         "index": 14
       },
       {
         "content": "alla kippar som jag",
-        "links": [],
+        "links": [
+          "kippa",
+          "andas"
+        ],
         "index": 15
       },
       {
         "content": "efter syre och famnvärme",
-        "links": [],
+        "links": [
+          "syre",
+          "famn",
+          "värme",
+          "intimitet"
+        ],
         "index": 16
       },
       {
         "content": "ljummen mjölk",
-        "links": [],
+        "links": [
+          "ljummen",
+          "mjölk",
+          "äta",
+          "mat"
+        ],
         "index": 17
       },
       {
         "content": "malande rörelse i organen",
-        "links": [],
+        "links": [
+          "mala",
+          "rörelse",
+          "organ",
+          "process"
+        ],
         "index": 18
       },
       {
         "content": "inledande processer",
-        "links": [],
+        "links": [
+          "process"
+        ],
         "index": 19
       },
       {
         "content": "rapar och skiter",
-        "links": [],
+        "links": [
+          "rapa",
+          "skit",
+          "gaser"
+        ],
         "index": 20
       },
       {
         "content": "pissar och spyr",
-        "links": [],
+        "links": [
+          "piss",
+          "urin",
+          "spya"
+        ],
         "index": 21
       },
       {
         "content": "fågelskit över hennes blus",
-        "links": [],
+        "links": [
+          "fågel",
+          "skit",
+          "fågelskit",
+          "blus",
+          "kläder",
+          "mor"
+        ],
         "index": 22
       },
       {
         "content": "former vindlar ovan",
-        "links": [],
+        "links": [
+          "form",
+          "rörelse",
+          "himmel",
+          "brus"
+        ],
         "index": 23
       },
       {
         "content": "dinglar och jollrar",
-        "links": [],
+        "links": [
+          "dingla",
+          "hänga",
+          "jollra",
+          "skratta",
+          "språk"
+        ],
         "index": 24
       },
       {
         "content": "sång för dig",
-        "links": [],
+        "links": [
+          "sång",
+          "sjunga",
+          "musik"
+        ],
         "index": 25
       },
       {
         "content": "kläder för dig",
-        "links": [],
+        "links": [
+          "kläder"
+        ],
         "index": 26
       },
       {
         "content": "invigd till kroppslös värme",
-        "links": [],
+        "links": [
+          "värme",
+          "saknad"
+        ],
         "index": 27
       },
       {
         "content": "kliande saknad",
-        "links": [],
+        "links": [
+          "saknad",
+          "irritation",
+          "instinkt",
+          "kli"
+        ],
         "index": 28
       },
       {
         "content": "nya skrik",
-        "links": [],
+        "links": [
+          "skrik"
+        ],
         "index": 29
       },
       {
         "content": "skuggskepnader",
-        "links": [],
+        "links": [
+          "skugga",
+          "skepnad",
+          "monster",
+          "dröm"
+        ],
         "index": 30
       },
       {
         "content": "spelar skuggspel",
-        "links": [],
+        "links": [
+          "spel",
+          "skuggspel",
+          "dröm"
+        ],
         "index": 31
       },
       {
         "content": "i första spegeln",
-        "links": [],
+        "links": [
+          "spegel"
+        ],
         "index": 32
       },
       {
         "content": "drömrummet återkopplar",
-        "links": [],
+        "links": [
+          "dröm",
+          "rum",
+          "loop",
+          "återkoppla"
+        ],
         "index": 33
       },
       {
         "content": "du blir återbesökt",
-        "links": [],
+        "links": [
+          "återkoppla",
+          "loop"
+        ],
         "index": 34
       },
       {
         "content": "grundläggande förstärkning",
-        "links": [],
+        "links": [
+          "förstärka",
+          "återkoppla",
+          "loop"
+        ],
         "index": 35
       },
       {
         "content": "avlöst anspänning",
-        "links": [],
+        "links": [
+          "fri",
+          "frigörelse"
+        ],
         "index": 36
       },
       {
         "content": "fastsurrad i perfekt substrat",
-        "links": [],
+        "links": [
+          "substrat",
+          "fåll",
+          "fälla"
+        ],
         "index": 37
       },
       {
         "content": "*baby* i formalin",
-        "links": [],
+        "links": [
+          "baby",
+          "bäbis",
+          "konserverad",
+          "formalin",
+          "substans"
+        ],
         "index": 38
       },
       {
         "content": "*baby* i blått dis",
-        "links": [],
+        "links": [
+          "baby",
+          "bäbis",
+          "dröm",
+          "himmel",
+          "dimma",
+          "blå",
+          "dis"
+        ],
         "index": 39
       },
       {
         "content": "*baby* som viker ihop",
-        "links": [],
+        "links": [
+          "baby",
+          "bäbis"
+        ],
         "index": 40
       },
       {
         "content": "borrar ner",
-        "links": [],
+        "links": [
+          "borr"
+        ],
         "index": 41
       },
       {
@@ -220,12 +387,21 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "dimmigt blådis",
-        "links": [],
+        "links": [
+          "dimma",
+          "blå",
+          "dis",
+          "dröm"
+        ],
         "index": 43
       },
       {
         "content": "i hjärnstammen",
-        "links": [],
+        "links": [
+          "hjärna",
+          "stam",
+          "ryggrad"
+        ],
         "index": 44
       },
       {
@@ -240,122 +416,228 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "på tuftade mattor",
-        "links": [],
+        "links": [
+          "tuftad",
+          "matta",
+          "golv"
+        ],
         "index": 45
       },
       {
         "content": "under bord av ek",
-        "links": [],
+        "links": [
+          "bord",
+          "ek",
+          "trä"
+        ],
         "index": 46
       },
       {
         "content": "legomönster i handflatorna",
-        "links": [],
+        "links": [
+          "lego",
+          "mönster",
+          "tecken",
+          "hand",
+          "handflata"
+        ],
         "index": 47
       },
       {
         "content": "första spår",
-        "links": [],
+        "links": [
+          "spår",
+          "tecken",
+          "mönster",
+          "minne"
+        ],
         "index": 48
       },
       {
         "content": "skinnets korttidsminne",
-        "links": [],
+        "links": [
+          "skinn",
+          "hud",
+          "minne",
+          "korttidsminne"
+        ],
         "index": 49
       },
       {
         "content": "växlar mellan glaskärl",
-        "links": [],
+        "links": [
+          "växla",
+          "glas",
+          "kärl",
+          "bägare",
+          "kruka",
+          "glaskärl"
+        ],
         "index": 50
       },
       {
         "content": "vuxensorl runt dig",
-        "links": [],
+        "links": [
+          "sorl",
+          "vuxen",
+          "främmande",
+          "alien",
+          "social"
+        ],
         "index": 51
       },
       {
         "content": "rummets oval kantad",
-        "links": [],
+        "links": [
+          "rum",
+          "kant",
+          "oval"
+        ],
         "index": 52
       },
       {
         "content": "av ansiktslösa gamlingar",
-        "links": [],
+        "links": [
+          "ansikte",
+          "ansiktslös",
+          "gamling",
+          "förälder",
+          "vuxen"
+        ],
         "index": 53
       },
       {
         "content": "med obegripligt språk",
-        "links": [],
+        "links": [
+          "språk",
+          "obegripligt",
+          "främmande",
+          "alien"
+        ],
         "index": 54
       },
       {
         "content": "dundrande skratt",
-        "links": [],
+        "links": [
+          "dundra",
+          "skratt",
+          "skratta"
+        ],
         "index": 55
       },
       {
         "content": "håller dig i kärlet",
-        "links": [],
+        "links": [
+          "kärl",
+          "bägare",
+          "kruka"
+        ],
         "index": 56
       },
       {
         "content": "farfars födelsedag",
-        "links": [],
+        "links": [
+          "farfar",
+          "födelsedag",
+          "födelse",
+          "ålder",
+          "vuxen"
+        ],
         "index": 57
       },
       {
         "content": "lokal med kristallkrona",
-        "links": [],
+        "links": [
+          "kristall",
+          "krona",
+          "kristallkrona"
+        ],
         "index": 58
       },
       {
         "content": "spökmålningar slinker in",
-        "links": [],
+        "links": [
+          "spöke",
+          "målning",
+          "mardröm"
+        ],
         "index": 59
       },
       {
         "content": "balsalar från serier",
-        "links": [],
+        "links": [
+          "bal",
+          "balsal",
+          "media",
+          "serie"
+        ],
         "index": 60
       },
       {
         "content": "spegelblankt golv",
-        "links": [],
+        "links": [
+          "spegel",
+          "spegelblankt"
+        ],
         "index": 61
       },
       {
         "content": "knastrande filter",
-        "links": [],
+        "links": [
+          "knastra",
+          "filter",
+          "hinna"
+        ],
         "index": 62
       },
       {
         "content": "sammansvetsat utan ord",
-        "links": [],
+        "links": [
+          "sammansvetsa",
+          "fåll",
+          "fälla",
+          "ord"
+        ],
         "index": 63
       },
       {
         "content": "barnen i andra kärl",
-        "links": [],
+        "links": [
+          "barn",
+          "kärl",
+          "bägare",
+          "kruka"
+        ],
         "index": 64
       },
       {
         "content": "bygger samma sak",
-        "links": [],
+        "links": [
+          "bygga"
+        ],
         "index": 65
       },
       {
         "content": "om och om igen",
-        "links": [],
+        "links": [
+          "loop",
+          "återkoppla"
+        ],
         "index": 66
       },
       {
         "content": "byter delar",
-        "links": [],
+        "links": [
+          "komponent"
+        ],
         "index": 67
       },
       {
         "content": "mest bara väntar",
-        "links": [],
+        "links": [
+          "tid",
+          "vänta"
+        ],
         "index": 68
       },
       {
@@ -370,27 +652,49 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "dina händer formar",
-        "links": [],
+        "links": [
+          "hand",
+          "form"
+        ],
         "index": 69
       },
       {
         "content": "fuktig jord och leklera",
-        "links": [],
+        "links": [
+          "jord",
+          "fukt",
+          "lera",
+          "leklera"
+        ],
         "index": 70
       },
       {
         "content": "sniffar på fingertopparna",
-        "links": [],
+        "links": [
+          "finger",
+          "sniffa",
+          "fingertopp",
+          "lukt",
+          "sinne",
+          "doft"
+        ],
         "index": 71
       },
       {
         "content": "skulpterar en form",
-        "links": [],
+        "links": [
+          "skulptur",
+          "konstellation"
+        ],
         "index": 72
       },
       {
         "content": "och en doft",
-        "links": [],
+        "links": [
+          "doft",
+          "lukt",
+          "sinne"
+        ],
         "index": 73
       },
       {

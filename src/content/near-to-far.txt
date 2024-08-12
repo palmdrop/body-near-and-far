@@ -2,11 +2,11 @@
 stamcellsgyttjans blick (stamcell, gyttja, blick)
 vakar och alstrar (vaka, alstra)
 över biofundamentets gödsel (biofundament, gödsel)
-hormonföreteelser (hormon, företeelse, händelse)
+hormonföreteelser (hormon, händelse)
 återbesöker stammen (återbesök, loop, feedback, stam)
 ristar och karvar (rista, karva, jack, märke)
 slickar årsringar (slicka, tunga, årsring)
-skriver i barken (skriv, ord, tecken, bark)
+skriver i barken (skriva, ord, tecken, bark)
 lager av barkvalk (lager, bark, valk, skinn)
 som strålar ut ur (stråle)
 
@@ -23,7 +23,7 @@ fylleslag för oss (fylleslag)
 räfflade rävkullen (räffla, räv, kull)
 skålar och skålar (skåla)
 kropparna minns (minne)
-våra förfäders malmbrott (förfäder, förälder, gruva, malm, brott)
+våra förfäders malmbrott (förfäder, förälder, brott)
 
 ben till kött (ben, kött)
 göder stressen (göda, gödsel, stress)
@@ -39,7 +39,7 @@ handtaget till (handtag, hand)
 min *skinner-box* (skinner, skinner-box, betingning)
 hinnan runt kroppen (hinnan, kropp)
 tillbaka in (loop, återkoppla)
-i kroppen ()
+i kroppen
 med sug från bärklustret (sug, instinkt, bär)
 *slav* squattens* knän (slav-squat, knä)
 dansen runt bål (dans, bål)
@@ -82,7 +82,7 @@ på nästa stig (stig, väg, flöde)
 korsa en *desire* *path* (stig, desire-path)
 i innerstadens (stad)
 ta en Uber längs (Uber, gig)
-mycelinmotorvägen (mycelin, motorväg, fåra, skåra)
+myelinmotorvägen (myelin, motorväg, fåra, skåra)
 ner i baklåset (baklås, deadlock, fälla)
 sitt där nere ()
 grubbla över (tänka)
@@ -236,29 +236,29 @@ värmedödens sista (värmedöd, undergång, rymd)
 beröringspunkt (beröring, punkt, närhet)
 spetsen på din kropp (spets, yta)
 
-vecklar ut oss
-spänner upp oss 
-dallrande på fjärilsrevben
-vidsträckt över vidden
-tänjer på synapsen
-tur den är av gummi
-som ger efter för
-spänningen
-drar ihop sig
-suger och kollapsar
-kroppen sväljer allt
-jord och satellit
-alla UFO-sonder
-bäddas ihop ordentligt
-inkludera allt
-efter att ha svällt
-andats så stort
-mässat mantran
-fått utlösning 
-i vattnet
-bland trampande ben
-ben och ben
-med jack och skåror
-ärrade spår i ryggkotor
-vi skrapar mot märgen
-i såsen vänder blicken
+vecklar ut oss (veck, fåll, kärl)
+spänner upp oss (spänna, spänd, fälla, fåll)
+dallrande på fjärilsrevben (dallra, fjäril, revben)
+vidsträckt över vidden (vid, vidsträckt, vidd)
+tänjer på synapsen (tänja, synaps, hjärna, myelin)
+tur den är av gummi (gummi)
+som ger efter för ()
+spänningen (spänning, spänd)
+drar ihop sig ()
+suger och kollapsar (sug, kollaps)
+kroppen sväljer allt  (svalg, mun)
+jord och satellit (jord, sattelit, rymd)
+alla UFO-sonder (UFO, sond, alien, rymd)
+bäddas ihop ordentligt (bädda)
+inkludera allt ()
+efter att ha svällt (svälla)
+andats så stort (andas, andetag, lunga)
+mässat mantran (mässa, mantra, ritual)
+fått utlösning (utlösning, orgasm, säd)
+i vattnet (vatten)
+bland trampande ben (trampa, ben)
+ben och ben (ben)
+med jack och skåror (jack, skåra, fåra)
+ärrade spår i ryggkotor (ärr, spår, rygg, ryggkota)
+vi skrapar mot märgen (skrapa, märg)
+i såsen vänder blicken (sås, blick, öga, soppa)
