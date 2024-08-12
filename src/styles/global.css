@@ -4,7 +4,11 @@
   --font-accent: 'Brush Script MT', cursive;
 
   --font-family: Helvetica, Arial, sans-serif;
-  --font-size: clamp(9px, 3vw, 2.5rem);
+
+  --max-font-size: 40px;
+  --min-font-size: 16px;
+
+  --font-size: clamp(var(--min-font-size), 3vw, var(--max-font-size));
 
   --edge-margin: 0.0em;
 }
@@ -21,10 +25,15 @@ body {
   max-width: 100vw;
   max-height: 100vh;
   overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
-  filter: url(#threshold) blur(1px) contrast(150%)
+  filter: url(#threshold) blur(clamp(0.1px, 0.045em, 1.1px)) contrast(140%);
+  max-width: 1000px;
 }
 
 *, *::before, *::after {
@@ -37,15 +46,16 @@ main {
   background-color: black;
   color: white;
   */
-  background-color: white;
-  border: 2px solid red;
+  background-color: rgb(255, 253, 132);
 
   font-style: italic;
 
   top: 50%;
   left: 50%;
 
+  /*
   font-size: max(1em, 16px);
+  */
 
   width: min(15em, 100vw);
   height: min(13em, 100vh);
@@ -112,13 +122,12 @@ main {
 
 .sequences {
   display: grid;
-  /*
-  */
-
   width: 100%;
   grid-template-columns: repeat(3, 33.3333%);
 
   text-align: justify;
+
+  font-size: 0.7em;
 
   /*
   gap: 0.5ch;

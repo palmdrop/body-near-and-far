@@ -6,7 +6,6 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "en sista stöt",
         "links": [
-          "stöt",
           "slut"
         ],
         "index": 0
@@ -14,7 +13,6 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "du i den utstötta massan",
         "links": [
-          "utstött",
           "massa"
         ],
         "index": 1
@@ -29,9 +27,7 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "dunsar ner",
-        "links": [
-          "duns"
-        ],
+        "links": [],
         "index": 3
       },
       {
@@ -45,27 +41,19 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "kvider och kippar",
         "links": [
-          "kvida",
           "kippa",
-          "andas",
-          "andhämtning"
+          "andas"
         ],
         "index": 5
       },
       {
         "content": "knut runt navelsträngen",
-        "links": [
-          "knut",
-          "navel",
-          "navelsträng"
-        ],
+        "links": [],
         "index": 6
       },
       {
         "content": "kvävd och befriad",
         "links": [
-          "kvävd",
-          "befriad",
           "frihet",
           "syre"
         ],
@@ -74,35 +62,26 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "kväker och skriker",
         "links": [
-          "kväka",
-          "groda",
           "skrik"
         ],
         "index": 8
       },
       {
         "content": "i bländande förvirring",
-        "links": [
-          "blända",
-          "bländad",
-          "förvirrad"
-        ],
+        "links": [],
         "index": 9
       },
       {
         "content": "obönhörlig smärta och kyla",
         "links": [
-          "obönhörlig",
-          "smärta",
-          "kyla"
+          "obeveklig",
+          "smärta"
         ],
         "index": 10
       },
       {
         "content": "ditt eget lätes oljud",
         "links": [
-          "läte",
-          "oljud",
           "röst"
         ],
         "index": 11
@@ -110,9 +89,8 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "skallrar i strupen",
         "links": [
-          "skallra",
-          "strupe",
-          "hals"
+          "skaka",
+          "dallra"
         ],
         "index": 12
       },
@@ -127,9 +105,7 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "skär genom sorlet",
         "links": [
-          "skära",
           "sorl",
-          "prat",
           "social"
         ],
         "index": 14
@@ -182,9 +158,7 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "rapar och skiter",
         "links": [
-          "rapa",
-          "skit",
-          "gaser"
+          "skit"
         ],
         "index": 20
       },
@@ -193,19 +167,16 @@ export const earlyToLateSequence: Sequence = [
         "links": [
           "piss",
           "urin",
-          "spya"
+          "spy",
+          "kräkas"
         ],
         "index": 21
       },
       {
         "content": "fågelskit över hennes blus",
         "links": [
-          "fågel",
           "skit",
-          "fågelskit",
-          "blus",
-          "kläder",
-          "mor"
+          "kläder"
         ],
         "index": 22
       },
@@ -222,9 +193,6 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "dinglar och jollrar",
         "links": [
-          "dingla",
-          "hänga",
-          "jollra",
           "skratta",
           "språk"
         ],
@@ -234,7 +202,6 @@ export const earlyToLateSequence: Sequence = [
         "content": "sång för dig",
         "links": [
           "sång",
-          "sjunga",
           "musik"
         ],
         "index": 25
@@ -258,9 +225,7 @@ export const earlyToLateSequence: Sequence = [
         "content": "kliande saknad",
         "links": [
           "saknad",
-          "irritation",
-          "instinkt",
-          "kli"
+          "instinkt"
         ],
         "index": 28
       },
@@ -274,8 +239,6 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "skuggskepnader",
         "links": [
-          "skugga",
-          "skepnad",
           "monster",
           "dröm"
         ],
@@ -285,7 +248,6 @@ export const earlyToLateSequence: Sequence = [
         "content": "spelar skuggspel",
         "links": [
           "spel",
-          "skuggspel",
           "dröm"
         ],
         "index": 31
@@ -318,7 +280,6 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "grundläggande förstärkning",
         "links": [
-          "förstärka",
           "återkoppla",
           "loop"
         ],
@@ -327,7 +288,6 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "avlöst anspänning",
         "links": [
-          "fri",
           "frigörelse"
         ],
         "index": 36
@@ -335,7 +295,6 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "fastsurrad i perfekt substrat",
         "links": [
-          "substrat",
           "fåll",
           "fälla"
         ],
@@ -347,7 +306,6 @@ export const earlyToLateSequence: Sequence = [
           "baby",
           "bäbis",
           "konserverad",
-          "formalin",
           "substans"
         ],
         "index": 38
@@ -375,9 +333,7 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "borrar ner",
-        "links": [
-          "borr"
-        ],
+        "links": [],
         "index": 41
       },
       {
@@ -417,29 +373,23 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "på tuftade mattor",
         "links": [
-          "tuftad",
-          "matta",
-          "golv"
+          "matta"
         ],
         "index": 45
       },
       {
         "content": "under bord av ek",
         "links": [
-          "bord",
-          "ek",
-          "trä"
+          "bord"
         ],
         "index": 46
       },
       {
         "content": "legomönster i handflatorna",
         "links": [
-          "lego",
           "mönster",
           "tecken",
-          "hand",
-          "handflata"
+          "hand"
         ],
         "index": 47
       },
@@ -458,20 +408,17 @@ export const earlyToLateSequence: Sequence = [
         "links": [
           "skinn",
           "hud",
-          "minne",
-          "korttidsminne"
+          "minne"
         ],
         "index": 49
       },
       {
         "content": "växlar mellan glaskärl",
         "links": [
-          "växla",
           "glas",
           "kärl",
           "bägare",
-          "kruka",
-          "glaskärl"
+          "kruka"
         ],
         "index": 50
       },
@@ -489,17 +436,13 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "rummets oval kantad",
         "links": [
-          "rum",
-          "kant",
-          "oval"
+          "rum"
         ],
         "index": 52
       },
       {
         "content": "av ansiktslösa gamlingar",
         "links": [
-          "ansikte",
-          "ansiktslös",
           "gamling",
           "förälder",
           "vuxen"
@@ -519,8 +462,6 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "dundrande skratt",
         "links": [
-          "dundra",
-          "skratt",
           "skratta"
         ],
         "index": 55
@@ -538,27 +479,19 @@ export const earlyToLateSequence: Sequence = [
         "content": "farfars födelsedag",
         "links": [
           "farfar",
-          "födelsedag",
-          "födelse",
-          "ålder",
-          "vuxen"
+          "vuxen",
+          "gamling"
         ],
         "index": 57
       },
       {
         "content": "lokal med kristallkrona",
-        "links": [
-          "kristall",
-          "krona",
-          "kristallkrona"
-        ],
+        "links": [],
         "index": 58
       },
       {
         "content": "spökmålningar slinker in",
         "links": [
-          "spöke",
-          "målning",
           "mardröm"
         ],
         "index": 59
@@ -566,8 +499,6 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "balsalar från serier",
         "links": [
-          "bal",
-          "balsal",
           "media",
           "serie"
         ],
@@ -576,8 +507,7 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "spegelblankt golv",
         "links": [
-          "spegel",
-          "spegelblankt"
+          "spegel"
         ],
         "index": 61
       },
@@ -585,7 +515,6 @@ export const earlyToLateSequence: Sequence = [
         "content": "knastrande filter",
         "links": [
           "knastra",
-          "filter",
           "hinna"
         ],
         "index": 62
@@ -593,7 +522,7 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "sammansvetsat utan ord",
         "links": [
-          "sammansvetsa",
+          "sammanhållen",
           "fåll",
           "fälla",
           "ord"
@@ -662,7 +591,6 @@ export const earlyToLateSequence: Sequence = [
         "content": "fuktig jord och leklera",
         "links": [
           "jord",
-          "fukt",
           "lera",
           "leklera"
         ],
@@ -672,7 +600,6 @@ export const earlyToLateSequence: Sequence = [
         "content": "sniffar på fingertopparna",
         "links": [
           "finger",
-          "sniffa",
           "fingertopp",
           "lukt",
           "sinne",
@@ -683,7 +610,6 @@ export const earlyToLateSequence: Sequence = [
       {
         "content": "skulpterar en form",
         "links": [
-          "skulptur",
           "konstellation"
         ],
         "index": 72
@@ -699,52 +625,90 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "hittar tillbaka",
-        "links": [],
+        "links": [
+          "hitta",
+          "återkoppla",
+          "loop"
+        ],
         "index": 74
       },
       {
         "content": "som ett omen",
-        "links": [],
+        "links": [
+          "omen",
+          "profetia"
+        ],
         "index": 75
       },
       {
         "content": "om stundande expansion",
-        "links": [],
+        "links": [
+          "expandera",
+          "explodera"
+        ],
         "index": 76
       },
       {
         "content": "armarna växer",
-        "links": [],
+        "links": [
+          "arm",
+          "växa",
+          "expandera"
+        ],
         "index": 77
       },
       {
         "content": "fingrarna skriver vidare",
-        "links": [],
+        "links": [
+          "finger",
+          "skriva",
+          "text",
+          "ord"
+        ],
         "index": 78
       },
       {
         "content": "zoomar tillbaka till dagis",
-        "links": [],
+        "links": [
+          "barn"
+        ],
         "index": 79
       },
       {
         "content": "fönster mot kullen",
-        "links": [],
+        "links": [
+          "fönster",
+          "gräs",
+          "minne"
+        ],
         "index": 80
       },
       {
         "content": "tom gräsyta",
-        "links": [],
+        "links": [
+          "gräs",
+          "yta",
+          "landskap",
+          "minne"
+        ],
         "index": 81
       },
       {
         "content": "dissociativ slänggunga",
-        "links": [],
+        "links": [
+          "dissociation",
+          "verklighet",
+          "rotation",
+          "slunga"
+        ],
         "index": 82
       },
       {
         "content": "med sjudande panik",
-        "links": [],
+        "links": [
+          "panik",
+          "ångest"
+        ],
         "index": 83
       },
       {
@@ -754,27 +718,47 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "skåran i kartan",
-        "links": [],
+        "links": [
+          "skåra",
+          "fåra",
+          "fåll",
+          "karta"
+        ],
         "index": 85
       },
       {
         "content": "elastiskt förlängd blixtglömska",
-        "links": [],
+        "links": [
+          "elastisk",
+          "förlängd",
+          "blixt",
+          "minne"
+        ],
         "index": 86
       },
       {
         "content": "som leklera",
-        "links": [],
+        "links": [
+          "leklera",
+          "lera",
+          "lukt",
+          "minne"
+        ],
         "index": 87
       },
       {
         "content": "oglömd substans",
-        "links": [],
+        "links": [
+          "substans",
+          "minne"
+        ],
         "index": 88
       },
       {
         "content": "i massan",
-        "links": [],
+        "links": [
+          "massa"
+        ],
         "index": 89
       },
       {
@@ -789,7 +773,9 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "potatismos och ketchup",
-        "links": [],
+        "links": [
+          "mat"
+        ],
         "index": 90
       },
       {
@@ -799,12 +785,19 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "porösa räfflor",
-        "links": [],
+        "links": [
+          "räffla",
+          "form"
+        ],
         "index": 92
       },
       {
         "content": "mellan gaffelns tänder",
-        "links": [],
+        "links": [
+          "tänder",
+          "tand",
+          "mat"
+        ],
         "index": 93
       },
       {
@@ -819,142 +812,229 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "kroppar blir fantasidjur",
-        "links": [],
+        "links": [
+          "kropp",
+          "fantasidjur",
+          "fantasi"
+        ],
         "index": 94
       },
       {
         "content": "i träd och på marken",
-        "links": [],
+        "links": [
+          "träd",
+          "mark"
+        ],
         "index": 95
       },
       {
         "content": "krälar en dimension bort",
-        "links": [],
+        "links": [
+          "kräla",
+          "dimension",
+          "verklighet"
+        ],
         "index": 96
       },
       {
         "content": "svansar vingar spröt",
-        "links": [],
+        "links": [
+          "komponent"
+        ],
         "index": 97
       },
       {
         "content": "projiceras på omgivningen",
-        "links": [],
+        "links": [
+          "projektion"
+        ],
         "index": 98
       },
       {
         "content": "bäckalivets ritual",
-        "links": [],
+        "links": [
+          "bäck",
+          "liv",
+          "ritual"
+        ],
         "index": 99
       },
       {
         "content": "vi är vattnet",
-        "links": [],
+        "links": [
+          "vatten"
+        ],
         "index": 100
       },
       {
         "content": "och isen",
-        "links": [],
+        "links": [
+          "is"
+        ],
         "index": 101
       },
       {
         "content": "barnen hackar och hackar",
-        "links": [],
+        "links": [
+          "barn",
+          "hacka",
+          "skåra",
+          "jack",
+          "skåra"
+        ],
         "index": 102
       },
       {
         "content": "din vän hoppar",
-        "links": [],
+        "links": [
+          "hopp"
+        ],
         "index": 103
       },
       {
         "content": "mellan flaken",
-        "links": [],
+        "links": [
+          "is",
+          "yta"
+        ],
         "index": 104
       },
       {
         "content": "barnen vill se honom dö",
-        "links": [],
+        "links": [
+          "barn",
+          "död",
+          "våld"
+        ],
         "index": 105
       },
       {
         "content": "galonklädda ben sjunka",
-        "links": [],
+        "links": [
+          "ben",
+          "vatten"
+        ],
         "index": 106
       },
       {
         "content": "men vi är odödliga",
-        "links": [],
+        "links": [
+          "död"
+        ],
         "index": 107
       },
       {
         "content": "fantasidjur på studsmattor",
-        "links": [],
+        "links": [
+          "fantasi",
+          "fantasidjur"
+        ],
         "index": 108
       },
       {
         "content": "vi gör reglerna",
-        "links": [],
+        "links": [
+          "regel"
+        ],
         "index": 109
       },
       {
         "content": "dikterar",
-        "links": [],
+        "links": [
+          "diktera"
+        ],
         "index": 110
       },
       {
         "content": "alla och inga regler",
-        "links": [],
+        "links": [
+          "regel"
+        ],
         "index": 111
       },
       {
         "content": "lerkrukor och borgar",
-        "links": [],
+        "links": [
+          "lera",
+          "kruka",
+          "keramik"
+        ],
         "index": 112
       },
       {
         "content": "andas möglande hö",
-        "links": [],
+        "links": [
+          "svamp",
+          "hö",
+          "gräs",
+          "spor"
+        ],
         "index": 113
       },
       {
         "content": "vitt dis",
-        "links": [],
+        "links": [
+          "dis",
+          "dimma",
+          "spor"
+        ],
         "index": 114
       },
       {
         "content": "sporer i sinusgångar",
-        "links": [],
+        "links": [
+          "spor",
+          "lunga",
+          "andas",
+          "andning"
+        ],
         "index": 115
       },
       {
         "content": "i vårt blod",
-        "links": [],
+        "links": [
+          "blod"
+        ],
         "index": 116
       },
       {
         "content": "lager på lager",
-        "links": [],
+        "links": [
+          "lager"
+        ],
         "index": 117
       },
       {
         "content": "snö under hö",
-        "links": [],
+        "links": [
+          "snö",
+          "hö",
+          "minne"
+        ],
         "index": 118
       },
       {
         "content": "bevarat i månader",
-        "links": [],
+        "links": [
+          "konserverad",
+          "tid"
+        ],
         "index": 119
       },
       {
         "content": "har aldrig provat kokain",
-        "links": [],
+        "links": [
+          "kokain",
+          "knark",
+          "drog"
+        ],
         "index": 120
       },
       {
         "content": "men vi kastar snöboll",
-        "links": [],
+        "links": [
+          "snö"
+        ],
         "index": 121
       },
       {
@@ -974,17 +1054,26 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "instrument på badrumsgolvet",
-        "links": [],
+        "links": [
+          "badrum"
+        ],
         "index": 123
       },
       {
         "content": "medicin och tillhygge",
-        "links": [],
+        "links": [
+          "medicin",
+          "våld",
+          "medicin"
+        ],
         "index": 124
       },
       {
         "content": "outvecklad inflammerad kuk",
-        "links": [],
+        "links": [
+          "kuk",
+          "penis"
+        ],
         "index": 125
       },
       {
@@ -994,7 +1083,10 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "lugnande ord",
-        "links": [],
+        "links": [
+          "lugn",
+          "ord"
+        ],
         "index": 127
       },
       {
@@ -1004,12 +1096,16 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "en rörelse",
-        "links": [],
+        "links": [
+          "rörelse"
+        ],
         "index": 129
       },
       {
         "content": "ett sprut",
-        "links": [],
+        "links": [
+          "flytning"
+        ],
         "index": 130
       },
       {
@@ -1024,32 +1120,46 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "ovälkommen flytning",
-        "links": [],
+        "links": [
+          "flytning"
+        ],
         "index": 133
       },
       {
         "content": "minns inte varför",
-        "links": [],
+        "links": [
+          "minne"
+        ],
         "index": 134
       },
       {
         "content": "sjuk eller osjuk",
-        "links": [],
+        "links": [
+          "sjuk",
+          "frisk"
+        ],
         "index": 135
       },
       {
         "content": "bara dimmigheten",
-        "links": [],
+        "links": [
+          "dimma"
+        ],
         "index": 136
       },
       {
         "content": "bedrövlig ytspänning",
-        "links": [],
+        "links": [
+          "yta"
+        ],
         "index": 137
       },
       {
         "content": "frigörelse",
-        "links": [],
+        "links": [
+          "frigörelse",
+          "frihet"
+        ],
         "index": 138
       },
       {
@@ -1059,7 +1169,9 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "isolerar",
-        "links": [],
+        "links": [
+          "ensam"
+        ],
         "index": 140
       },
       {
@@ -1074,62 +1186,104 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "hon står på trampolinen",
-        "links": [],
+        "links": [
+          "träning",
+          "diktera"
+        ],
         "index": 141
       },
       {
         "content": "trampar på plats",
-        "links": [],
+        "links": [
+          "trampa",
+          "träning"
+        ],
         "index": 142
       },
       {
         "content": "vi trampar vatten",
-        "links": [],
+        "links": [
+          "trampa",
+          "vatten"
+        ],
         "index": 143
       },
       {
         "content": "bröstvårtor över ytan",
-        "links": [],
+        "links": [
+          "bröst",
+          "mjölk",
+          "yta",
+          "vatten"
+        ],
         "index": 144
       },
       {
         "content": "mjölksyra i gommen",
-        "links": [],
+        "links": [
+          "mjölksyra",
+          "mun"
+        ],
         "index": 145
       },
       {
         "content": "i kindernas hörn",
-        "links": [],
+        "links": [
+          "käft",
+          "bete"
+        ],
         "index": 146
       },
       {
         "content": "i tandköttet",
-        "links": [],
+        "links": [
+          "tand"
+        ],
         "index": 147
       },
       {
         "content": "som du borstar sönder",
-        "links": [],
+        "links": [
+          "våld",
+          "tvång",
+          "oro"
+        ],
         "index": 148
       },
       {
         "content": "med malande rörelser",
-        "links": [],
+        "links": [
+          "mala",
+          "rörelse",
+          "oro"
+        ],
         "index": 149
       },
       {
         "content": "tramp tramp tramp",
-        "links": [],
+        "links": [
+          "trampa",
+          "loop"
+        ],
         "index": 150
       },
       {
         "content": "sväller mellan benen",
-        "links": [],
+        "links": [
+          "svälla",
+          "stånd",
+          "ben",
+          "kuk",
+          "penis"
+        ],
         "index": 151
       },
       {
         "content": "buken och skrevet",
-        "links": [],
+        "links": [
+          "buk",
+          "skrev"
+        ],
         "index": 152
       },
       {
@@ -1144,32 +1298,48 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "ovälkomna darrningar",
-        "links": [],
+        "links": [
+          "skälva"
+        ],
         "index": 155
       },
       {
         "content": "du kommer i poolen",
-        "links": [],
+        "links": [
+          "utlösning"
+        ],
         "index": 156
       },
       {
         "content": "en första orgasm",
-        "links": [],
+        "links": [
+          "orgasm",
+          "utlösning"
+        ],
         "index": 157
       },
       {
         "content": "tramp tramp tramp",
-        "links": [],
+        "links": [
+          "trampa",
+          "loop",
+          "återkoppla"
+        ],
         "index": 158
       },
       {
         "content": "späder ut din säd",
-        "links": [],
+        "links": [
+          "utlösning"
+        ],
         "index": 159
       },
       {
         "content": "den dör i kloret",
-        "links": [],
+        "links": [
+          "död",
+          "vatten"
+        ],
         "index": 160
       },
       {
@@ -1184,52 +1354,87 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "skräckfilmsomslagen",
-        "links": [],
+        "links": [
+          "mardröm"
+        ],
         "index": 161
       },
       {
         "content": "förvrider kroppen",
-        "links": [],
+        "links": [
+          "förvränga"
+        ],
         "index": 162
       },
       {
         "content": "*videobiljardens* onda sektion",
-        "links": [],
+        "links": [
+          "dvd",
+          "ondska",
+          "komponent"
+        ],
         "index": 163
       },
       {
         "content": "du vänder bort blicken",
-        "links": [],
+        "links": [
+          "blick",
+          "se",
+          "öga"
+        ],
         "index": 164
       },
       {
         "content": "men ser ändå",
-        "links": [],
+        "links": [
+          "blick",
+          "se",
+          "öga"
+        ],
         "index": 165
       },
       {
         "content": "skräck och kosmisk extas",
-        "links": [],
+        "links": [
+          "skräck",
+          "rymd",
+          "kosmisk",
+          "extas",
+          "orgasm"
+        ],
         "index": 166
       },
       {
         "content": "tortyr och massiva betar",
-        "links": [],
+        "links": [
+          "smärta",
+          "våld",
+          "bete",
+          "best",
+          "monster"
+        ],
         "index": 167
       },
       {
         "content": "ansikten blir slime",
-        "links": [],
+        "links": [
+          "förvränga"
+        ],
         "index": 168
       },
       {
         "content": "zombie knycker med huvudet",
-        "links": [],
+        "links": [
+          "sjuk"
+        ],
         "index": 169
       },
       {
         "content": "stora ögon inga ögon",
-        "links": [],
+        "links": [
+          "öga",
+          "blick"
+        ],
         "index": 170
       },
       {
@@ -1239,127 +1444,197 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "ouroboros av kroppen",
-        "links": [],
+        "links": [
+          "loop",
+          "återkoppla"
+        ],
         "index": 172
       },
       {
         "content": "käft i buken",
-        "links": [],
+        "links": [
+          "käft",
+          "buk",
+          "mun"
+        ],
         "index": 173
       },
       {
         "content": "varelser du inte förstår",
-        "links": [],
+        "links": [
+          "monster",
+          "obegripligt"
+        ],
         "index": 174
       },
       {
         "content": "de bor under ögonlocken",
-        "links": [],
+        "links": [
+          "öga",
+          "ögonlock"
+        ],
         "index": 175
       },
       {
         "content": "dansar i mörkerbruset",
-        "links": [],
+        "links": [
+          "dans",
+          "mörker",
+          "brus",
+          "flimmer"
+        ],
         "index": 176
       },
       {
         "content": "din kropp tar deras form",
-        "links": [],
+        "links": [
+          "form"
+        ],
         "index": 177
       },
       {
         "content": "kan ta deras form",
-        "links": [],
+        "links": [
+          "form"
+        ],
         "index": 178
       },
       {
         "content": "du blir som dem",
-        "links": [],
+        "links": [
+          "tvång"
+        ],
         "index": 179
       },
       {
         "content": "du blir inte dem",
-        "links": [],
+        "links": [
+          "tvång",
+          "mantra"
+        ],
         "index": 180
       },
       {
         "content": "du får inte bli dem",
-        "links": [],
+        "links": [
+          "tvång"
+        ],
         "index": 181
       },
       {
         "content": "du kommer inte bli ett monster",
-        "links": [],
+        "links": [
+          "tvång",
+          "monster",
+          "mantra"
+        ],
         "index": 182
       },
       {
         "content": "du vet att du inte kan",
-        "links": [],
+        "links": [
+          "tvång",
+          "mantra"
+        ],
         "index": 183
       },
       {
         "content": "du vet det",
-        "links": [],
+        "links": [
+          "tvång"
+        ],
         "index": 184
       },
       {
         "content": "men du får inte",
-        "links": [],
+        "links": [
+          "tvång"
+        ],
         "index": 185
       },
       {
         "content": "du får inte bli",
-        "links": [],
+        "links": [
+          "tvång",
+          "mantra"
+        ],
         "index": 186
       },
       {
         "content": "du kan inte bli",
-        "links": [],
+        "links": [
+          "tvång",
+          "mantra"
+        ],
         "index": 187
       },
       {
         "content": "de säger till dig",
-        "links": [],
+        "links": [
+          "frigörelse"
+        ],
         "index": 188
       },
       {
         "content": "*\"allt* *blir* *bra\"*",
-        "links": [],
+        "links": [
+          "frigörelse"
+        ],
         "index": 189
       },
       {
         "content": "men du får inte",
-        "links": [],
+        "links": [
+          "tvång"
+        ],
         "index": 190
       },
       {
         "content": "allt kommer blir bra",
-        "links": [],
+        "links": [
+          "frigörelse"
+        ],
         "index": 191
       },
       {
         "content": "du kan inte bli",
-        "links": [],
+        "links": [
+          "tvång",
+          "mantra"
+        ],
         "index": 192
       },
       {
         "content": "allt kommer bli bra",
-        "links": [],
+        "links": [
+          "frigörelse",
+          "mantra"
+        ],
         "index": 193
       },
       {
         "content": "du kan inte bli",
-        "links": [],
+        "links": [
+          "tvång",
+          "mantra"
+        ],
         "index": 194
       },
       {
         "content": "din kropp kommer förbli",
-        "links": [],
+        "links": [
+          "frigörelse",
+          "intakt"
+        ],
         "index": 195
       },
       {
         "content": "du kommer bli bra",
-        "links": [],
+        "links": [
+          "frigörelse",
+          "mantra",
+          "tvång"
+        ],
         "index": 196
       },
       {
@@ -1374,7 +1649,13 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "spåret av stickan",
-        "links": [],
+        "links": [
+          "spår",
+          "tecken",
+          "mönster",
+          "sticka",
+          "sår"
+        ],
         "index": 197
       },
       {
@@ -1384,37 +1665,58 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "förblir även efter",
-        "links": [],
+        "links": [
+          "intakt"
+        ],
         "index": 199
       },
       {
         "content": "en svart skåra",
-        "links": [],
+        "links": [
+          "skåra",
+          "fåra",
+          "tecken",
+          "mönster"
+        ],
         "index": 200
       },
       {
         "content": "kvarlämningen",
-        "links": [],
+        "links": [
+          "fossil",
+          "arkiv",
+          "tecken"
+        ],
         "index": 201
       },
       {
         "content": "en fossil",
-        "links": [],
+        "links": [
+          "fossil"
+        ],
         "index": 202
       },
       {
         "content": "måste du acceptera",
-        "links": [],
+        "links": [
+          "acceptans"
+        ],
         "index": 203
       },
       {
         "content": "när trösten infinner sig",
-        "links": [],
+        "links": [
+          "frigörelse",
+          "tröst"
+        ],
         "index": 204
       },
       {
         "content": "du äter din *sandwich*",
-        "links": [],
+        "links": [
+          "tröst",
+          "glömma"
+        ],
         "index": 205
       },
       {
@@ -1429,17 +1731,26 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "den passar i handen",
-        "links": [],
+        "links": [
+          "hand",
+          "mobil"
+        ],
         "index": 206
       },
       {
         "content": "alla våra händer",
-        "links": [],
+        "links": [
+          "hand"
+        ],
         "index": 207
       },
       {
         "content": "skolgårdens ritual",
-        "links": [],
+        "links": [
+          "ritual",
+          "mobil",
+          "tvång"
+        ],
         "index": 208
       },
       {
@@ -1449,7 +1760,11 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "*worms* och *tetris*",
-        "links": [],
+        "links": [
+          "mobil",
+          "spel",
+          "skinner-box"
+        ],
         "index": 210
       },
       {
@@ -1459,22 +1774,38 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "mot fotbollsplanen",
-        "links": [],
+        "links": [
+          "gräs",
+          "minne",
+          "yta"
+        ],
         "index": 212
       },
       {
         "content": "där gräset växer",
-        "links": [],
+        "links": [
+          "gräs",
+          "växa"
+        ],
         "index": 213
       },
       {
         "content": "fästingarna myllrar",
-        "links": [],
+        "links": [
+          "fästing",
+          "parasit",
+          "blod",
+          "myller"
+        ],
         "index": 214
       },
       {
         "content": "från afrika med spindelben",
-        "links": [],
+        "links": [
+          "ben",
+          "monster",
+          "skräck"
+        ],
         "index": 215
       },
       {
@@ -1489,7 +1820,11 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "den passar i handen",
-        "links": [],
+        "links": [
+          "hand",
+          "tvång",
+          "mobil"
+        ],
         "index": 218
       },
       {
@@ -1509,17 +1844,24 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "ålar mot hans hand",
-        "links": [],
+        "links": [
+          "hand"
+        ],
         "index": 220
       },
       {
         "content": "kropp mot kropp",
-        "links": [],
+        "links": [
+          "intimitet"
+        ],
         "index": 221
       },
       {
         "content": "päls och skinn",
-        "links": [],
+        "links": [
+          "päls",
+          "skinn"
+        ],
         "index": 222
       },
       {
@@ -1529,7 +1871,11 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "värmen och rörelsen",
-        "links": [],
+        "links": [
+          "värme",
+          "rörelse",
+          "intimitet"
+        ],
         "index": 224
       },
       {
@@ -1539,62 +1885,94 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "det får inte hända",
-        "links": [],
+        "links": [
+          "tvång"
+        ],
         "index": 226
       },
       {
         "content": "inget får resa sig här",
-        "links": [],
+        "links": [
+          "tvång",
+          "kuk",
+          "penis"
+        ],
         "index": 227
       },
       {
         "content": "styvna eller fyllas",
-        "links": [],
+        "links": [
+          "stånd",
+          "kuk",
+          "penis"
+        ],
         "index": 228
       },
       {
         "content": "han måste vara sjuk",
-        "links": [],
+        "links": [
+          "sjuk"
+        ],
         "index": 229
       },
       {
         "content": "en sjuk person",
-        "links": [],
+        "links": [
+          "sjuk"
+        ],
         "index": 230
       },
       {
         "content": "ingen får höra",
-        "links": [],
+        "links": [
+          "tvång"
+        ],
         "index": 231
       },
       {
         "content": "ingen får veta",
-        "links": [],
+        "links": [
+          "tvång"
+        ],
         "index": 232
       },
       {
         "content": "en sjuk person",
-        "links": [],
+        "links": [
+          "sjuk"
+        ],
         "index": 233
       },
       {
         "content": "han är inte sjuk",
-        "links": [],
+        "links": [
+          "tvång",
+          "mantra"
+        ],
         "index": 234
       },
       {
         "content": "han är frisk",
-        "links": [],
+        "links": [
+          "tvång",
+          "mantra"
+        ],
         "index": 235
       },
       {
         "content": "han är inte sjuk",
-        "links": [],
+        "links": [
+          "tvång",
+          "mantra"
+        ],
         "index": 236
       },
       {
         "content": "han är frisk",
-        "links": [],
+        "links": [
+          "tvång",
+          "mantra"
+        ],
         "index": 237
       },
       {
@@ -1614,47 +1992,78 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "med fjärrkontrollen",
-        "links": [],
+        "links": [
+          "tv"
+        ],
         "index": 239
       },
       {
         "content": "brus och text-TV",
-        "links": [],
+        "links": [
+          "brus",
+          "tv"
+        ],
         "index": 240
       },
       {
         "content": "hotellet har vita gardiner",
-        "links": [],
+        "links": [
+          "hotell",
+          "slöja",
+          "hinna",
+          "yta"
+        ],
         "index": 241
       },
       {
         "content": "marmorytor och sidenfransar",
-        "links": [],
+        "links": [
+          "yta",
+          "matta"
+        ],
         "index": 242
       },
       {
         "content": "overkliga landskap ute",
-        "links": [],
+        "links": [
+          "alien",
+          "landskap",
+          "yta"
+        ],
         "index": 243
       },
       {
         "content": "IKEA-hotellets kyrkogård",
-        "links": [],
+        "links": [
+          "hotell",
+          "skräck"
+        ],
         "index": 244
       },
       {
         "content": "sci-fi-vidder",
-        "links": [],
+        "links": [
+          "vidd",
+          "yta",
+          "alien"
+        ],
         "index": 245
       },
       {
         "content": "saltöken",
-        "links": [],
+        "links": [
+          "vidd"
+        ],
         "index": 246
       },
       {
         "content": "i kanalen vi hittar",
-        "links": [],
+        "links": [
+          "kanal",
+          "skåra",
+          "fåra",
+          "hitta"
+        ],
         "index": 247
       },
       {
@@ -1669,17 +2078,26 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "latexskinn",
-        "links": [],
+        "links": [
+          "skinn"
+        ],
         "index": 250
       },
       {
         "content": "och blanka blickar",
-        "links": [],
+        "links": [
+          "blick",
+          "öga"
+        ],
         "index": 251
       },
       {
         "content": "koreograferat sex",
-        "links": [],
+        "links": [
+          "dans",
+          "koreografi",
+          "sex"
+        ],
         "index": 252
       },
       {
@@ -1689,22 +2107,34 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "bland böljande slöjor",
-        "links": [],
+        "links": [
+          "slöja",
+          "hinna",
+          "yta"
+        ],
         "index": 254
       },
       {
         "content": "eteriskt knull",
-        "links": [],
+        "links": [
+          "sex"
+        ],
         "index": 255
       },
       {
         "content": "*art-house* porr",
-        "links": [],
+        "links": [
+          "porr",
+          "sex"
+        ],
         "index": 256
       },
       {
         "content": "den första porren",
-        "links": [],
+        "links": [
+          "porr",
+          "sex"
+        ],
         "index": 257
       },
       {
@@ -1714,7 +2144,11 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "undanstuvade kanaler",
-        "links": [],
+        "links": [
+          "kanal",
+          "fåra",
+          "skåra"
+        ],
         "index": 259
       },
       {
@@ -1729,92 +2163,160 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "svällande och växande",
-        "links": [],
+        "links": [
+          "svälla",
+          "växa"
+        ],
         "index": 260
       },
       {
         "content": "mätstickor och vågar",
-        "links": [],
+        "links": [
+          "sticka",
+          "våg",
+          "karta"
+        ],
         "index": 261
       },
       {
         "content": "passform och skostorlek",
-        "links": [],
+        "links": [
+          "form",
+          "karta"
+        ],
         "index": 262
       },
       {
         "content": "muskelmassa och smalbensärr",
-        "links": [],
+        "links": [
+          "massa",
+          "ärr",
+          "jack"
+        ],
         "index": 263
       },
       {
         "content": "pedal och rakhyvel",
-        "links": [],
+        "links": [
+          "vuxen",
+          "hår"
+        ],
         "index": 264
       },
       {
         "content": "stopp i avloppet",
-        "links": [],
+        "links": [
+          "avlopp",
+          "kloak",
+          "avföring"
+        ],
         "index": 265
       },
       {
         "content": "alkohol i blodet",
-        "links": [],
+        "links": [
+          "alkohol",
+          "berusad",
+          "blod",
+          "drog"
+        ],
         "index": 266
       },
       {
         "content": "mer *kopparbergscider*",
-        "links": [],
+        "links": [
+          "alkohol"
+        ],
         "index": 267
       },
       {
         "content": "spy i toaletten",
-        "links": [],
+        "links": [
+          "spy",
+          "kräkas",
+          "toalett",
+          "berusad",
+          "drog",
+          "sjuk"
+        ],
         "index": 268
       },
       {
         "content": "kroppens angelägna funktion",
-        "links": [],
+        "links": [
+          "process"
+        ],
         "index": 269
       },
       {
         "content": "i badkar och spolen",
-        "links": [],
+        "links": [
+          "spole",
+          "loop",
+          "återkoppla"
+        ],
         "index": 270
       },
       {
         "content": "karusellen gungar och vrider",
-        "links": [],
+        "links": [
+          "gunga",
+          "vrida",
+          "rotation",
+          "loop",
+          "återkoppla"
+        ],
         "index": 271
       },
       {
         "content": "handlöst glid tillbaka",
-        "links": [],
+        "links": [
+          "hand",
+          "glida"
+        ],
         "index": 272
       },
       {
         "content": "glapp mellan ytor",
-        "links": [],
+        "links": [
+          "glapp",
+          "yta"
+        ],
         "index": 273
       },
       {
         "content": "skinn- och minneslager",
-        "links": [],
+        "links": [
+          "skinn",
+          "minne",
+          "lager"
+        ],
         "index": 274
       },
       {
         "content": "skenbensjacket",
-        "links": [],
+        "links": [
+          "skenben",
+          "ben",
+          "jack",
+          "skåra",
+          "fåra",
+          "minne"
+        ],
         "index": 275
       },
       {
         "content": "ska minnas",
-        "links": [],
+        "links": [
+          "minne"
+        ],
         "index": 276
       },
       {
         "content": "det du inte minns",
-        "links": [],
+        "links": [
+          "minne"
+        ],
         "index": 277
       },
       {
@@ -1829,47 +2331,71 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "kroppar i dimma",
-        "links": [],
+        "links": [
+          "dimma"
+        ],
         "index": 278
       },
       {
         "content": "kroppar i vätska",
-        "links": [],
+        "links": [
+          "vätska"
+        ],
         "index": 279
       },
       {
         "content": "kroppar i skärmen",
-        "links": [],
+        "links": [
+          "skärm",
+          "mobil",
+          "maskin"
+        ],
         "index": 280
       },
       {
         "content": "kroppar i maskinen",
-        "links": [],
+        "links": [
+          "maskin"
+        ],
         "index": 281
       },
       {
         "content": "kroppar i kroppen",
-        "links": [],
+        "links": [
+          "intimitet"
+        ],
         "index": 282
       },
       {
         "content": "kroppar i kluster",
-        "links": [],
+        "links": [
+          "konstellation"
+        ],
         "index": 283
       },
       {
         "content": "kroppar i varandra",
-        "links": [],
+        "links": [
+          "sex",
+          "intimitet"
+        ],
         "index": 284
       },
       {
         "content": "kroppar i älven",
-        "links": [],
+        "links": [
+          "vatten",
+          "flöde"
+        ],
         "index": 285
       },
       {
         "content": "kroppar i fragment",
-        "links": [],
+        "links": [
+          "fragment",
+          "spillra",
+          "jack"
+        ],
         "index": 286
       },
       {
@@ -1879,17 +2405,30 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "kroppar i gödsel",
-        "links": [],
+        "links": [
+          "gödsel",
+          "göda",
+          "växa"
+        ],
         "index": 288
       },
       {
         "content": "kroppar i sekvens",
-        "links": [],
+        "links": [
+          "serie",
+          "process",
+          "kedja",
+          "länk"
+        ],
         "index": 289
       },
       {
         "content": "kroppar i tecken",
-        "links": [],
+        "links": [
+          "tecken",
+          "mönster",
+          "ord"
+        ],
         "index": 290
       },
       {
@@ -1904,17 +2443,26 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "kroppar i nätverk",
-        "links": [],
+        "links": [
+          "mobil",
+          "rhizome"
+        ],
         "index": 293
       },
       {
         "content": "kroppar i jorden",
-        "links": [],
+        "links": [
+          "jord",
+          "nedbrytare"
+        ],
         "index": 294
       },
       {
         "content": "kroppar i kroppar",
-        "links": [],
+        "links": [
+          "sex",
+          "intimitet"
+        ],
         "index": 295
       },
       {
@@ -1929,27 +2477,44 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "det dröjer",
-        "links": [],
+        "links": [
+          "vänta"
+        ],
         "index": 296
       },
       {
         "content": "men det växer",
-        "links": [],
+        "links": [
+          "växa"
+        ],
         "index": 297
       },
       {
         "content": "i träd och kroppen",
-        "links": [],
+        "links": [
+          "träd"
+        ],
         "index": 298
       },
       {
         "content": "blommar i himlens brus",
-        "links": [],
+        "links": [
+          "blomma",
+          "himmel",
+          "brus",
+          "sus",
+          "njutning",
+          "drog",
+          "knark"
+        ],
         "index": 299
       },
       {
         "content": "smygande leende",
-        "links": [],
+        "links": [
+          "mun",
+          "njutning"
+        ],
         "index": 300
       },
       {
@@ -1959,42 +2524,71 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "blir mjuka",
-        "links": [],
+        "links": [
+          "mjuk"
+        ],
         "index": 302
       },
       {
         "content": "allt blir bekvämt",
-        "links": [],
+        "links": [
+          "njutning"
+        ],
         "index": 303
       },
       {
         "content": "armar ben och rygg",
-        "links": [],
+        "links": [
+          "arm",
+          "ben",
+          "rygg"
+        ],
         "index": 304
       },
       {
         "content": "frigörelse i alla lemmar",
-        "links": [],
+        "links": [
+          "frigörelse",
+          "arm",
+          "ben",
+          "rygg"
+        ],
         "index": 305
       },
       {
         "content": "flödar med pulser",
-        "links": [],
+        "links": [
+          "puls",
+          "flöde",
+          "ström"
+        ],
         "index": 306
       },
       {
         "content": "axlar mot axlar",
-        "links": [],
+        "links": [
+          "axel",
+          "intimitet",
+          "närhet"
+        ],
         "index": 307
       },
       {
         "content": "mellan famn och famn",
-        "links": [],
+        "links": [
+          "famn",
+          "värme",
+          "närhet",
+          "intimitet"
+        ],
         "index": 308
       },
       {
         "content": "rinner genom alla",
-        "links": [],
+        "links": [
+          "flöde",
+          "ström"
+        ],
         "index": 309
       },
       {
@@ -2004,67 +2598,106 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "på dansgolvet",
-        "links": [],
+        "links": [
+          "dans",
+          "rave"
+        ],
         "index": 311
       },
       {
         "content": "ett lossande hölje",
-        "links": [],
+        "links": [
+          "hölje",
+          "frigörelse"
+        ],
         "index": 312
       },
       {
         "content": "kaleidoskop i periferin",
-        "links": [],
+        "links": [
+          "hallucination",
+          "dröm",
+          "drog",
+          "knark"
+        ],
         "index": 313
       },
       {
         "content": "musik i musiken",
-        "links": [],
+        "links": [
+          "musik"
+        ],
         "index": 314
       },
       {
         "content": "trolova med varje ord",
-        "links": [],
+        "links": [
+          "trolova",
+          "ord"
+        ],
         "index": 315
       },
       {
         "content": "en slak orgasm",
-        "links": [],
+        "links": [
+          "orgasm"
+        ],
         "index": 316
       },
       {
         "content": "disponerad i avloppet",
-        "links": [],
+        "links": [
+          "avlopp",
+          "kloak"
+        ],
         "index": 317
       },
       {
         "content": "sjunkande strömmen",
-        "links": [],
+        "links": [
+          "ström",
+          "flöde"
+        ],
         "index": 318
       },
       {
         "content": "brus och avdomning",
-        "links": [],
+        "links": [
+          "brus"
+        ],
         "index": 319
       },
       {
         "content": "flimret i fönstret",
-        "links": [],
+        "links": [
+          "flimmer",
+          "fönster",
+          "verklighet"
+        ],
         "index": 320
       },
       {
         "content": "musikens minne",
-        "links": [],
+        "links": [
+          "musik",
+          "minne",
+          "dröm"
+        ],
         "index": 321
       },
       {
         "content": "kropparnas rörelser",
-        "links": [],
+        "links": [
+          "rörelse"
+        ],
         "index": 322
       },
       {
         "content": "under ögonlocket",
-        "links": [],
+        "links": [
+          "öga",
+          "ögonlock"
+        ],
         "index": 323
       },
       {
@@ -2079,17 +2712,25 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "släpar efter",
-        "links": [],
+        "links": [
+          "tid"
+        ],
         "index": 326
       },
       {
         "content": "till bilen hem",
-        "links": [],
+        "links": [
+          "bil"
+        ],
         "index": 327
       },
       {
         "content": "vaken sömngång",
-        "links": [],
+        "links": [
+          "sömn",
+          "dröm",
+          "mardröm"
+        ],
         "index": 328
       },
       {
@@ -2099,12 +2740,20 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "ensamheten förlängs",
-        "links": [],
+        "links": [
+          "ensam",
+          "signalsubstans",
+          "serotonin"
+        ],
         "index": 330
       },
       {
         "content": "tänjs ut",
-        "links": [],
+        "links": [
+          "tid",
+          "förlängd",
+          "tänjd"
+        ],
         "index": 331
       },
       {
@@ -2114,17 +2763,29 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "om temporär brist",
-        "links": [],
+        "links": [
+          "tid"
+        ],
         "index": 333
       },
       {
         "content": "på signalsubstanser",
-        "links": [],
+        "links": [
+          "signalsubstans",
+          "serotonin"
+        ],
         "index": 334
       },
       {
         "content": "nedbrutna fabriker",
-        "links": [],
+        "links": [
+          "skada",
+          "smärta",
+          "våld",
+          "hjärna",
+          "signalsubstans",
+          "fabrik"
+        ],
         "index": 335
       },
       {
@@ -2149,37 +2810,68 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "i tågtunneln",
-        "links": [],
+        "links": [
+          "rave",
+          "drog"
+        ],
         "index": 338
       },
       {
         "content": "stannar dansen",
-        "links": [],
+        "links": [
+          "dans",
+          "tid"
+        ],
         "index": 339
       },
       {
         "content": "och tar fart",
-        "links": [],
+        "links": [
+          "fart",
+          "start",
+          "tid"
+        ],
         "index": 340
       },
       {
         "content": "strömmen bromsar",
-        "links": [],
+        "links": [
+          "ström",
+          "flöde",
+          "bromsa",
+          "tid"
+        ],
         "index": 341
       },
       {
         "content": "strömmen återvänder",
-        "links": [],
+        "links": [
+          "ström",
+          "flöde",
+          "fart",
+          "start",
+          "tid"
+        ],
         "index": 342
       },
       {
         "content": "din kropp är svett",
-        "links": [],
+        "links": [
+          "svett",
+          "vätska",
+          "drog"
+        ],
         "index": 343
       },
       {
         "content": "piss över låren",
-        "links": [],
+        "links": [
+          "piss",
+          "urin",
+          "lår",
+          "ben",
+          "skinn"
+        ],
         "index": 344
       },
       {
@@ -2189,17 +2881,32 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "fast håren svajar",
-        "links": [],
+        "links": [
+          "hår",
+          "rörelse",
+          "drog",
+          "hallucination"
+        ],
         "index": 346
       },
       {
         "content": "se aldrig på dina lår",
-        "links": [],
+        "links": [
+          "se",
+          "öga",
+          "lår",
+          "ben"
+        ],
         "index": 347
       },
       {
         "content": "håren som ålar sig",
-        "links": [],
+        "links": [
+          "hår",
+          "ål",
+          "rörelse",
+          "hallucination"
+        ],
         "index": 348
       },
       {
@@ -2219,52 +2926,91 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "dit ni ålar er",
-        "links": [],
+        "links": [
+          "ål",
+          "sex"
+        ],
         "index": 350
       },
       {
         "content": "in i svettpåsar",
-        "links": [],
+        "links": [
+          "svett",
+          "säck",
+          "hinna",
+          "fåll"
+        ],
         "index": 351
       },
       {
         "content": "säckar av oljiga lakan",
-        "links": [],
+        "links": [
+          "säck",
+          "hinna",
+          "yta",
+          "svett",
+          "fåll"
+        ],
         "index": 352
       },
       {
         "content": "höljen och hinnor",
-        "links": [],
+        "links": [
+          "hölje",
+          "hinna",
+          "säck",
+          "fåll"
+        ],
         "index": 353
       },
       {
         "content": "ytan som uppstår",
-        "links": [],
+        "links": [
+          "yta",
+          "alstra"
+        ],
         "index": 354
       },
       {
         "content": "bygger upp friktion",
-        "links": [],
+        "links": [
+          "bygga",
+          "friktion",
+          "motstånd",
+          "värme",
+          "intimitet"
+        ],
         "index": 355
       },
       {
         "content": "värme i värme",
-        "links": [],
+        "links": [
+          "värme"
+        ],
         "index": 356
       },
       {
         "content": "trampar på plats",
-        "links": [],
+        "links": [
+          "trampa"
+        ],
         "index": 357
       },
       {
         "content": "öppnar jorden",
-        "links": [],
+        "links": [
+          "jord",
+          "bördig"
+        ],
         "index": 358
       },
       {
         "content": "fästingarna blir en del",
-        "links": [],
+        "links": [
+          "fästing",
+          "blod",
+          "parasit"
+        ],
         "index": 359
       },
       {
@@ -2274,7 +3020,12 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "sjunger samma sång",
-        "links": [],
+        "links": [
+          "sång",
+          "musik",
+          "extas",
+          "orgasm"
+        ],
         "index": 361
       },
       {
@@ -2289,17 +3040,28 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "nästa klibbiga länk",
-        "links": [],
+        "links": [
+          "länk"
+        ],
         "index": 364
       },
       {
         "content": "kedjan slingrar trögt",
-        "links": [],
+        "links": [
+          "kedja",
+          "länk",
+          "motstånd",
+          "tid"
+        ],
         "index": 365
       },
       {
         "content": "särar på skikten",
-        "links": [],
+        "links": [
+          "skikt",
+          "hinna",
+          "yta"
+        ],
         "index": 366
       },
       {
@@ -2314,7 +3076,9 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "ansträngning",
-        "links": [],
+        "links": [
+          "motstånd"
+        ],
         "index": 369
       },
       {
@@ -2329,32 +3093,55 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "i knappt ljus",
-        "links": [],
+        "links": [
+          "ljus",
+          "mörker"
+        ],
         "index": 370
       },
       {
         "content": "framträder pulsen",
-        "links": [],
+        "links": [
+          "puls"
+        ],
         "index": 371
       },
       {
         "content": "pendlande flimmer",
-        "links": [],
+        "links": [
+          "gunga",
+          "rörelse",
+          "flimmer",
+          "brus"
+        ],
         "index": 372
       },
       {
         "content": "dansande gruskorn",
-        "links": [],
+        "links": [
+          "dans",
+          "grus",
+          "brus",
+          "flimmer"
+        ],
         "index": 373
       },
       {
         "content": "en dov sandstorm",
-        "links": [],
+        "links": [
+          "brus",
+          "flimmer"
+        ],
         "index": 374
       },
       {
         "content": "i bakhuvudet",
-        "links": [],
+        "links": [
+          "bakhuvud",
+          "hjärna",
+          "stam",
+          "ryggrad"
+        ],
         "index": 375
       },
       {
@@ -2369,22 +3156,39 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "tjutande brus sus",
-        "links": [],
+        "links": [
+          "tjut",
+          "brus",
+          "sus",
+          "flimmer"
+        ],
         "index": 376
       },
       {
         "content": "störningar i nerven",
-        "links": [],
+        "links": [
+          "nerv",
+          "hjärna"
+        ],
         "index": 377
       },
       {
         "content": "nervös sömn",
-        "links": [],
+        "links": [
+          "oro",
+          "sömn",
+          "sova"
+        ],
         "index": 378
       },
       {
         "content": "statisk orkestermusik",
-        "links": [],
+        "links": [
+          "statisk",
+          "brus",
+          "sus",
+          "musik"
+        ],
         "index": 379
       },
       {
@@ -2394,32 +3198,47 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "under lila himmel",
-        "links": [],
+        "links": [
+          "himmel",
+          "alien"
+        ],
         "index": 381
       },
       {
         "content": "genom ljusslingor",
-        "links": [],
+        "links": [
+          "ljus"
+        ],
         "index": 382
       },
       {
         "content": "toalettgolvet",
-        "links": [],
+        "links": [
+          "toalett"
+        ],
         "index": 383
       },
       {
         "content": "linoleummönstret",
-        "links": [],
+        "links": [
+          "mönster",
+          "tecken",
+          "fraktal"
+        ],
         "index": 384
       },
       {
         "content": "upprepar sig aldrig",
-        "links": [],
+        "links": [
+          "fraktal"
+        ],
         "index": 385
       },
       {
         "content": "utom i otanken",
-        "links": [],
+        "links": [
+          "tänka"
+        ],
         "index": 386
       },
       {
@@ -2429,7 +3248,13 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "brusande tankar",
-        "links": [],
+        "links": [
+          "brus",
+          "tanke",
+          "hjärna",
+          "fokus",
+          "dissociation"
+        ],
         "index": 388
       },
       {
@@ -2439,7 +3264,11 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "alltid skyndsam",
-        "links": [],
+        "links": [
+          "stress",
+          "ångest",
+          "oro"
+        ],
         "index": 390
       },
       {
@@ -2449,7 +3278,9 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "timmar räknade",
-        "links": [],
+        "links": [
+          "tid"
+        ],
         "index": 392
       },
       {
@@ -2459,12 +3290,16 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "från ett fiktivt",
-        "links": [],
+        "links": [
+          "narrativ"
+        ],
         "index": 394
       },
       {
         "content": "normaltillstånd",
-        "links": [],
+        "links": [
+          "händelse"
+        ],
         "index": 395
       },
       {
@@ -2479,32 +3314,56 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "himlen har blå fält",
-        "links": [],
+        "links": [
+          "blå",
+          "fält",
+          "yta",
+          "himmel"
+        ],
         "index": 396
       },
       {
         "content": "transdimensionella ögonmaskar",
-        "links": [],
+        "links": [
+          "dimension",
+          "verklighet",
+          "mask"
+        ],
         "index": 397
       },
       {
         "content": "dallrar på krokar",
-        "links": [],
+        "links": [
+          "dallra",
+          "oro"
+        ],
         "index": 398
       },
       {
         "content": "i glaskroppen",
-        "links": [],
+        "links": [
+          "glas",
+          "glaskropp",
+          "öga"
+        ],
         "index": 399
       },
       {
         "content": "med flimrande pixelbågar",
-        "links": [],
+        "links": [
+          "flimmer",
+          "båge",
+          "rörelse"
+        ],
         "index": 400
       },
       {
         "content": "ensamma hyperpunkter",
-        "links": [],
+        "links": [
+          "hyper",
+          "punkt",
+          "skärningspunkt"
+        ],
         "index": 401
       },
       {
@@ -2519,52 +3378,79 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "men maskar viskar",
-        "links": [],
+        "links": [
+          "mask",
+          "viska",
+          "språk"
+        ],
         "index": 404
       },
       {
         "content": "de krälar fram",
-        "links": [],
+        "links": [
+          "kräla"
+        ],
         "index": 405
       },
       {
         "content": "i badrummet",
-        "links": [],
+        "links": [
+          "badrum"
+        ],
         "index": 406
       },
       {
         "content": "framför datorn",
-        "links": [],
+        "links": [
+          "dator",
+          "skärm",
+          "flöde"
+        ],
         "index": 407
       },
       {
         "content": "i skärmen",
-        "links": [],
+        "links": [
+          "skärm",
+          "flöde"
+        ],
         "index": 408
       },
       {
         "content": "sitter bakom ögat",
-        "links": [],
+        "links": [
+          "öga"
+        ],
         "index": 409
       },
       {
         "content": "i jorden i köttet",
-        "links": [],
+        "links": [
+          "jord",
+          "kött"
+        ],
         "index": 410
       },
       {
         "content": "försöker varna",
-        "links": [],
+        "links": [
+          "omen",
+          "tecken"
+        ],
         "index": 411
       },
       {
         "content": "om en kommande",
-        "links": [],
+        "links": [
+          "omen"
+        ],
         "index": 412
       },
       {
         "content": "dallring",
-        "links": [],
+        "links": [
+          "dallra"
+        ],
         "index": 413
       },
       {
@@ -2579,107 +3465,202 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "invändigt gnissel",
-        "links": [],
+        "links": [
+          "gnissel",
+          "tjut"
+        ],
         "index": 414
       },
       {
         "content": "tand mot tand",
-        "links": [],
+        "links": [
+          "tand",
+          "gnissel",
+          "spänd",
+          "motstånd"
+        ],
         "index": 415
       },
       {
         "content": "i sömn och vardag",
-        "links": [],
+        "links": [
+          "sömn"
+        ],
         "index": 416
       },
       {
         "content": "genom skälvande kropp",
-        "links": [],
+        "links": [
+          "skälva",
+          "dallra"
+        ],
         "index": 417
       },
       {
         "content": "änglasång ekar",
-        "links": [],
+        "links": [
+          "ängel",
+          "sång",
+          "musik",
+          "puls"
+        ],
         "index": 418
       },
       {
         "content": "ur min kloak",
-        "links": [],
+        "links": [
+          "kloak",
+          "anus",
+          "tarm",
+          "mage",
+          "organ"
+        ],
         "index": 419
       },
       {
         "content": "tarmen resonerar",
-        "links": [],
+        "links": [
+          "tarm",
+          "anus",
+          "kloak",
+          "mage",
+          "organ",
+          "musik"
+        ],
         "index": 420
       },
       {
         "content": "magfett och bukmassa",
-        "links": [],
+        "links": [
+          "mage",
+          "fett",
+          "buk",
+          "massa"
+        ],
         "index": 421
       },
       {
         "content": "röda fläckar",
-        "links": [],
+        "links": [
+          "fläck",
+          "märke"
+        ],
         "index": 422
       },
       {
         "content": "parasiter som biter",
-        "links": [],
+        "links": [
+          "parasit",
+          "blod",
+          "bit",
+          "tand",
+          "sug"
+        ],
         "index": 423
       },
       {
         "content": "svamp i ljumskarna",
-        "links": [],
+        "links": [
+          "svamp",
+          "spor",
+          "ben"
+        ],
         "index": 424
       },
       {
         "content": "svamp i blomjorden",
-        "links": [],
+        "links": [
+          "svamp",
+          "spor",
+          "blomma",
+          "jord"
+        ],
         "index": 425
       },
       {
         "content": "vitt pulver",
-        "links": [],
+        "links": [
+          "drog",
+          "kokain",
+          "knark"
+        ],
         "index": 426
       },
       {
         "content": "vita larver",
-        "links": [],
+        "links": [
+          "larv",
+          "kött",
+          "sjuk"
+        ],
         "index": 427
       },
       {
         "content": "i hårbotten",
-        "links": [],
+        "links": [
+          "hår",
+          "huvud"
+        ],
         "index": 428
       },
       {
         "content": "som jag välkomnar",
-        "links": [],
+        "links": [
+          "acceptans"
+        ],
         "index": 429
       },
       {
         "content": "min bördiga grå vävnad",
-        "links": [],
+        "links": [
+          "grå",
+          "vävnad",
+          "grå-vävnad",
+          "hjärna",
+          "bördig",
+          "gödsel"
+        ],
         "index": 430
       },
       {
         "content": "kräla in i mina ögon",
-        "links": [],
+        "links": [
+          "kräla",
+          "öga",
+          "se"
+        ],
         "index": 431
       },
       {
         "content": "porer och käft",
-        "links": [],
+        "links": [
+          "spor",
+          "körtel",
+          "käft",
+          "mun",
+          "tand",
+          "monster",
+          "best"
+        ],
         "index": 432
       },
       {
         "content": "utveckla små tunnlar",
-        "links": [],
+        "links": [
+          "förfall",
+          "förvränga",
+          "rhizome"
+        ],
         "index": 433
       },
       {
         "content": "passager mellan djupare fåror",
-        "links": [],
+        "links": [
+          "fåra",
+          "skåra",
+          "fåll",
+          "rhizome"
+        ],
         "index": 434
       },
       {
@@ -2689,42 +3670,73 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "i blått poolvatten",
-        "links": [],
+        "links": [
+          "vatten",
+          "blå"
+        ],
         "index": 436
       },
       {
         "content": "i glaskroppen",
-        "links": [],
+        "links": [
+          "glas",
+          "glaskropp",
+          "öga"
+        ],
         "index": 437
       },
       {
         "content": "superstrukturen",
-        "links": [],
+        "links": [
+          "hyper",
+          "hyperobjekt",
+          "konstellation"
+        ],
         "index": 438
       },
       {
         "content": "genererar rikedom",
-        "links": [],
+        "links": [
+          "rikedom",
+          "alstra"
+        ],
         "index": 439
       },
       {
         "content": "ändlös nederbörd",
-        "links": [],
+        "links": [
+          "regn",
+          "rikedom",
+          "bördig",
+          "gödsel"
+        ],
         "index": 440
       },
       {
         "content": "inre överflöd",
-        "links": [],
+        "links": [
+          "rikedom",
+          "bördig",
+          "gödsel"
+        ],
         "index": 441
       },
       {
         "content": "förfallets strålande",
-        "links": [],
+        "links": [
+          "förfall",
+          "dekomposition",
+          "stråle"
+        ],
         "index": 442
       },
       {
         "content": "varsel om dekomposition",
-        "links": [],
+        "links": [
+          "omen",
+          "dekomposition",
+          "förfall"
+        ],
         "index": 443
       },
       {
@@ -2739,32 +3751,49 @@ export const earlyToLateSequence: Sequence = [
     "lines": [
       {
         "content": "nedbrytarnas speldans",
-        "links": [],
+        "links": [
+          "nedbrytare",
+          "spel",
+          "dans"
+        ],
         "index": 444
       },
       {
         "content": "på tronen vi byggt",
-        "links": [],
+        "links": [
+          "alstra"
+        ],
         "index": 445
       },
       {
         "content": "där vindlar de",
-        "links": [],
+        "links": [
+          "myller",
+          "flimmer"
+        ],
         "index": 446
       },
       {
         "content": "i moln och jord",
-        "links": [],
+        "links": [
+          "jord",
+          "himmel"
+        ],
         "index": 447
       },
       {
         "content": "ovan vår bugning",
-        "links": [],
+        "links": [
+          "gud"
+        ],
         "index": 448
       },
       {
         "content": "dubbelvikta kroppar",
-        "links": [],
+        "links": [
+          "fåll",
+          "fåra"
+        ],
         "index": 449
       },
       {
@@ -2774,7 +3803,11 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "vi kysser deras jord",
-        "links": [],
+        "links": [
+          "mun",
+          "tunga",
+          "jord"
+        ],
         "index": 451
       },
       {
@@ -2784,12 +3817,18 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "till himmelen",
-        "links": [],
+        "links": [
+          "himmel"
+        ],
         "index": 453
       },
       {
         "content": "nedbrytarns simmar",
-        "links": [],
+        "links": [
+          "nedbrytare",
+          "vatten",
+          "rörelse"
+        ],
         "index": 454
       },
       {
@@ -2799,7 +3838,9 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "vi hedrar löftet",
-        "links": [],
+        "links": [
+          "löfte"
+        ],
         "index": 456
       },
       {
@@ -2809,27 +3850,47 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "dekomposition",
-        "links": [],
+        "links": [
+          "dekomposition",
+          "nedbrytare"
+        ],
         "index": 458
       },
       {
         "content": "maskarnas obevekliga",
-        "links": [],
+        "links": [
+          "mask",
+          "larv",
+          "ål",
+          "obeveklig"
+        ],
         "index": 459
       },
       {
         "content": "ideologi",
-        "links": [],
+        "links": [
+          "ideologi"
+        ],
         "index": 460
       },
       {
         "content": "bakterier och svampar",
-        "links": [],
+        "links": [
+          "svamp",
+          "sjuk",
+          "spor"
+        ],
         "index": 461
       },
       {
         "content": "tarmflorans dödsänglar",
-        "links": [],
+        "links": [
+          "tarm",
+          "anus",
+          "organ",
+          "död",
+          "ängel"
+        ],
         "index": 462
       },
       {
@@ -2844,17 +3905,26 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "en sista vändning",
-        "links": [],
+        "links": [
+          "vända",
+          "vrida"
+        ],
         "index": 465
       },
       {
         "content": "sleven i grytan",
-        "links": [],
+        "links": [
+          "soppa",
+          "kärl",
+          "mat"
+        ],
         "index": 466
       },
       {
         "content": "en tjocknande klump",
-        "links": [],
+        "links": [
+          "intakt"
+        ],
         "index": 467
       },
       {
@@ -2864,7 +3934,9 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "ska ut den med",
-        "links": [],
+        "links": [
+          "frigörelse"
+        ],
         "index": 469
       }
     ]

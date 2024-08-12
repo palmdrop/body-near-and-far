@@ -1,10 +1,8 @@
 export const indicesToUrlHash = (
-  sequenceOneIndex: number, 
-  sequenceTwoIndex: number, 
-  sequenceThreeIndex: number,
-  fieldIndex: number
+  fieldIndex: number,
+  ...sequenceIndices: number[]
 ) => {
-  return `${sequenceOneIndex}.${sequenceTwoIndex}.${sequenceThreeIndex}.(${fieldIndex})`; 
+  return `${sequenceIndices.join(".")}.(${fieldIndex})`;
 }
 
 export const parseIndicesFromString = (indices: string) => {

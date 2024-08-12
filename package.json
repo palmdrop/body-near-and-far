@@ -18,5 +18,8 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "devDependencies": {
+    "@solid-primitives/scheduled": "^1.4.3"
   }
 }

@@ -1,9 +1,10 @@
 import { Title } from "@solidjs/meta";
-import { createEffect, createMemo, createSignal, onCleanup } from "solid-js";
+import { createEffect, createMemo, createSignal, For, onCleanup } from "solid-js";
 import { Filter } from "~/assets/MorphFilter";
 import { Composite } from "~/components/composite/Composite";
 import { SequenceRenderer } from "~/components/sequence/SequenceRenderer";
 import { bodyField } from "~/data/field/body";
+import { sequences } from "~/data/sequence";
 import { earlyToLateSequence } from "~/data/sequence/early-to-late";
 import { loopToUnloopSequence } from "~/data/sequence/loop-to-unloop";
 import { nearToFarSequence } from "~/data/sequence/near-to-far";
@@ -12,7 +13,7 @@ import { createFieldIterator } from "~/utils/field";
 import { getLine } from "~/utils/sequence";
 import { indicesToUrlHash, parseIndicesFromString } from "~/utils/url";
 
-const createLineInterval = (sequence: Sequence, interval: number) => {
+const createSequenceIterator = (sequence: Sequence, interval: number) => {
   const [index, setIndex] = createSignal(0);
 
   const lastIndex = sequence.at(-1)
@@ -38,9 +39,23 @@ const sequenceSpeed = 2000;
 const fieldSpeed = 1000;
 
 export default function Root() {
-  const { index: earlyToLateIndex, line: earlyToLateLine } = createLineInterval(earlyToLateSequence, sequenceSpeed);
-  const { index: nearToFarIndex, line: nearToFarLine } = createLineInterval(nearToFarSequence, sequenceSpeed);
-  const { index: loopToUnloopIndex, line: loopToUnloopLine } = createLineInterval(loopToUnloopSequence, sequenceSpeed);
+  /*
+  const { index: earlyToLateIndex, line: earlyToLateLine } = createSequenceIterator(earlyToLateSequence, sequenceSpeed);
+  const { index: nearToFarIndex, line: nearToFarLine } = createSequenceIterator(nearToFarSequence, sequenceSpeed);
+  const { index: loopToUnloopIndex, line: loopToUnloopLine } = createSequenceIterator(loopToUnloopSequence, sequenceSpeed);
+  */
+
+  const sequenceIterators = sequences.map(
+    sequence => createSequenceIterator(sequence, sequenceSpeed)
+  );
+
+  const sequenceIndices = createMemo(
+    () => sequenceIterators.map(iterator => iterator.index())
+  );
+
+  const sequenceLines = createMemo(
+    () => sequenceIterators.map(iterator => iterator.line())
+  );
 
   const { 
     word: fieldWord, 
@@ -55,7 +70,7 @@ export default function Root() {
   );
 
   const index = createMemo(
-    () => `${earlyToLateIndex()}.${nearToFarIndex()}.${loopToUnloopIndex()} (${fieldIndex()})`
+    () => `${sequenceIndices().join(".")} (${fieldIndex()})`
   );
 
   const sequenceChangeCallback = (element: HTMLLIElement, root: HTMLUListElement) => {
@@ -67,7 +82,11 @@ export default function Root() {
   }
 
   createEffect(() => {
-    const hash = indicesToUrlHash(earlyToLateIndex(), nearToFarIndex(), loopToUnloopIndex(), fieldIndex());
+    const hash = indicesToUrlHash(
+      fieldIndex(), 
+      ...sequenceIndices()
+    );
+
     window.location.hash = hash;
   });
 
@@ -77,27 +96,23 @@ export default function Root() {
       <Filter />
       <div class="center-piece">
         <Composite 
-          lines={[earlyToLateLine(), nearToFarLine(), loopToUnloopLine()]} 
+          lines={sequenceLines()} 
           index={index()}
           fieldWord={fieldLine()}
         />
       </div>
       <div class="sequences">
-        <SequenceRenderer
-          sequence={earlyToLateSequence}
-          activeIndex={earlyToLateIndex}
-          activeElementCallback={sequenceChangeCallback}
-        />
-        <SequenceRenderer
-          sequence={nearToFarSequence}
-          activeIndex={nearToFarIndex}
-          activeElementCallback={sequenceChangeCallback}
-        />
-        <SequenceRenderer
-          sequence={loopToUnloopSequence}
-          activeIndex={loopToUnloopIndex}
-          activeElementCallback={sequenceChangeCallback}
-        />
+        <For each={sequences}>
+          {(sequence, i) => (
+            <SequenceRenderer
+              sequence={sequence}
+              activeIndex={sequenceIterators[i()].index}
+              activeElementCallback={sequenceChangeCallback}
+            >
+
+            </SequenceRenderer>
+          )}
+        </For>
       </div>
     </main>
   );

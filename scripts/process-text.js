@@ -48,7 +48,7 @@ const processField = async (name, path, outputPath) => {
   await fs.writeFile(outputPath, output);
 }
 
-const processSequence = async (name, path, outputPath) => {
+const processSequence = async path => {
   const data = await fs.readFile(path, "utf8");
   const lines = data.split("\n");
 
@@ -71,7 +71,7 @@ const processSequence = async (name, path, outputPath) => {
 
     const links = linksPart
       ?.split(",")
-      .map(link => link.trim()) 
+      .map(link => link.trim().toLowerCase()) 
       .filter(link => !!link.length) 
       ?? [];
 
@@ -133,8 +133,36 @@ const processSequence = async (name, path, outputPath) => {
     }
   }
 
-  const output = toTypescriptObject(sequence, name, "Sequence", 'import { Sequence } from "~/types/sequence";');
-  
+  return sequence;
+}
+
+const filterLinks = sequence => {
+  sequence.forEach(
+    section => section
+      .lines
+      .forEach(
+        line => {
+          line.links = line
+            .links
+            .filter(link => {
+              const keep = linksCount.get(link) > 1;
+
+              // if(!keep) console.log(link)
+
+              return keep;
+            });
+        }
+      )
+  );
+}
+
+const writeSequence = async (sequence, name, outputPath) => {
+  const output = toTypescriptObject(
+    sequence, 
+    name, 
+    "Sequence", 'import { Sequence } from "~/types/sequence";'
+  );
+
   await fs.writeFile(outputPath, output);
 }
 
@@ -147,37 +175,29 @@ const main = async () => {
   );
 
   // Sequence (early to late)
-  await processSequence(
-    SEQUENCE_EARLY_TO_LATE_NAME,
+  const earlyToLateSequence = await processSequence(
     SEQUENCE_EARLY_TO_LATE_DATA_PATH,
-    SEQUENCE_EARLY_TO_LATE_OUTPUT_PATH
   );
 
-  await processSequence(
-    SEQUENCE_NEAR_TO_FAR_NAME,
+  const nearToFarSequence = await processSequence(
     SEQUENCE_NEAR_TO_FAR_DATA_PATH,
-    SEQUENCE_NEAR_TO_FAR_OUTPUT_PATH
   );
 
-  await processSequence(
-    SEQUENCE_LOOP_TO_UNLOOP_NAME,
+  const loopToUnloopSequence = await processSequence(
     SEQUENCE_LOOP_TO_UNLOOP_DATA_PATH,
-    SEQUENCE_LOOP_TO_UNLOOP_OUTPUT_PATH
   );
+
+  // Filter and process links
+  filterLinks(earlyToLateSequence); 
+  filterLinks(nearToFarSequence);
+  filterLinks(loopToUnloopSequence);
+
+  // Write sequences
+  await writeSequence(earlyToLateSequence, SEQUENCE_EARLY_TO_LATE_NAME, SEQUENCE_EARLY_TO_LATE_OUTPUT_PATH);
+  await writeSequence(nearToFarSequence, SEQUENCE_NEAR_TO_FAR_NAME, SEQUENCE_NEAR_TO_FAR_OUTPUT_PATH);
+  await writeSequence(loopToUnloopSequence, SEQUENCE_LOOP_TO_UNLOOP_NAME, SEQUENCE_LOOP_TO_UNLOOP_OUTPUT_PATH);
 }
 
 main()
-  .then(() => {
-    console.log(
-      JSON.stringify(
-        [...linksCount.entries()]
-          // .sort((a, b) => b[1] - a[1])
-          .sort((a, b) => a[0].localeCompare(b[0], "sv"))
-          .map(([link, count]) => `${link}: ${count}`),
-        null,
-        2
-      )
-    );
-  })
   .catch(console.error);
 

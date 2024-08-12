@@ -14,8 +14,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "stamcellsgyttjans blick",
         "links": [
-          "stamcell",
-          "gyttja",
           "blick"
         ],
         "index": 1
@@ -23,7 +21,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "vakar och alstrar",
         "links": [
-          "vaka",
           "alstra"
         ],
         "index": 2
@@ -31,7 +28,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "över biofundamentets gödsel",
         "links": [
-          "biofundament",
           "gödsel"
         ],
         "index": 3
@@ -40,7 +36,6 @@ export const nearToFarSequence: Sequence = [
         "content": "hormonföreteelser",
         "links": [
           "hormon",
-          "företeelse",
           "händelse"
         ],
         "index": 4
@@ -48,9 +43,8 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "återbesöker stammen",
         "links": [
-          "återbesök",
+          "återkoppla",
           "loop",
-          "feedback",
           "stam"
         ],
         "index": 5
@@ -68,16 +62,14 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "slickar årsringar",
         "links": [
-          "slicka",
-          "tunga",
-          "årsring"
+          "tunga"
         ],
         "index": 7
       },
       {
         "content": "skriver i barken",
         "links": [
-          "skriv",
+          "skriva",
           "ord",
           "tecken",
           "bark"
@@ -132,8 +124,7 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "för varje atombombstest",
         "links": [
-          "atombombstest",
-          "explosion",
+          "explodera",
           "våld"
         ],
         "index": 13
@@ -141,7 +132,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "omsorgsfullt ristat",
         "links": [
-          "omsorg",
           "rista",
           "karva"
         ],
@@ -167,8 +157,7 @@ export const nearToFarSequence: Sequence = [
         "content": "kokar till buljong",
         "links": [
           "koka",
-          "äta",
-          "buljong"
+          "äta"
         ],
         "index": 17
       },
@@ -184,31 +173,26 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "fermenterad soppa",
         "links": [
-          "fermentera",
           "soppa"
         ],
         "index": 19
       },
       {
         "content": "fylleslag för oss",
-        "links": [
-          "fylleslag"
-        ],
+        "links": [],
         "index": 20
       },
       {
         "content": "räfflade rävkullen",
         "links": [
-          "räffla",
-          "räv",
-          "kull"
+          "räffla"
         ],
         "index": 21
       },
       {
         "content": "skålar och skålar",
         "links": [
-          "skåla"
+          "skål"
         ],
         "index": 22
       },
@@ -223,10 +207,7 @@ export const nearToFarSequence: Sequence = [
         "content": "våra förfäders malmbrott",
         "links": [
           "förfäder",
-          "förälder",
-          "gruva",
-          "malm",
-          "brott"
+          "förälder"
         ],
         "index": 24
       },
@@ -267,16 +248,12 @@ export const nearToFarSequence: Sequence = [
       },
       {
         "content": "koagulerande protein",
-        "links": [
-          "koagulera",
-          "protein"
-        ],
+        "links": [],
         "index": 28
       },
       {
         "content": "tjurögat över elden",
         "links": [
-          "tjur",
           "eld"
         ],
         "index": 29
@@ -299,7 +276,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "för hästrygg",
         "links": [
-          "häst",
           "rygg",
           "ryggrad"
         ],
@@ -316,16 +292,12 @@ export const nearToFarSequence: Sequence = [
       },
       {
         "content": "morot och piska",
-        "links": [
-          "morot",
-          "piska"
-        ],
+        "links": [],
         "index": 34
       },
       {
         "content": "handtaget till",
         "links": [
-          "handtag",
           "hand"
         ],
         "index": 35
@@ -333,7 +305,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "min *skinner-box*",
         "links": [
-          "skinner",
           "skinner-box",
           "betingning"
         ],
@@ -342,7 +313,7 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "hinnan runt kroppen",
         "links": [
-          "hinnan",
+          "hinna",
           "kropp"
         ],
         "index": 37
@@ -364,31 +335,25 @@ export const nearToFarSequence: Sequence = [
         "content": "med sug från bärklustret",
         "links": [
           "sug",
-          "instinkt",
-          "bär"
+          "instinkt"
         ],
         "index": 40
       },
       {
         "content": "*slav* squattens* knän",
-        "links": [
-          "slav-squat",
-          "knä"
-        ],
+        "links": [],
         "index": 41
       },
       {
         "content": "dansen runt bål",
         "links": [
-          "dans",
-          "bål"
+          "dans"
         ],
         "index": 42
       },
       {
         "content": "det tryggaste luktrummet",
         "links": [
-          "trygg",
           "lukt",
           "rum"
         ],
@@ -398,7 +363,6 @@ export const nearToFarSequence: Sequence = [
         "content": "kokt spik",
         "links": [
           "koka",
-          "spik",
           "soppa",
           "mat"
         ],
@@ -407,7 +371,7 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "blöt hund",
         "links": [
-          "väta",
+          "vätska",
           "vatten",
           "hund"
         ],
@@ -416,7 +380,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "grillkött",
         "links": [
-          "grill",
           "grilla",
           "kött",
           "mat"
@@ -427,16 +390,13 @@ export const nearToFarSequence: Sequence = [
         "content": "bränt hår",
         "links": [
           "eld",
-          "bränt",
           "hår"
         ],
         "index": 47
       },
       {
         "content": "pyr pyr pyr",
-        "links": [
-          "pyra"
-        ],
+        "links": [],
         "index": 48
       },
       {
@@ -450,7 +410,7 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "gungar bäckenet",
         "links": [
-          "gung",
+          "gunga",
           "bäcken",
           "rytm",
           "sex"
@@ -468,7 +428,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "av en våt dröm",
         "links": [
-          "våt",
           "vatten",
           "dröm",
           "sex"
@@ -480,8 +439,7 @@ export const nearToFarSequence: Sequence = [
         "links": [
           "språk",
           "tecken",
-          "mönster",
-          "vittnesmål"
+          "mönster"
         ],
         "index": 53
       },
@@ -502,7 +460,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "späckat med tecken",
         "links": [
-          "späck",
           "tecken",
           "mönster"
         ],
@@ -537,17 +494,13 @@ export const nearToFarSequence: Sequence = [
       },
       {
         "content": "mammut och gamut",
-        "links": [
-          "mammut",
-          "gamut"
-        ],
+        "links": [],
         "index": 60
       },
       {
         "content": "moloch och golgata",
         "links": [
-          "moloch",
-          "golgata"
+          "moloch"
         ],
         "index": 61
       },
@@ -555,7 +508,6 @@ export const nearToFarSequence: Sequence = [
         "content": "i grottaket",
         "links": [
           "grotta",
-          "grottak",
           "tak"
         ],
         "index": 62
@@ -572,15 +524,13 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "i din *genomes* nät",
         "links": [
-          "genome",
-          "nät"
+          "gen"
         ],
         "index": 64
       },
       {
         "content": "porlar alkohol",
         "links": [
-          "porl",
           "ström",
           "flöde",
           "alkohol"
@@ -591,10 +541,7 @@ export const nearToFarSequence: Sequence = [
         "content": "glasklar bergsbäck",
         "links": [
           "glas",
-          "tydlig",
-          "berg",
-          "bäck",
-          "bergsbäck"
+          "bäck"
         ],
         "index": 66
       },
@@ -632,16 +579,12 @@ export const nearToFarSequence: Sequence = [
       },
       {
         "content": "gräver vidare",
-        "links": [
-          "gräva"
-        ],
+        "links": [],
         "index": 71
       },
       {
         "content": "drar i spaken",
-        "links": [
-          "spak"
-        ],
+        "links": [],
         "index": 72
       },
       {
@@ -655,7 +598,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "hör pengaklirret",
         "links": [
-          "ljud",
           "pengar",
           "betingning",
           "skinner-box"
@@ -664,9 +606,7 @@ export const nearToFarSequence: Sequence = [
       },
       {
         "content": "i nästa glänta",
-        "links": [
-          "glänta"
-        ],
+        "links": [],
         "index": 75
       },
       {
@@ -694,31 +634,24 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "korsa en *desire* *path*",
         "links": [
-          "stig",
-          "desire-path"
+          "stig"
         ],
         "index": 79
       },
       {
         "content": "i innerstadens",
-        "links": [
-          "stad"
-        ],
+        "links": [],
         "index": 80
       },
       {
         "content": "ta en Uber längs",
-        "links": [
-          "Uber",
-          "gig"
-        ],
+        "links": [],
         "index": 81
       },
       {
         "content": "myelinmotorvägen",
         "links": [
           "myelin",
-          "motorväg",
           "fåra",
           "skåra"
         ],
@@ -766,9 +699,9 @@ export const nearToFarSequence: Sequence = [
         "index": 88
       },
       {
-        "content": "i grå massa",
+        "content": "i grå vävnad",
         "links": [
-          "grå-massa",
+          "grå-vävnad",
           "hjärna"
         ],
         "index": 89
@@ -840,7 +773,6 @@ export const nearToFarSequence: Sequence = [
         "content": "ur din gapande käft",
         "links": [
           "käft",
-          "gapa",
           "mun"
         ],
         "index": 97
@@ -876,7 +808,6 @@ export const nearToFarSequence: Sequence = [
         "content": "i våra sporer",
         "links": [
           "spor",
-          "frö",
           "feromon"
         ],
         "index": 100
@@ -884,8 +815,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "kacklande ord",
         "links": [
-          "kackla",
-          "kyckling",
           "ord"
         ],
         "index": 101
@@ -909,7 +838,7 @@ export const nearToFarSequence: Sequence = [
         "content": "sociala spänningsfält",
         "links": [
           "social",
-          "spänning",
+          "spänd",
           "fält"
         ],
         "index": 104
@@ -929,22 +858,18 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "i andra kroppar",
         "links": [
-          "andra",
           "andre"
         ],
         "index": 107
       },
       {
         "content": "väver in sig själv",
-        "links": [
-          "väv"
-        ],
+        "links": [],
         "index": 108
       },
       {
         "content": "i relation",
         "links": [
-          "relation",
           "social"
         ],
         "index": 109
@@ -957,16 +882,13 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "småbarnsfamiljens",
         "links": [
-          "barn",
-          "familj"
+          "barn"
         ],
         "index": 111
       },
       {
         "content": "trepunktsstruktur",
         "links": [
-          "struktur",
-          "koppling",
           "länk"
         ],
         "index": 112
@@ -975,8 +897,7 @@ export const nearToFarSequence: Sequence = [
         "content": "med hemliga älskare",
         "links": [
           "sex",
-          "otrogen",
-          "älskare"
+          "otrogen"
         ],
         "index": 113
       },
@@ -1000,7 +921,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "smegma på burk",
         "links": [
-          "smegma",
           "smuts",
           "kärl",
           "burk"
@@ -1025,7 +945,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "över torget",
         "links": [
-          "torg",
           "marknad",
           "social"
         ],
@@ -1049,7 +968,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "folie i trappuppgången",
         "links": [
-          "folie",
           "hinna",
           "yta",
           "trappa",
@@ -1075,8 +993,7 @@ export const nearToFarSequence: Sequence = [
         "links": [
           "deadlock",
           "fälla",
-          "fåll",
-          "guld"
+          "fåll"
         ],
         "index": 125
       },
@@ -1091,8 +1008,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "och institution",
         "links": [
-          "instutition",
-          "statsskick",
           "stat"
         ],
         "index": 127
@@ -1109,9 +1024,7 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "polisstatskörteln",
         "links": [
-          "polis",
           "stat",
-          "polisstat",
           "körtel"
         ],
         "index": 129
@@ -1119,10 +1032,8 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "batongjacket hos generationen",
         "links": [
-          "batong",
           "jack",
-          "skåra",
-          "generation"
+          "skåra"
         ],
         "index": 130
       },
@@ -1130,8 +1041,6 @@ export const nearToFarSequence: Sequence = [
         "content": "med överrörliga handleder",
         "links": [
           "hand",
-          "handled",
-          "vig",
           "skelett"
         ],
         "index": 131
@@ -1139,19 +1048,14 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "immun mot smärtgrepp",
         "links": [
-          "immun",
           "smärta",
-          "våld",
-          "smärtgrepp"
+          "våld"
         ],
         "index": 132
       },
       {
         "content": "men ny ordning förblir",
-        "links": [
-          "lag",
-          "ordning"
-        ],
+        "links": [],
         "index": 133
       },
       {
@@ -1165,10 +1069,7 @@ export const nearToFarSequence: Sequence = [
         "content": "för stadssanktionerad krigföring",
         "links": [
           "stat",
-          "sanktion",
-          "krig",
-          "våld",
-          "krigföring"
+          "våld"
         ],
         "index": 135
       },
@@ -1200,7 +1101,6 @@ export const nearToFarSequence: Sequence = [
         "content": "flaskpostprojekt",
         "links": [
           "glas",
-          "behållare",
           "bägare",
           "flaska",
           "minne"
@@ -1211,15 +1111,13 @@ export const nearToFarSequence: Sequence = [
         "content": "sekulär tro",
         "links": [
           "tro",
-          "religion",
-          "sekulär"
+          "religion"
         ],
         "index": 140
       },
       {
         "content": "på kroppens fortlevnad",
         "links": [
-          "överlevnad",
           "tid"
         ],
         "index": 141
@@ -1234,9 +1132,7 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "och dikt och sång",
         "links": [
-          "dikt",
           "sång",
-          "poesi",
           "musik"
         ],
         "index": 143
@@ -1247,25 +1143,20 @@ export const nearToFarSequence: Sequence = [
           "arkiv",
           "minne",
           "karta",
-          "spår",
-          "inspelning"
+          "spår"
         ],
         "index": 144
       },
       {
         "content": "swing och baktakt",
         "links": [
-          "rytm",
-          "swing",
-          "baktakt"
+          "rytm"
         ],
         "index": 145
       },
       {
         "content": "hjärtslag och andning",
         "links": [
-          "hjärtslag",
-          "hjärta",
           "andning"
         ],
         "index": 146
@@ -1273,36 +1164,25 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "smyga och gå",
         "links": [
-          "smyga",
           "gå"
         ],
         "index": 147
       },
       {
         "content": "jogga och kuta",
-        "links": [
-          "jogga",
-          "kuta",
-          "springa"
-        ],
+        "links": [],
         "index": 148
       },
       {
         "content": "anlända och avgå",
-        "links": [
-          "resa",
-          "anlända",
-          "avgå"
-        ],
+        "links": [],
         "index": 149
       },
       {
         "content": "havsbränning och menscykler",
         "links": [
-          "hav",
           "våg",
           "rytm",
-          "mens",
           "blod",
           "hormon",
           "feromon"
@@ -1312,12 +1192,7 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "vargtimmen och blodmånen",
         "links": [
-          "varg",
-          "tid",
-          "natt",
-          "timme",
-          "blodmåne",
-          "vargtimme"
+          "tid"
         ],
         "index": 151
       },
@@ -1331,10 +1206,7 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "folkdräkter över höfter",
         "links": [
-          "folkdräkt",
-          "tradition",
-          "ritual",
-          "höft"
+          "ritual"
         ],
         "index": 153
       },
@@ -1342,7 +1214,6 @@ export const nearToFarSequence: Sequence = [
         "content": "cirkeldans och skrål",
         "links": [
           "dans",
-          "skrål",
           "sång"
         ],
         "index": 154
@@ -1358,9 +1229,7 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "tusen altare",
         "links": [
-          "altare",
-          "religion",
-          "be"
+          "religion"
         ],
         "index": 156
       },
@@ -1396,7 +1265,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "i katedralens tak",
         "links": [
-          "katedral",
           "tak"
         ],
         "index": 161
@@ -1406,7 +1274,7 @@ export const nearToFarSequence: Sequence = [
         "links": [
           "arv",
           "minne",
-          "byggnad",
+          "bygga",
           "betong"
         ],
         "index": 162
@@ -1449,15 +1317,12 @@ export const nearToFarSequence: Sequence = [
       },
       {
         "content": "översatt översättning",
-        "links": [
-          "översätta"
-        ],
+        "links": [],
         "index": 168
       },
       {
         "content": "cirkulära referenser",
         "links": [
-          "referens",
           "loop",
           "återkoppla"
         ],
@@ -1466,8 +1331,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "detaljstudier i ideologisk renhet",
         "links": [
-          "studera",
-          "detalj",
           "ideologi",
           "ren"
         ],
@@ -1491,9 +1354,7 @@ export const nearToFarSequence: Sequence = [
       },
       {
         "content": "rätt in i teglet",
-        "links": [
-          "tegel"
-        ],
+        "links": [],
         "index": 173
       },
       {
@@ -1529,7 +1390,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "falsk falskhet",
         "links": [
-          "falsk",
           "oäkta"
         ],
         "index": 178
@@ -1562,36 +1422,28 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "oskyldig skuld",
         "links": [
-          "oskyldig",
-          "skyldig",
-          "skuld"
+          "skuld",
+          "oskuld"
         ],
         "index": 182
       },
       {
         "content": "ryck efter ryck",
-        "links": [
-          "ryck"
-        ],
+        "links": [],
         "index": 183
       },
       {
         "content": "dans efter tummens nyck",
         "links": [
-          "nyck",
-          "impuls",
           "instinkt",
-          "dans",
-          "tumme"
+          "dans"
         ],
         "index": 184
       },
       {
         "content": "halstrad över glödande",
         "links": [
-          "halstra",
           "grilla",
-          "glöd",
           "eld",
           "mat"
         ],
@@ -1617,9 +1469,7 @@ export const nearToFarSequence: Sequence = [
         "links": [
           "spår",
           "spåra",
-          "kontur",
-          "linje",
-          "konturlinje"
+          "linje"
         ],
         "index": 188
       },
@@ -1636,7 +1486,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "algoritmiskt lergods",
         "links": [
-          "algoritm",
           "maskin",
           "lera",
           "keramik",
@@ -1647,16 +1496,14 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "upphängd med hullingar",
         "links": [
-          "hänga-upp",
-          "hulling",
-          "hook"
+          "hulling"
         ],
         "index": 191
       },
       {
         "content": "fokuserad mot skärningspunkten",
         "links": [
-          "fokusera",
+          "fokus",
           "skärningspunkt"
         ],
         "index": 192
@@ -1672,20 +1519,14 @@ export const nearToFarSequence: Sequence = [
       },
       {
         "content": "minmax-minmaxxing",
-        "links": [
-          "maxxing",
-          "minmax",
-          "minmaxxing",
-          "grind"
-        ],
+        "links": [],
         "index": 194
       },
       {
         "content": "av återvunna begär",
         "links": [
           "begär",
-          "andre",
-          "återvinna"
+          "andre"
         ],
         "index": 195
       },
@@ -1720,21 +1561,15 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "medsols och motsols",
         "links": [
-          "medsols",
-          "motsols",
-          "riktning",
-          "väderstreck"
+          "riktning"
         ],
         "index": 200
       },
       {
         "content": "solgud i luren",
         "links": [
-          "sol",
-          "solgud",
           "gud",
           "telefon",
-          "kommunikation",
           "social"
         ],
         "index": 201
@@ -1756,9 +1591,7 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "låter oss slungas",
         "links": [
-          "slunga",
-          "kasta",
-          "katapult"
+          "slunga"
         ],
         "index": 204
       },
@@ -1774,7 +1607,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "vid omloppsbana",
         "links": [
-          "omloppsbana",
           "loop",
           "återkoppla"
         ],
@@ -1783,7 +1615,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "perspektiv på vittringen",
         "links": [
-          "perspektiv",
           "se",
           "vittra",
           "förfall",
@@ -1795,9 +1626,8 @@ export const nearToFarSequence: Sequence = [
         "content": "hyperobjektens guru",
         "links": [
           "hyperobjekt",
-          "guru",
-          "profetia",
-          "magi"
+          "hyper",
+          "profetia"
         ],
         "index": 208
       },
@@ -1815,25 +1645,18 @@ export const nearToFarSequence: Sequence = [
         "links": [
           "moloch",
           "käft",
-          "gap",
           "mun"
         ],
         "index": 210
       },
       {
         "content": "demon i varje kropp",
-        "links": [
-          "demon"
-        ],
+        "links": [],
         "index": 211
       },
       {
         "content": "paradigmskiftet",
-        "links": [
-          "paradigm",
-          "paradigmskifte",
-          "förändring"
-        ],
+        "links": [],
         "index": 212
       },
       {
@@ -1864,7 +1687,7 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "gnisslar i sömnen",
         "links": [
-          "gnissla",
+          "gnissel",
           "tjut",
           "sömn",
           "sova"
@@ -1884,17 +1707,14 @@ export const nearToFarSequence: Sequence = [
         "content": "håller alla vakna",
         "links": [
           "sömn",
-          "vaken",
-          "vakt"
+          "vaken"
         ],
         "index": 218
       },
       {
         "content": "klagar på bakhuvudets ägg",
         "links": [
-          "klagar",
           "bakhuvud",
-          "bakhuvudet",
           "ägg"
         ],
         "index": 219
@@ -1903,9 +1723,7 @@ export const nearToFarSequence: Sequence = [
         "content": "yrar om ängeln i Moloch",
         "links": [
           "ängel",
-          "moloch",
-          "yra",
-          "illusion"
+          "moloch"
         ],
         "index": 220
       },
@@ -1914,7 +1732,6 @@ export const nearToFarSequence: Sequence = [
         "links": [
           "grå",
           "blå",
-          "gråblå",
           "knastra"
         ],
         "index": 221
@@ -1937,8 +1754,7 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "till obotlig framtid",
         "links": [
-          "obotlig",
-          "framtid",
+          "obeveklig",
           "hopp"
         ],
         "index": 224
@@ -1946,7 +1762,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "kapsla in det i",
         "links": [
-          "kapsel",
           "kärl",
           "flaska"
         ],
@@ -1955,9 +1770,8 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "den kulturella strålningen",
         "links": [
-          "kultur",
           "social",
-          "stråla"
+          "stråle"
         ],
         "index": 226
       },
@@ -1987,7 +1801,6 @@ export const nearToFarSequence: Sequence = [
         "content": "värmedödens sista",
         "links": [
           "värmedöd",
-          "undergång",
           "rymd"
         ],
         "index": 230
@@ -2004,7 +1817,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "spetsen på din kropp",
         "links": [
-          "spets",
           "yta"
         ],
         "index": 232
@@ -2031,7 +1843,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "spänner upp oss",
         "links": [
-          "spänna",
           "spänd",
           "fälla",
           "fåll"
@@ -2041,17 +1852,13 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "dallrande på fjärilsrevben",
         "links": [
-          "dallra",
-          "fjäril",
-          "revben"
+          "dallra"
         ],
         "index": 235
       },
       {
         "content": "vidsträckt över vidden",
         "links": [
-          "vid",
-          "vidsträckt",
           "vidd"
         ],
         "index": 236
@@ -2059,8 +1866,8 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "tänjer på synapsen",
         "links": [
-          "tänja",
-          "synaps",
+          "tänjd",
+          "elastisk",
           "hjärna",
           "myelin"
         ],
@@ -2068,9 +1875,7 @@ export const nearToFarSequence: Sequence = [
       },
       {
         "content": "tur den är av gummi",
-        "links": [
-          "gummi"
-        ],
+        "links": [],
         "index": 238
       },
       {
@@ -2081,7 +1886,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "spänningen",
         "links": [
-          "spänning",
           "spänd"
         ],
         "index": 240
@@ -2094,15 +1898,13 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "suger och kollapsar",
         "links": [
-          "sug",
-          "kollaps"
+          "sug"
         ],
         "index": 242
       },
       {
         "content": "kroppen sväljer allt",
         "links": [
-          "svalg",
           "mun"
         ],
         "index": 243
@@ -2111,7 +1913,6 @@ export const nearToFarSequence: Sequence = [
         "content": "jord och satellit",
         "links": [
           "jord",
-          "sattelit",
           "rymd"
         ],
         "index": 244
@@ -2119,8 +1920,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "alla UFO-sonder",
         "links": [
-          "UFO",
-          "sond",
           "alien",
           "rymd"
         ],
@@ -2128,9 +1927,7 @@ export const nearToFarSequence: Sequence = [
       },
       {
         "content": "bäddas ihop ordentligt",
-        "links": [
-          "bädda"
-        ],
+        "links": [],
         "index": 246
       },
       {
@@ -2149,7 +1946,6 @@ export const nearToFarSequence: Sequence = [
         "content": "andats så stort",
         "links": [
           "andas",
-          "andetag",
           "lunga"
         ],
         "index": 249
@@ -2157,7 +1953,6 @@ export const nearToFarSequence: Sequence = [
       {
         "content": "mässat mantran",
         "links": [
-          "mässa",
           "mantra",
           "ritual"
         ],
@@ -2167,8 +1962,7 @@ export const nearToFarSequence: Sequence = [
         "content": "fått utlösning",
         "links": [
           "utlösning",
-          "orgasm",
-          "säd"
+          "orgasm"
         ],
         "index": 251
       },
@@ -2208,23 +2002,18 @@ export const nearToFarSequence: Sequence = [
         "links": [
           "ärr",
           "spår",
-          "rygg",
-          "ryggkota"
+          "rygg"
         ],
         "index": 256
       },
       {
         "content": "vi skrapar mot märgen",
-        "links": [
-          "skrapa",
-          "märg"
-        ],
+        "links": [],
         "index": 257
       },
       {
         "content": "i såsen vänder blicken",
         "links": [
-          "sås",
           "blick",
           "öga",
           "soppa"
