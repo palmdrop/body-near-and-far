@@ -87,11 +87,6 @@ main {
 .composite p {
   text-align: left;
   width: 70%;
-
-  /*
-  overflow-wrap: break-word;
-  hyphens: auto;
-  */
 }
 
 .composite p:nth-child(even) {
@@ -104,10 +99,9 @@ main {
 .composite .field {
   text-wrap: nowrap;
   width: 100%;
-
   padding-bottom: 0.1em;
 
-  font-family: var(--font-accent);
+  font-family: var(--font-serif);
   flex: 0;
 }
 
@@ -126,13 +120,7 @@ main {
   grid-template-columns: repeat(3, 33.3333%);
 
   text-align: justify;
-
   font-size: 0.7em;
-
-  /*
-  gap: 0.5ch;
-  gap: 0.15em;
-  */
 }
 
 .sequence {
@@ -154,11 +142,6 @@ main {
 
   line-height: var(--line-height);
   padding-bottom: var(--line-height);
-
-  /*
-  color: white;
-  text-shadow: 3px 3px 2px rgb(125, 125, 125);
-  */
 }
 
 .section li {
