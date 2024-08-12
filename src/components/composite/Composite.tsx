@@ -1,4 +1,5 @@
 import { Component, For } from "solid-js";
+import { LineRenderer } from "../line/LineRenderer";
 
 type Props = {
   lines: string[],
@@ -10,10 +11,14 @@ export const Composite: Component<Props> = (props) => {
   return (
     <article class="composite">
       <For each={props.lines}>
-        {line => <p>{line}</p>}
+        {line => (
+          <p>
+            <LineRenderer line={line} />
+          </p>
+        )}
       </For>
       <p class="field">
-        { props.fieldWord }
+        <LineRenderer line={props.fieldWord} />
       </p>
       <p class="index">
         { props.index }

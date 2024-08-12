@@ -163,7 +163,7 @@ main {
   font-size: 1.1em;
 }
 
-.section > li > .emphasized {
+.emphasized {
   font-family: var(--font-accent);
   font-style: italic;
   font-size: 1.3em;
