@@ -1,3 +1,5 @@
+const hashIndexRegex = /\d+\.\d+.\d+\.\(\d+\)/;
+
 export const indicesToUrlHash = (
   fieldIndex: number,
   ...sequenceIndices: number[]
@@ -5,20 +7,26 @@ export const indicesToUrlHash = (
   return `${sequenceIndices.join(".")}.(${fieldIndex})`;
 }
 
-export const parseIndicesFromString = (indices: string) => {
-  const sections = indices.split(".");
+export const parseIndicesFromString = (indicesString: string) => {
+  if(!hashIndexRegex.test(indicesString)) {
+    throw new Error("Invalid indices string");
+  }
 
-  const sequenceOneIndex = Number(sections.at(0));
-  const sequenceTwoIndex = Number(sections.at(1));
-  const sequenceThreeIndex = Number(sections.at(2));
-  const fieldIndex = Number(
-    sections.at(3)?.substring(1, sections.at(3)!.length - 1)
-  );
+  const indices = indicesString
+    .split(".")
+    .map(
+      index => (index.startsWith("(") && index.endsWith(")"))
+        ? Number(index.slice(1, -1))
+        : Number(index)
+    );
 
-  return {
-    sequenceOneIndex,
-    sequenceTwoIndex,
-    sequenceThreeIndex,
-    fieldIndex
+  return indices;
+}
+
+export const indicesFromURL = () => {
+  try {
+    return parseIndicesFromString(window.location.hash.slice(1));
+  } catch(_) {
+    return [0, 0, 0, 0];
   }
 }

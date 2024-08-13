@@ -9,7 +9,7 @@ type Props = {
 
 export const Composite: Component<Props> = (props) => {
   return (
-    <article class="composite">
+    <article class="composite filtered">
       <For each={props.lines}>
         {line => (
           <p>

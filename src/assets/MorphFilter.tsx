@@ -32,8 +32,6 @@ export const Filter: Component = () => {
       const delta = (fontSize - minFontSize) / (maxFontSize - minFontSize);
       const threshold = (maxThreshold - minThreshold) * delta + minThreshold;
 
-      console.log(threshold)
-
       setThreshold(threshold);
     }, 100);
 

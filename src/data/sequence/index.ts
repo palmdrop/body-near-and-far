@@ -31,19 +31,19 @@ const createSequenceLinks = (sequences: Sequence[], removeSelfOnlyLinks: boolean
     });
 
   if(removeSelfOnlyLinks) {
-    [...sequenceLinks.entries()].forEach(([link, links]) => {
-      if(
-        links.length === 1 ||
-        links.every(({ sequence }) => sequence === links[0].sequence)
-      ) {
+    const linkEntries = [...sequenceLinks.entries()];
+
+    linkEntries.forEach(([link, links]) => {
+      const allLinksFromSameSequence = links
+        .every(({ sequence }) => sequence === links[0].sequence)
+
+      if(allLinksFromSameSequence) {
         sequenceLinks.delete(link)
       }
     });
   }
 
-  console.log(sequenceLinks)
-
   return sequenceLinks;
 };
 
-export const sequenceLinks: SequenceLinks = createSequenceLinks(sequences, true);
+export const sequenceLinks = createSequenceLinks(sequences, true);

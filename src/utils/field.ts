@@ -1,4 +1,4 @@
-import { createEffect, createMemo, createSignal, onCleanup } from "solid-js";
+import { createEffect, createMemo, createSignal, onCleanup, onMount } from "solid-js";
 import { Field } from "~/types/field";
 
 const getWord = (field: Field, index: number, subIndex: number): string => {
@@ -20,8 +20,12 @@ export const createFieldIterator = (
   delay: number,
   subDelay: number
 ) => {
-  const [index, setIndex] = createSignal(startIndex);
+  const [index, setIndex] = createSignal(0);
   const [subIndex, setSubIndex] = createSignal(0);
+
+  onMount(() => {
+    setIndex(startIndex % field.length);
+  })
 
   const inSubField = createMemo(() => {
     return isSubField(field[index()]);

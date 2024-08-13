@@ -52,7 +52,7 @@ export const SequenceRenderer: Component<Props> = (props) => {
   });
 
   return (
-    <ul class="sequence" ref={root}>
+    <ul class="sequence filtered" ref={root}>
       <For each={props.sequence}>{
         section => (
           <li>
