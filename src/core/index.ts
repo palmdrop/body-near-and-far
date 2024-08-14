@@ -1,4 +1,4 @@
-import { createSignal } from "solid-js";
+import { createMemo, createSignal, onMount } from "solid-js";
 import { SequenceLinks } from "~/types/links"
 import { Sequence } from "~/types/sequence"
 import { randomElement } from "~/utils/array";
@@ -6,7 +6,6 @@ import { getLine, getLineEntry, getMaxIndex } from "~/utils/sequence";
 
 type Options = {
   linkProbability: number,
-  interval: number,
   startIndices?: number[],
   allowSelfLinks?: boolean,
 }
@@ -46,40 +45,49 @@ const followLink = (
 }
 
 // NOTE: make it an actual iterator, letting the interval be controlled from consumer?
-const createLinkedIterator = (
+export const createLinkedIterator = (
   sequences: Sequence[],
   links: SequenceLinks,
   options: Options = {
-    interval: 1000,
     linkProbability: 0.25,
     startIndices: sequences.map(() => 0),
     allowSelfLinks: false
   }
 ) => {
-  const { interval, startIndices } = options;
+  const { startIndices } = options;
 
   const SEQUENCE_INDICES = sequences.map((_, i) => i);
   const SEQUENCE_MAX_INDEX = sequences.map(sequence => getMaxIndex(sequence));
-  const sequenceLineIndices = sequences.map(
+  const lineIndices = sequences.map(
     () => createSignal(0)
   );
 
-  // 1. Pick starting sequence
-  // 2. Add starting sequence to list of visited sequences
-  // 3. Possibly follow link. Move linked sequence to link location.
-  // 4. Push linked sequence to visited sequences
-  // 5. Repeat
+  onMount(() => {
+    lineIndices.forEach(
+      ([, setLineIndex], i) => setLineIndex(startIndices?.[i] ?? 0)
+    );
+  });
 
   const incrementLineIndex = (sequenceIndex: number) => {
-    const [, setLineIndex] = sequenceLineIndices[sequenceIndex];
+    const [, setLineIndex] = lineIndices[sequenceIndex];
     setLineIndex(i => (i + 1) % SEQUENCE_MAX_INDEX[sequenceIndex]);
   }
 
-  const updateSequences = () => {
+  const update = () => {
     const shouldFollowLinks = Math.random() < options.linkProbability;
+
+
+    const log = () => {
+      console.log({
+        shouldFollowLinks, 
+        lineIndices: lineIndices.map(([i]) => i()),
+        lines: lineIndices.map(([lineIndex], i) => getLine(sequences[i], lineIndex())),
+      });
+    }
 
     if(!shouldFollowLinks) {
       SEQUENCE_INDICES.forEach(incrementLineIndex);
+      log();
       return;
     }
 
@@ -97,18 +105,39 @@ const createLinkedIterator = (
       visitedSequences.push(sequenceIndex);
       availableSequences = availableSequences.filter(i => i !== sequenceIndex);
 
-      const lineIndex = sequenceLineIndices[sequenceIndex][0]();
+      if(!link) {
+        incrementLineIndex(sequenceIndex);
+      } else {
+        const [_, setLineIndex] = lineIndices[sequenceIndex];
+        setLineIndex(link.line);
+      }
+
+      const [lineIndex] = lineIndices[sequenceIndex];
       const nextLink = followLink(
         sequences,
         links,
         sequenceIndex,
-        lineIndex,
+        lineIndex(),
         visitedSequences
       );
 
-
+      if(nextLink) {
+        console.log({
+          from: sequenceIndex,
+          ...nextLink
+        })
+      }
 
       link = nextLink;
     }
+
+    log();
+  }
+
+  return {
+    update,
+    //lineIndices: createMemo(() => lineIndices.map(([i]) => i())),
+    lineIndices: lineIndices.map(([i]) => i),
+    lines: createMemo(() => lineIndices.map(([lineIndex], i) => getLine(sequences[i], lineIndex()) ?? ""))
   }
 }

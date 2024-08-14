@@ -1,32 +1,43 @@
 import { Title } from "@solidjs/meta";
-import { createEffect, createMemo } from "solid-js";
+import { createEffect, createMemo, onCleanup, onMount } from "solid-js";
 import { Filter } from "~/assets/MorphFilter";
 import { Composite } from "~/components/composite/Composite";
 import { SequenceRenderer } from "~/components/sequence/SequenceRenderer";
+import { createLinkedIterator } from "~/core";
 import { bodyField } from "~/data/field/body";
-import { sequences } from "~/data/sequence";
+import { sequenceLinks, sequences } from "~/data/sequence";
 import { createFieldIterator } from "~/utils/field";
-import { createSequenceIterator, sequenceChangeCallback } from "~/utils/sequence";
+import { sequenceChangeCallback } from "~/utils/sequence";
 import { indicesFromURL, indicesToUrlHash } from "~/utils/url";
 
 
 // TODO: make slower
 const sequenceSpeed = 2000;
 const fieldSpeed = 1000;
+const linkProbability = 0.5;
 
 export default function Root() {
   const startIndices = indicesFromURL();
 
-  const sequenceIterators = sequences.map(
-    (sequence, i) => createSequenceIterator(sequence, sequenceSpeed, startIndices[i])
-  );
+  const {
+    update: updateLinkedIterator,
+    lineIndices: sequenceIndices,
+    lines: sequenceLines
+  } = createLinkedIterator(sequences, sequenceLinks, {
+    linkProbability,
+    startIndices
+  });
 
-  const sequenceIndices = createMemo(
-    () => sequenceIterators.map(iterator => iterator.index())
-  );
+  const interval = setInterval(() => {
+    updateLinkedIterator();
+  }, sequenceSpeed);
 
-  const sequenceLines = createMemo(
-    () => sequenceIterators.map(iterator => iterator.line())
+  onCleanup(() => {
+    clearInterval(interval);
+  });
+
+  const indices = createMemo(
+    () => sequenceIndices.map(i => i())
   );
 
   const fieldIterator = createFieldIterator(
@@ -43,15 +54,13 @@ export default function Root() {
   );
 
   const index = createMemo(
-    () => indicesToUrlHash(fieldIterator.index(), ...sequenceIndices())
+    () => indicesToUrlHash(fieldIterator.index(), ...indices())
   );
-
-
 
   createEffect(() => {
     const hash = indicesToUrlHash(
       fieldIterator.index(), 
-      ...sequenceIndices()
+      ...indices()
     );
 
     window.location.hash = hash;
@@ -73,7 +82,7 @@ export default function Root() {
           { sequences.map((sequence, i) => (
             <SequenceRenderer
               sequence={sequence}
-              activeIndex={sequenceIterators[i].index}
+              activeIndex={sequenceIndices[i]}
               activeElementCallback={sequenceChangeCallback}
             />
           )) }
