@@ -4,7 +4,7 @@ import { LineRenderer } from "../line/LineRenderer";
 type Props = {
   lines: string[],
   fieldWord: string,
-  index: string
+  index: string,
 }
 
 export const Composite: Component<Props> = (props) => {
@@ -12,7 +12,7 @@ export const Composite: Component<Props> = (props) => {
     <article class="composite filtered">
       <For each={props.lines}>
         {line => (
-          <p>
+          <p class="line">
             <LineRenderer line={line} />
           </p>
         )}

@@ -35,7 +35,7 @@ body, .root {
 }
 
 .filtered {
-  filter: url(#threshold) blur(clamp(0.1px, 0.045em, 1.0px)) contrast(140%);
+  filter: url(#threshold) blur(clamp(0.0px, 0.045em, 1.0px)) contrast(140%);
 }
 
 main {
@@ -53,7 +53,9 @@ main {
   color: white;
   */
   background-color: rgb(207, 255, 16);
-  box-shadow: 0.1em 0.1em 0.2em black;
+  box-shadow: 
+    0.3em 0.2em 0.3em -0.1em rgba(0, 0, 0, 0.588),
+    0.0em 0.0em 0.2em 0.1em rgba(79, 107, 2, 0.354);
 
   font-style: italic;
 
@@ -84,6 +86,7 @@ main {
   height: 100%;
 
   font-family: var(--font-sans);
+  counter-reset: line;
 }
 
 .composite > * {
@@ -91,12 +94,20 @@ main {
   flex: 1;
 }
 
-.composite p {
+.composite .line {
   text-align: left;
   width: 70%;
+  counter-increment: line;
 }
 
-.composite p:nth-child(even) {
+.composite .line::before {
+  content: counter(line) ". ";
+
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+.composite .line:nth-child(even) {
   text-align: right;
   overflow-wrap: break-word;
   hyphens: auto;
@@ -110,6 +121,24 @@ main {
 
   font-family: var(--font-serif);
   flex: 0;
+
+  width: 100%;
+  text-align: right;
+}
+
+.composite.align-center .line {
+  text-align: right;
+  width: 50%;
+}
+
+.composite.align-center .line:nth-child(odd) {
+  text-align: right;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.composite.align-center .line:nth-child(even) {
+  text-align: left;
 }
 
 .composite .index {
