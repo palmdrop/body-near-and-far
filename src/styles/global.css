@@ -28,6 +28,8 @@ body, .root {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  position: relative;
 }
 
 .root {
@@ -204,3 +206,29 @@ main {
   font-style: italic;
   font-size: 1.3em;
 }
+
+aside {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  background-color: white;
+  padding: 1em;
+}
+
+aside button {
+  font-family: var(--font-serif);
+  padding: 0.25em;
+
+  cursor: pointer;
+  font-style: italic;
+}
+
+aside button::after { 
+  content: " ]";
+}
+
+aside button::before { 
+  content: "[ ";
+}
+

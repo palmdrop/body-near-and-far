@@ -1,4 +1,5 @@
 import { Title } from "@solidjs/meta";
+import { useSearchParams } from "@solidjs/router";
 import { createEffect, createMemo, createSignal, onCleanup, onMount, Show } from "solid-js";
 import { Filter } from "~/assets/MorphFilter";
 import { Composite } from "~/components/composite/Composite";
@@ -10,7 +11,6 @@ import { createFieldIterator } from "~/utils/field";
 import { sequenceChangeCallback } from "~/utils/sequence";
 import { indicesFromURL, indicesToUrlHash } from "~/utils/url";
 
-
 // TODO: make slower
 const sequenceSpeed = 5000;
 const fieldSpeed = 2000;
@@ -18,6 +18,8 @@ const linkProbability = 0.5;
 
 export default function Root() {
   const startIndices = indicesFromURL();
+  const [searchParams, setSearchParams] = useSearchParams();
+
   const [isRunning, setIsRunning] = createSignal(true);
 
   const {
@@ -36,7 +38,28 @@ export default function Root() {
     fieldSpeed / 2
   );
 
+  onMount(() => {
+    setIsRunning(searchParams["running"] === "true");
+
+    const keyboardListener = (event: KeyboardEvent) => {
+      event.preventDefault();
+      switch(event.key) {
+        case " ": {
+          setIsRunning(isRunning => !isRunning);
+        }
+      }
+      return;
+    }
+
+    window.addEventListener("keydown", keyboardListener);
+
+    onCleanup(() => {
+      window.removeEventListener("keydown", keyboardListener);
+    });
+  });
+
   createEffect(() => {
+    setSearchParams({ running: String(isRunning()) });
     fieldIterator.setIsRunning(isRunning());
     if(!isRunning()) return;
 
