@@ -1,5 +1,5 @@
 import { Title } from "@solidjs/meta";
-import { Component, Show, Switch, createEffect, createMemo, createSignal, onCleanup } from "solid-js";
+import { Component, Show } from "solid-js";
 import { Field } from "~/types/field";
 import { createFieldIterator } from "~/utils/field";
 

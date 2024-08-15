@@ -579,7 +579,7 @@ export const loopToUnloopSequence: Sequence = [
         "index": 67
       },
       {
-        "content": "mardröms-*deadlock*",
+        "content": "mardröms- *deadlock*",
         "links": [
           "mardröm",
           "deadlock",

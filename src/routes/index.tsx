@@ -1,5 +1,5 @@
 import { Title } from "@solidjs/meta";
-import { createEffect, createMemo, onCleanup, onMount } from "solid-js";
+import { createEffect, createMemo, createSignal, onCleanup, onMount, Show } from "solid-js";
 import { Filter } from "~/assets/MorphFilter";
 import { Composite } from "~/components/composite/Composite";
 import { SequenceRenderer } from "~/components/sequence/SequenceRenderer";
@@ -18,6 +18,7 @@ const linkProbability = 0.5;
 
 export default function Root() {
   const startIndices = indicesFromURL();
+  const [isRunning, setIsRunning] = createSignal(true);
 
   const {
     update: updateLinkedIterator,
@@ -28,23 +29,28 @@ export default function Root() {
     startIndices
   });
 
-  const interval = setInterval(() => {
-    updateLinkedIterator();
-  }, sequenceSpeed);
-
-  onCleanup(() => {
-    clearInterval(interval);
-  });
-
-  const indices = createMemo(
-    () => sequenceIndices.map(i => i())
-  );
-
   const fieldIterator = createFieldIterator(
     bodyField, 
     startIndices[sequences.length], 
     fieldSpeed, 
     fieldSpeed / 2
+  );
+
+  createEffect(() => {
+    fieldIterator.setIsRunning(isRunning());
+    if(!isRunning()) return;
+
+    const interval = setInterval(() => {
+      updateLinkedIterator();
+    }, sequenceSpeed);
+
+    onCleanup(() => {
+      clearInterval(interval);
+    });
+  });
+
+  const indices = createMemo(
+    () => sequenceIndices.map(i => i())
   );
 
   const fieldLine = createMemo(
@@ -88,6 +94,18 @@ export default function Root() {
           )) }
         </div>
       </main>
+      <aside>
+        <button
+          onClick={() => setIsRunning(isRunning => !isRunning)}
+        >
+          <Show
+            when={isRunning()}
+            fallback={<span>Start</span>}
+          >
+            <span>Stop</span>  
+          </Show>
+        </button>
+      </aside>
     </div>
   );
 }

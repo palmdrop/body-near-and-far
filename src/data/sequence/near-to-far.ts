@@ -340,7 +340,7 @@ export const nearToFarSequence: Sequence = [
         "index": 40
       },
       {
-        "content": "*slav* squattens* knän",
+        "content": "*slav* *squattens* knän",
         "links": [],
         "index": 41
       },

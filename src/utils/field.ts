@@ -22,6 +22,7 @@ export const createFieldIterator = (
 ) => {
   const [index, setIndex] = createSignal(0);
   const [subIndex, setSubIndex] = createSignal(0);
+  const [isRunning, setIsRunning] = createSignal(true);
 
   onMount(() => {
     setIndex(startIndex % field.length);
@@ -40,6 +41,8 @@ export const createFieldIterator = (
   });
 
   createEffect(() => {
+    if(!isRunning()) return;
+
     let interval: NodeJS.Timeout;
     if(!inSubField()) {
       interval = setInterval(() => {
@@ -54,7 +57,7 @@ export const createFieldIterator = (
   });
 
   createEffect(() => {
-    if(!inSubField()) return;
+    if(!inSubField() || !isRunning()) return;
 
     const interval = setInterval(() => {
       setSubIndex(i => {
@@ -75,6 +78,7 @@ export const createFieldIterator = (
   return {
     word,
     inSubField,
-    index
+    index,
+    setIsRunning
   }
 }
