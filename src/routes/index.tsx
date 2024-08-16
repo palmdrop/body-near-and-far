@@ -21,6 +21,7 @@ export default function Root() {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const [isRunning, setIsRunning] = createSignal(true);
+  const [visible, setVisible] = createSignal(false);
 
   const {
     update: updateLinkedIterator,
@@ -39,7 +40,8 @@ export default function Root() {
   );
 
   onMount(() => {
-    setIsRunning(searchParams["running"] === "true");
+    setIsRunning(searchParams["running"] !== "false");
+    setVisible(true);
 
     const keyboardListener = (event: KeyboardEvent) => {
       event.preventDefault();
@@ -96,7 +98,7 @@ export default function Root() {
   });
 
   return (
-    <div class="root">
+    <div class={`root ${visible() ? "visible" : ""}`}>
       <Filter />
       <main>
         <Title>{`${fieldIterator.word()?.toUpperCase()} | Nära och långt från kroppen`}</Title> 
