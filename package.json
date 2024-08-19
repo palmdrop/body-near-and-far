@@ -3,6 +3,7 @@
   "description": "Body: near and far",
   "type": "module",
   "scripts": {
+    "prebuild": "npm install && npm run process",
     "dev": "vinxi dev",
     "build": "vinxi build",
     "preview": "npx live-server .output/public",
