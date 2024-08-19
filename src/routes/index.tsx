@@ -27,10 +27,14 @@ export default function Root() {
     update: updateLinkedIterator,
     lineIndices: sequenceIndices,
     lines: sequenceLines
-  } = createLinkedIterator(sequences, sequenceLinks, {
-    linkProbability,
-    startIndices
-  });
+  } = createLinkedIterator(
+    sequences, 
+    sequenceLinks, 
+    {
+      linkProbability,
+      startIndices
+    }
+  );
 
   const fieldIterator = createFieldIterator(
     bodyField, 

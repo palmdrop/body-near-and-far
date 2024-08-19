@@ -105,20 +105,24 @@ main {
   text-align: left;
   width: 70%;
   counter-increment: line;
+
+  line-height: 1.07em;
 }
 
+/*
 .composite .line::before {
   content: counter(line) ". ";
 
   font-family: var(--font-serif);
   font-style: italic;
 }
+  */
 
 .composite .line:nth-child(even) {
   text-align: right;
+  align-self: flex-end;
   overflow-wrap: break-word;
   hyphens: auto;
-  align-self: flex-end;
 }
 
 .composite .field {

@@ -1,5 +1,5 @@
 import { createMemo, createSignal, onMount } from "solid-js";
-import { SequenceLinks } from "~/types/links"
+import { Link, SequenceLineVisits, SequenceLinks } from "~/types/links"
 import { Sequence } from "~/types/sequence"
 import { randomElement } from "~/utils/array";
 import { getLine, getLineEntry, getMaxIndex } from "~/utils/sequence";
@@ -10,8 +10,23 @@ type Options = {
   allowSelfLinks?: boolean,
 }
 
-// NOTE: maybe just work with probabilities... i.e follow a link with a random probability
+// NOTE: avoid following links to lines that have been used recently
 // NOTE: and then add a cooldown to avoid the same sequence being moved too often? or skip that?
+
+const getAvailableLinks = (
+  sequenceLinks: Link[],
+  visitedSequences: number[],
+  visitedLines: SequenceLineVisits
+) => {
+  const availableLinks = sequenceLinks
+    .filter(({ sequence }) => !visitedSequences.includes(sequence));
+
+  if(!availableLinks.length) return availableLinks;
+
+  // TODO
+  const prioritizedLinks = availableLinks;
+  return prioritizedLinks;
+}
 
 const followLink = (
   sequences: Sequence[], 
@@ -19,6 +34,7 @@ const followLink = (
   sequenceIndex: number, 
   lineIndex: number,
   visitedSequences: number[],
+  visitedLines: SequenceLineVisits
 ) => {
   const sequence = sequences[sequenceIndex];
   const lineEntry = getLineEntry(sequence, lineIndex);
@@ -31,12 +47,17 @@ const followLink = (
 
   if(!sequenceLinks) return undefined;
 
-  const availableLinks = sequenceLinks
-    .filter(({ sequence }) => !visitedSequences.includes(sequence));
-
+  const availableLinks = getAvailableLinks(
+    sequenceLinks,
+    visitedSequences,
+    visitedLines
+  )
+  
   if(!availableLinks.length) return undefined;
 
   const link = randomElement(availableLinks);
+
+  visitedLines.set(`${link.sequence}.${link.line}`, new Date());
 
   return {
     ...link,
@@ -62,6 +83,8 @@ export const createLinkedIterator = (
     () => createSignal(0)
   );
 
+  const visitedLines: SequenceLineVisits = new Map();
+
   onMount(() => {
     lineIndices.forEach(
       ([, setLineIndex], i) => setLineIndex(startIndices?.[i] ?? 0)
@@ -76,28 +99,16 @@ export const createLinkedIterator = (
   const update = () => {
     const shouldFollowLinks = Math.random() < options.linkProbability;
 
-
-    const log = () => {
-      console.log({
-        shouldFollowLinks, 
-        lineIndices: lineIndices.map(([i]) => i()),
-        lines: lineIndices.map(([lineIndex], i) => getLine(sequences[i], lineIndex())),
-      });
-    }
-
     if(!shouldFollowLinks) {
       SEQUENCE_INDICES.forEach(incrementLineIndex);
-      log();
       return;
     }
 
     const visitedSequences: number[] = [];
     let availableSequences = [...SEQUENCE_INDICES];
 
-    // let nextSequence: number | undefined = undefined;
-    let link: { sequence: number, line: number, linkKey: string } | undefined = undefined;
+    let link: ReturnType<typeof followLink> = undefined;
     while(visitedSequences.length !== sequences.length) {
-      // TODO: need to actually increment line index of the sequence UNLESS it followed a 
       const sequenceIndex = !!link
         ? link.sequence 
         : randomElement(availableSequences);
@@ -113,31 +124,24 @@ export const createLinkedIterator = (
       }
 
       const [lineIndex] = lineIndices[sequenceIndex];
-      const nextLink = followLink(
+      link = followLink(
         sequences,
         links,
         sequenceIndex,
         lineIndex(),
-        visitedSequences
+        visitedSequences,
+        visitedLines
       );
-
-      if(nextLink) {
-        console.log({
-          from: sequenceIndex,
-          ...nextLink
-        })
-      }
-
-      link = nextLink;
     }
-
-    log();
   }
+
+  const lines = createMemo(
+    () => lineIndices.map(([lineIndex], i) => getLine(sequences[i], lineIndex()) ?? "")
+  );
 
   return {
     update,
-    //lineIndices: createMemo(() => lineIndices.map(([i]) => i())),
     lineIndices: lineIndices.map(([i]) => i),
-    lines: createMemo(() => lineIndices.map(([lineIndex], i) => getLine(sequences[i], lineIndex()) ?? ""))
+    lines,
   }
 }

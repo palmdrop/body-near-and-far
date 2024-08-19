@@ -1043,7 +1043,7 @@ export const loopToUnloopSequence: Sequence = [
         "index": 121
       },
       {
-        "content": "skärm i skärm",
+        "content": "flöde i flöde",
         "links": [
           "skärm",
           "mobil",
