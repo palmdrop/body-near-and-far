@@ -3,12 +3,13 @@
   "description": "Body: near and far",
   "type": "module",
   "scripts": {
-    "prebuild": "npm install && npm run process",
+    "prebuild": "npm i && npm run process",
     "dev": "vinxi dev",
-    "build": "vinxi build",
+    "build": "vinxi build && cp -r .output/public build",
     "preview": "npx live-server .output/public",
     "version": "vinxi version",
-    "process": "node ./scripts/process-text.js"
+    "process": "node ./scripts/process-text.js",
+    "dummy": "echo build"
   },
   "dependencies": {
     "@solidjs/meta": "^0.29.4",
