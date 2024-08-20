@@ -23,9 +23,21 @@ const getAvailableLinks = (
 
   if(!availableLinks.length) return availableLinks;
 
-  // TODO
-  const prioritizedLinks = availableLinks;
-  return prioritizedLinks;
+  const unvisited = availableLinks.filter(
+    ({ sequence, line }) => !visitedLines.has(`${sequence}.${line}`)
+  );
+
+  if(unvisited.length) {
+    console.log("unvisited", unvisited);
+    return unvisited;
+  }
+
+  console.log("cleared", sequenceLinks.map(({ sequence, line }) => `${sequence}.${line}`));
+  sequenceLinks.forEach(
+    ({ sequence, line }) => visitedLines.delete(`${sequence}.${line}`)
+  );
+
+  return availableLinks;
 }
 
 const followLink = (
