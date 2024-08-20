@@ -4,7 +4,7 @@ export const indicesToUrlHash = (
   fieldIndex: number,
   ...sequenceIndices: number[]
 ) => {
-  return `${sequenceIndices.join(".")}.(${fieldIndex})`;
+  return `${sequenceIndices.map(index => index + 1).join(".")}.(${fieldIndex + 1})`;
 }
 
 export const parseIndicesFromString = (indicesString: string) => {
@@ -18,7 +18,8 @@ export const parseIndicesFromString = (indicesString: string) => {
       index => (index.startsWith("(") && index.endsWith(")"))
         ? Number(index.slice(1, -1))
         : Number(index)
-    );
+    )
+    .map(index => index - 1);
 
   return indices;
 }
