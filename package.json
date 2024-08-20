@@ -5,7 +5,7 @@
   "scripts": {
     "prebuild": "npm i && npm run process",
     "dev": "vinxi dev",
-    "build": "vinxi build && cp -r .output/public build",
+    "build": "vinxi build && rm -r build && cp -r .output/public build",
     "preview": "npx live-server .output/public",
     "version": "vinxi version",
     "process": "node ./scripts/process-text.js",

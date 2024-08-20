@@ -42,7 +42,13 @@ body, .root {
 }
 
 .filtered {
-  filter: url(#threshold) blur(clamp(0.0px, 0.045em, 1.0px)) contrast(140%);
+  filter: none;
+}
+
+@media screen and (min-width: 600px) {
+  .filtered {
+    filter: url(#threshold) blur(clamp(0.0px, 0.045em, 1.0px)) contrast(140%);
+  }
 }
 
 main {
