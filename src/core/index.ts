@@ -50,29 +50,39 @@ const followLink = (
 
   if(!lineLinks) return undefined;
 
-  const linkKey = randomElement(lineLinks);
-  if(!linkKey) return undefined;
+  const linksToTry = [...lineLinks];
 
-  const sequenceLinks = links.get(linkKey);
+  while(linksToTry.length) {
+    const index = Math.floor(Math.random() * linksToTry.length);
+    const linkKey = linksToTry[index];
 
-  if(!sequenceLinks) return undefined;
+    linksToTry.splice(index, 1);
 
-  const availableLinks = getAvailableLinks(
-    sequenceLinks,
-    visitedSequences,
-    visitedLines
-  )
-  
-  if(!availableLinks.length) return undefined;
+    if(!linkKey) continue;
 
-  const link = randomElement(availableLinks);
+    const sequenceLinks = links.get(linkKey);
 
-  visitedLines.add(`${link.sequence}.${link.line}`);
+    if(!sequenceLinks) continue;
 
-  return {
-    ...link,
-    linkKey
+    const availableLinks = getAvailableLinks(
+      sequenceLinks,
+      visitedSequences,
+      visitedLines
+    )
+    
+    if(!availableLinks.length) continue;
+
+    const link = randomElement(availableLinks);
+
+    visitedLines.add(`${link.sequence}.${link.line}`);
+
+    return {
+      ...link,
+      linkKey
+    }
   }
+
+  return undefined;
 }
 
 // NOTE: make it an actual iterator, letting the interval be controlled from consumer?
