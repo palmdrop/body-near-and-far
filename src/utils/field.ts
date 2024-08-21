@@ -17,12 +17,12 @@ const isSubField = (line: Field[number]): line is string[] => {
 export const createFieldIterator = (
   field: Field,
   startIndex: number,
-  delay: number,
-  subDelay: number
+  // delay: number,
+  // subDelay: number
 ) => {
   const [index, setIndex] = createSignal(0);
   const [subIndex, setSubIndex] = createSignal(0);
-  const [isRunning, setIsRunning] = createSignal(true);
+  // const [isRunning, setIsRunning] = createSignal(true);
 
   onMount(() => {
     setIndex(startIndex % field.length);
@@ -40,6 +40,7 @@ export const createFieldIterator = (
     return getWord(field, index(), subIndex());
   });
 
+  /*
   createEffect(() => {
     if(!isRunning()) return;
 
@@ -74,11 +75,33 @@ export const createFieldIterator = (
       clearInterval(interval);
     });
   });
+  */
+
+  const incrementMainIndex = () => {
+    setIndex(i => (i + 1) % field.length);
+  }
+
+  const update = () => {
+    if(!inSubField()) {
+      incrementMainIndex();
+      setSubIndex(0);
+    } else {
+      setSubIndex(i => {
+        if(i + 1 >= line().length) {
+          incrementMainIndex();
+          return 0;
+        }
+
+        return i + 1;
+      });
+    }
+  }
 
   return {
     word,
     inSubField,
     index,
-    setIsRunning
+    update,
+    // setIsRunning
   }
 }

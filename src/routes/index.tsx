@@ -8,12 +8,13 @@ import { createLinkedIterator } from "~/core";
 import { bodyField } from "~/data/field/body";
 import { sequenceLinks, sequences } from "~/data/sequence";
 import { createFieldIterator } from "~/utils/field";
+import { createLoop } from "~/utils/loop";
 import { sequenceChangeCallback } from "~/utils/sequence";
 import { indicesFromURL, indicesToUrlHash } from "~/utils/url";
 
 // TODO: make slower
-const sequenceSpeed = 5000;
-const fieldSpeed = 2000;
+const sequenceSpeed = 1000;
+const fieldSpeed = 1000;
 // const linkProbability = 0.5;
 const linkProbability = 1.0;
 
@@ -24,11 +25,7 @@ export default function Root() {
   const [isRunning, setIsRunning] = createSignal(true);
   const [visible, setVisible] = createSignal(false);
 
-  const {
-    update: updateLinkedIterator,
-    lineIndices: sequenceIndices,
-    lines: sequenceLines
-  } = createLinkedIterator(
+  const linkedSequenceIterator = createLinkedIterator(
     sequences, 
     sequenceLinks, 
     {
@@ -40,20 +37,32 @@ export default function Root() {
   const fieldIterator = createFieldIterator(
     bodyField, 
     startIndices[sequences.length], 
-    fieldSpeed, 
-    fieldSpeed / 2
+  );
+
+  const { start, stop } = createLoop(
+    () => {
+      linkedSequenceIterator.update();
+      fieldIterator.update();
+    },
+    {
+      rate: sequenceSpeed,
+      subRate: fieldSpeed
+    }
   );
 
   onMount(() => {
-    setIsRunning(searchParams["running"] !== "false");
+    const isRunning = searchParams["running"] !== "false"
+    setIsRunning(isRunning);
     setVisible(true);
+
+    if(isRunning) start();
 
     const keyboardListener = (event: KeyboardEvent) => {
       event.preventDefault();
       switch(event.key) {
         case " ": {
-          setIsRunning(isRunning => !isRunning);
-        }
+          toggle();
+        } break;
       }
       return;
     }
@@ -65,22 +74,19 @@ export default function Root() {
     });
   });
 
-  createEffect(() => {
-    setSearchParams({ running: String(isRunning()) });
-    fieldIterator.setIsRunning(isRunning());
-    if(!isRunning()) return;
+  const toggle = () => {
+    const running = isRunning();
+    setIsRunning(!running);
+    setSearchParams({ running: String(!running) });
+    !running ? start() : stop();
+  }
 
-    const interval = setInterval(() => {
-      updateLinkedIterator();
-    }, sequenceSpeed);
-
-    onCleanup(() => {
-      clearInterval(interval);
-    });
+  onCleanup(() => {
+    stop();
   });
 
   const indices = createMemo(
-    () => sequenceIndices.map(i => i())
+    () => linkedSequenceIterator.lineIndices.map(i => i())
   );
 
   const fieldLine = createMemo(
@@ -109,7 +115,7 @@ export default function Root() {
         <Title>{`${fieldIterator.word()?.toUpperCase()} | Nära och långt från kroppen`}</Title> 
         <div class="center-piece">
           <Composite 
-            lines={sequenceLines()} 
+            lines={linkedSequenceIterator.lines()} 
             index={index()}
             fieldWord={fieldLine()}
           />
@@ -118,7 +124,7 @@ export default function Root() {
           { sequences.map((sequence, i) => (
             <SequenceRenderer
               sequence={sequence}
-              activeIndex={sequenceIndices[i]}
+              activeIndex={linkedSequenceIterator.lineIndices[i]}
               activeElementCallback={sequenceChangeCallback}
             />
           )) }
@@ -126,7 +132,7 @@ export default function Root() {
       </main>
       <aside>
         <button
-          onClick={() => setIsRunning(isRunning => !isRunning)}
+          onClick={toggle}
         >
           <Show
             when={isRunning()}
