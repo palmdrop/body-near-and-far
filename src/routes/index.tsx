@@ -8,13 +8,13 @@ import { createLinkedIterator } from "~/core";
 import { bodyField } from "~/data/field/body";
 import { sequenceLinks, sequences } from "~/data/sequence";
 import { createFieldIterator } from "~/utils/field";
-import { createLoop } from "~/utils/loop";
+import { createLoops } from "~/utils/loop";
 import { sequenceChangeCallback } from "~/utils/sequence";
 import { indicesFromURL, indicesToUrlHash } from "~/utils/url";
 
 // TODO: make slower
 const sequenceSpeed = 1000;
-const fieldSpeed = 1000;
+const fieldSpeed = 500;
 // const linkProbability = 0.5;
 const linkProbability = 1.0;
 
@@ -39,15 +39,33 @@ export default function Root() {
     startIndices[sequences.length], 
   );
 
-  const { start, stop } = createLoop(
-    () => {
-      linkedSequenceIterator.update();
-      fieldIterator.update();
-    },
-    {
-      rate: sequenceSpeed,
-      subRate: fieldSpeed
-    }
+  const { start, stop } = createLoops(
+    [
+      // Linked sequence loop
+      {
+        callback: () => {
+          linkedSequenceIterator.update();
+          fieldIterator.update();
+        },
+        rate: sequenceSpeed
+      },
+      // Main field loop
+      {
+        callback: () => {
+          if(fieldIterator.inSubField()) return;
+          fieldIterator.update();
+        },
+        rate: fieldSpeed
+      },
+      // Sub field loop
+      {
+        callback: () => {
+          if(!fieldIterator.inSubField()) return;
+          fieldIterator.update();
+        },
+        rate: fieldSpeed / 2
+      }
+    ]
   );
 
   onMount(() => {

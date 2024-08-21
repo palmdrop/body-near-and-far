@@ -1,35 +1,36 @@
-type Options = {
-  rate: number,
-  subRate: number,
-}
-
-type LoopCallback = {
+type Loop = {
   rate: number,
   callback: (delta: number) => void,
 }
 
-export const createLoop = (callback: (delta: number) => void, { 
-  rate, 
-  subRate 
-}: Options) => {
-
+export const createLoops = (loops: Loop[]) => {
   let animationFrame: number;
-  let then = Date.now();
+
+  let thens: number[];
+
+  const setThens = () => {
+    thens = Array(loops.length).fill(Date.now());
+  }
 
   const animate = () => {
     const now = Date.now();
-    const delta = now - then;
 
-    if(delta > rate) {
-      then = now - (delta % rate);
-      callback(delta);
-    }
+    loops.forEach(({ callback, rate }, i) => {
+      const then = thens[i];
+      const delta = now - then;
+
+      if(delta > rate) {
+        thens[i] = now - (delta % rate);
+        callback(delta);
+      }
+    });
 
     animationFrame = requestAnimationFrame(animate);
   }
 
   const start = () => {
-    then = Date.now();
+    debugger
+    setThens();
     animate();
   }
 
