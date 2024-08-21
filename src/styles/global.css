@@ -45,12 +45,6 @@ body, .root {
   filter: none;
 }
 
-@media screen and (min-width: 600px) {
-  .filtered {
-    filter: url(#threshold) blur(clamp(0.0px, 0.045em, 1.0px)) contrast(140%);
-  }
-}
-
 main {
   max-width: 1000px;
 }
@@ -171,6 +165,7 @@ main {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, 33.3333%);
+  gap: 1ch;
 
   text-align: justify;
   font-size: 0.7em;
@@ -247,3 +242,12 @@ aside button::before {
   content: "[ ";
 }
 
+@media screen and (min-width: 600px) {
+  .filtered {
+    filter: url(#threshold) blur(clamp(0.0px, 0.045em, 1.0px)) contrast(140%);
+  }
+
+  .sequences {
+    gap: 0.0em;
+  }
+}
