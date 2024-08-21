@@ -3,14 +3,15 @@
   --font-sans: Helvetica, Arial, sans-serif;
   --font-accent: 'Brush Script MT', cursive, var(--font-serif);
 
-  --font-family: Helvetica, Arial, sans-serif;
-
   --max-font-size: 40px;
   --min-font-size: 16px;
 
   --font-size: clamp(var(--min-font-size), 3vw, var(--max-font-size));
-
   --edge-margin: 0.0em;
+
+  --bg: white;
+  --fg: black;
+  --primary: rgb(207, 255, 16);
 }
 
 html {
@@ -56,10 +57,10 @@ main {
 .center-piece {
   position: fixed;
   /*
-  background-color: black;
-  color: white;
+  background-color: var(--fg);
+  color: var(--bg);
   */
-  background-color: rgb(207, 255, 16);
+  background-color: var(--primary);
   box-shadow: 
     0.3em 0.2em 0.3em -0.1em rgba(0, 0, 0, 0.588),
     0.0em 0.0em 0.2em 0.1em rgba(79, 107, 2, 0.354);
@@ -197,12 +198,12 @@ main {
 }
 
 .section span {
-  text-shadow: 0px 0px 0px white;
+  text-shadow: 0px 0px 0px var(--bg);
   transition: 200ms;
 }
 
 .section .active {
-  text-shadow: 0px 0px 0.15em black;
+  text-shadow: 0px 0px 0.15em var(--fg);
 }
 
 .section li:nth-child(odd) {
@@ -222,24 +223,55 @@ aside {
   bottom: 0;
   left: 0;
 
-  background-color: white;
-  padding: 1em;
+  padding: 0.5em;
+
+  width: 100%;
+  max-width: 300px;
 }
 
 aside button {
   font-family: var(--font-serif);
-  padding: 0.25em;
+  padding: 0.15em;
+  margin: 0.15em;
 
   cursor: pointer;
   font-style: italic;
 }
 
-aside button::after { 
-  content: " ]";
+.controller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-shadow: 0px 0px 0.1em var(--fg);
 }
 
-aside button::before { 
-  content: "[ ";
+.progress {
+  width: 100%;
+  height: 0.5em;
+
+  background-color: var(--bg);
+  box-shadow: 
+    0px 0px 0.1em var(--fg),
+    inset 0px 0px 0.1em var(--fg);
+
+  border-radius: 0.2em;
+  overflow: hidden;
+}
+
+.progress .bar {
+  height: 100%;
+
+  background-color: var(--primary);
+  width: calc(100% * var(--value));
+
+  transition: 0.15s;
+
+  box-shadow: 
+    0px 0px 0.1em var(--primary),
+    inset 0px 0px 0.1em var(--fg);
+
+  border-radius: inherit;
 }
 
 @media screen and (min-width: 600px) {

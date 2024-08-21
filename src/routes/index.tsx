@@ -3,18 +3,20 @@ import { useSearchParams } from "@solidjs/router";
 import { createEffect, createMemo, createSignal, onCleanup, onMount, Show } from "solid-js";
 import { Filter } from "~/assets/MorphFilter";
 import { Composite } from "~/components/composite/Composite";
+import Controller from "~/components/controller/Controller";
 import { SequenceRenderer } from "~/components/sequence/SequenceRenderer";
 import { createLinkedIterator } from "~/core";
 import { bodyField } from "~/data/field/body";
 import { sequenceLinks, sequences } from "~/data/sequence";
+import { easeInOutQuart } from "~/utils/easing";
 import { createFieldIterator } from "~/utils/field";
 import { createLoops } from "~/utils/loop";
 import { sequenceChangeCallback } from "~/utils/sequence";
 import { indicesFromURL, indicesToUrlHash } from "~/utils/url";
 
 // TODO: make slower
-const sequenceSpeed = 1000;
-const fieldSpeed = 500;
+const sequenceSpeed = 5000;
+const fieldSpeed = 2500;
 // const linkProbability = 0.5;
 const linkProbability = 1.0;
 
@@ -39,13 +41,25 @@ export default function Root() {
     startIndices[sequences.length], 
   );
 
+  const [delta, setDelta] = createSignal(0);
+
   const { start, stop } = createLoops(
     [
+      // Delta loop
+      {
+        callback: delta => {
+          setDelta(easeInOutQuart(delta / sequenceSpeed));
+        },
+        rate: sequenceSpeed,
+        constant: true
+      },
       // Linked sequence loop
       {
-        callback: () => {
+        callback: delta => {
           linkedSequenceIterator.update();
           fieldIterator.update();
+
+          setDelta(delta / sequenceSpeed);
         },
         rate: sequenceSpeed
       },
@@ -149,16 +163,11 @@ export default function Root() {
         </div>
       </main>
       <aside>
-        <button
-          onClick={toggle}
-        >
-          <Show
-            when={isRunning()}
-            fallback={<span>Start</span>}
-          >
-            <span>Stop</span>  
-          </Show>
-        </button>
+        <Controller
+          running={isRunning()}
+          onToggleRunning={toggle}
+          delta={delta()}
+        />
       </aside>
     </div>
   );
