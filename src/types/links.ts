@@ -10,7 +10,6 @@ export type SequenceLinks = Map<
   Link[]
 >;
 
-export type SequenceLineVisits = Map<
-  `${number}.${number}`, // #sequence.#line
-  Date
+export type SequenceLineVisits = Set<
+  `${number}.${number}` // #sequence.#line
 >;

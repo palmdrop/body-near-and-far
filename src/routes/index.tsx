@@ -14,7 +14,8 @@ import { indicesFromURL, indicesToUrlHash } from "~/utils/url";
 // TODO: make slower
 const sequenceSpeed = 5000;
 const fieldSpeed = 2000;
-const linkProbability = 0.5;
+// const linkProbability = 0.5;
+const linkProbability = 1.0;
 
 export default function Root() {
   const startIndices = indicesFromURL();

@@ -10,9 +10,6 @@ type Options = {
   allowSelfLinks?: boolean,
 }
 
-// NOTE: avoid following links to lines that have been used recently
-// NOTE: and then add a cooldown to avoid the same sequence being moved too often? or skip that?
-
 const getAvailableLinks = (
   sequenceLinks: Link[],
   visitedSequences: number[],
@@ -28,14 +25,13 @@ const getAvailableLinks = (
   );
 
   if(unvisited.length) {
-    console.log("unvisited", unvisited);
     return unvisited;
   }
 
-  console.log("cleared", sequenceLinks.map(({ sequence, line }) => `${sequence}.${line}`));
-  sequenceLinks.forEach(
+  availableLinks.forEach(
     ({ sequence, line }) => visitedLines.delete(`${sequence}.${line}`)
   );
+
 
   return availableLinks;
 }
@@ -55,6 +51,8 @@ const followLink = (
   if(!lineLinks) return undefined;
 
   const linkKey = randomElement(lineLinks);
+  if(!linkKey) return undefined;
+
   const sequenceLinks = links.get(linkKey);
 
   if(!sequenceLinks) return undefined;
@@ -69,7 +67,7 @@ const followLink = (
 
   const link = randomElement(availableLinks);
 
-  visitedLines.set(`${link.sequence}.${link.line}`, new Date());
+  visitedLines.add(`${link.sequence}.${link.line}`);
 
   return {
     ...link,
@@ -95,7 +93,7 @@ export const createLinkedIterator = (
     () => createSignal(0)
   );
 
-  const visitedLines: SequenceLineVisits = new Map();
+  const visitedLines: SequenceLineVisits = new Set();
 
   onMount(() => {
     lineIndices.forEach(

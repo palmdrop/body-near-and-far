@@ -1,7 +1,7 @@
 import { earlyToLateSequence } from "./early-to-late";
 import { nearToFarSequence } from "./near-to-far";
 import { loopToUnloopSequence } from "./loop-to-unloop";
-import { SequenceLinks, SequenceLineVisits } from "~/types/links";
+import { SequenceLinks } from "~/types/links";
 import { Sequence } from "~/types/sequence";
 
 export const sequences = [
