@@ -10,8 +10,11 @@ export const createLoops = (loops: Loop[]) => {
 
   let thens: number[];
 
-  const setThens = () => {
-    thens = Array(loops.length).fill(Date.now());
+  const setThens = (thenAspect = 1) => {
+    // TODO: set each then to a fraction of the total rate! i.e 0 becomes now - rate, n becomes now - rate * (1 - n)
+    const now = Date.now();
+    // thens = Array(loops.length).fill(now);
+    thens = loops.map(({ rate }) => now - rate * (1 - thenAspect));
   }
 
   setThens();
@@ -34,9 +37,9 @@ export const createLoops = (loops: Loop[]) => {
     animationFrame = requestAnimationFrame(animate);
   }
 
-  const start = () => {
+  const start = (thenAspect?: number) => {
     // TODO: Store delta? make sure timer is preserved between pauses?
-    setThens();
+    setThens(thenAspect);
     animate();
   }
 

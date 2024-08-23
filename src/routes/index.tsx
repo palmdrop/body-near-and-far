@@ -110,7 +110,12 @@ export default function Root() {
     const running = isRunning();
     setIsRunning(!running);
     setSearchParams({ running: String(!running) });
-    !running ? start() : stop();
+    if(!running) {
+      start(0);
+    } else {
+      stop();
+      setDelta(1);
+    }
   }
 
   onCleanup(() => {
@@ -167,6 +172,7 @@ export default function Root() {
           running={isRunning()}
           onToggleRunning={toggle}
           delta={delta()}
+          index={index()}
         />
       </aside>
     </div>

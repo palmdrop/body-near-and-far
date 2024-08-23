@@ -4,7 +4,9 @@ export const indicesToUrlHash = (
   fieldIndex: number,
   ...sequenceIndices: number[]
 ) => {
-  return `${sequenceIndices.map(index => index + 1).join(".")}.(${fieldIndex + 1})`;
+  const paddedSequenceIndices = sequenceIndices.map(index => `${index + 1}`.padStart(3, "0"));
+  const paddedFieldIndex = String(fieldIndex + 1).padStart(3, "0");
+  return `${paddedSequenceIndices.join(".")}.(${paddedFieldIndex})`;
 }
 
 export const parseIndicesFromString = (indicesString: string) => {

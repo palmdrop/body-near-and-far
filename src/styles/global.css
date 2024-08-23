@@ -9,9 +9,13 @@
   --font-size: clamp(var(--min-font-size), 3vw, var(--max-font-size));
   --edge-margin: 0.0em;
 
-  --bg: white;
-  --fg: black;
-  --primary: rgb(207, 255, 16);
+  --white: white;
+  --black: black;
+  --yellow: rgb(207, 255, 16);
+
+  --bg: var(--white);
+  --fg: var(--black);
+  --primary: var(--yellow);
 }
 
 html {
@@ -166,7 +170,6 @@ main {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, 33.3333%);
-  gap: 1ch;
 
   text-align: justify;
   font-size: 0.7em;
@@ -178,6 +181,8 @@ main {
 
   height: 100%;
   max-height: calc(100vh - var(--edge-margin) * 2);
+
+  padding: 0.5ch;
 }
 
 .section {
@@ -221,57 +226,115 @@ main {
 aside {
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: 50%;
+
+  transform: translate(-50%);
 
   padding: 0.5em;
 
-  width: 100%;
-  max-width: 300px;
+  border: 0.05em solid var(--fg);
+  border-bottom: none;
+  background-color: rgba(255, 255, 255, 0.697);
+  backdrop-filter: blur(2px);
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
 }
 
 aside button {
   font-family: var(--font-serif);
-  padding: 0.15em;
-  margin: 0.15em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   cursor: pointer;
-  font-style: italic;
+
+  width: 1.5em;
 }
 
 .controller {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   text-shadow: 0px 0px 0.1em var(--fg);
+  filter: url(#threshold) blur(0.02em);
+  font-size: 1.1em;
+}
+
+.progress-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .progress {
+  display: inline-block;
   width: 100%;
-  height: 0.5em;
+  --height: 0.75em;
+  height: var(--height);
 
-  background-color: var(--bg);
+  margin: 0em calc(var(--height) * 1.25);
+
   box-shadow: 
     0px 0px 0.1em var(--fg),
     inset 0px 0px 0.1em var(--fg);
 
+  border: 1px solid var(--fg);
   border-radius: 0.2em;
-  overflow: hidden;
+  position: relative;
+}
+
+.progress::before, .progress::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+
+  border: 1px solid var(--fg);
+  box-shadow: inherit;
+  z-index: 1;
+  border-radius: 100%;
+
+  aspect-ratio: 1;
+
+  transition: var(--edge-class-fadeout);
+}
+
+.progress::before {
+  left: 0;
+  transform: translate(-125%, 0);
+}
+
+.progress::after {
+  right: 0;
+  transform: translate(125%, 0);
+}
+
+.progress.start::before, .progress.end::after {
+  background-color: var(--fg);
+  box-shadow: 
+    0px 0px 0.15em var(--fg),
+    inset 0px 0px 0.2em var(--bg);
 }
 
 .progress .bar {
-  height: 100%;
+  display: inline-block;
+  height: 50%;
 
-  background-color: var(--primary);
+  position: absolute;
+
+  top: 50%;
+  transform: translate(0, -50%);
+
   width: calc(100% * var(--value));
+  border: 1px solid var(--fg);
 
   transition: 0.15s;
 
   box-shadow: 
-    0px 0px 0.1em var(--primary),
+    0px 0px 0.1em var(--bg),
     inset 0px 0px 0.1em var(--fg);
 
-  border-radius: inherit;
+  border-radius: 1em;
+}
+
+.controller .index {
+  width: 100%;
 }
 
 @media screen and (min-width: 600px) {
@@ -279,7 +342,19 @@ aside button {
     filter: url(#threshold) blur(clamp(0.0px, 0.045em, 1.0px)) contrast(140%);
   }
 
-  .sequences {
-    gap: 0.0em;
+  .sequence {
+    padding: 0;
+  }
+
+  aside {
+    left: 0;
+    transform: none;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  aside {
+    border: none;
+    backdrop-filter: none;
   }
 }
