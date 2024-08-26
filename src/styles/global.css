@@ -364,7 +364,7 @@ aside button {
 }
 
 @media screen and (min-width: 600px) {
-  .filtered {
+  .sequence.filtered, .composite.filtered {
     filter: url(#threshold) blur(clamp(0.0px, 0.045em, 1.0px)) contrast(140%);
   }
 
@@ -393,10 +393,8 @@ aside button {
     left: 0;
     bottom: 0;
 
-    width: 11em;
-
-    --fg: var(--black);
-    --bg: var(--white);
+    width: auto;
+    padding: 0.25em 0.5em;
   }
 
   main {
