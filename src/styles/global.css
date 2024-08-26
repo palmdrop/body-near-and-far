@@ -16,6 +16,8 @@
   --bg: var(--white);
   --fg: var(--black);
   --primary: var(--yellow);
+
+  --aside-height: 3em;
 }
 
 html {
@@ -27,10 +29,11 @@ html {
 
 body, .root {
   max-width: 100vw;
-  max-height: 100vh;
+  height: 100vh;
   overflow: hidden;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
@@ -52,6 +55,7 @@ body, .root {
 
 main {
   max-width: 1000px;
+  height: calc(100vh - var(--aside-height));
 }
 
 *, *::before, *::after {
@@ -169,6 +173,7 @@ main {
 .sequences {
   display: grid;
   width: 100%;
+  height: 100%;
   grid-template-columns: repeat(3, 33.3333%);
 
   text-align: justify;
@@ -224,20 +229,31 @@ main {
 }
 
 aside {
+  /*
   position: fixed;
   bottom: 0;
   left: 50%;
-
   transform: translate(-50%);
+  */
+  position: relative;
+  width: 100%;
 
   padding: 0.5em;
 
-  border: 0.05em solid var(--fg);
-  border-bottom: none;
-  background-color: rgba(255, 255, 255, 0.697);
-  backdrop-filter: blur(2px);
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
+  display: flex;
+  justify-content: center;
+
+  /*
+  --bg: var(--black);
+  --fg: var(--white);
+  */
+
+  border-top: 3px solid black;
+
+  color: var(--fg);
+  background-color: var(--bg);
+
+  font-size: 1.1em;
 }
 
 aside button {
@@ -253,9 +269,8 @@ aside button {
 }
 
 .controller {
-  text-shadow: 0px 0px 0.1em var(--fg);
+  text-shadow: 0px 0px 0.05em var(--fg);
   filter: url(#threshold) blur(0.02em);
-  font-size: 1.1em;
 }
 
 .progress-wrapper {
@@ -346,15 +361,30 @@ aside button {
     padding: 0;
   }
 
+  /*
   aside {
     left: 0;
     transform: none;
   }
+  */
 }
 
 @media screen and (min-width: 1800px) {
   aside {
     border: none;
     backdrop-filter: none;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    width: 11em;
+
+    --fg: var(--black);
+    --bg: var(--white);
+  }
+
+  main {
+    height: 100%;
   }
 }
