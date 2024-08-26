@@ -48,7 +48,9 @@ export default function Root() {
       // Delta loop
       {
         callback: delta => {
-          setDelta(easeInOutQuart(delta / sequenceSpeed));
+          setDelta(
+            Math.min(Math.max(easeInOutQuart(delta / sequenceSpeed), 0), 1)
+          );
         },
         rate: sequenceSpeed,
         constant: true
@@ -146,7 +148,12 @@ export default function Root() {
   });
 
   return (
-    <div class={`root ${visible() ? "visible" : ""}`}>
+    <div 
+      classList={{
+        root: true,
+        visible: visible()
+      }}
+    >
       <Filter />
       <main>
         <Title>{`${fieldIterator.word()?.toUpperCase()} | Nära och långt från kroppen`}</Title> 

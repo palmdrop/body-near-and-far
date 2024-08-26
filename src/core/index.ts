@@ -85,7 +85,6 @@ const followLink = (
   return undefined;
 }
 
-// NOTE: make it an actual iterator, letting the interval be controlled from consumer?
 export const createLinkedIterator = (
   sequences: Sequence[],
   links: SequenceLinks,

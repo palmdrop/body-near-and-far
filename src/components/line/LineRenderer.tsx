@@ -20,7 +20,12 @@ export const LineRenderer: Component<Props> = props => {
 
         return (
           <span 
-            class={`${emphasized ? "emphasized" : ""} ${props.active ? "active" : ""}`}
+            classList={{
+              word: true,
+              emphasized,
+              active: props.active,
+              filtered: props.active
+            }}
           >
             {word}{!hyphenated ? " " : ""}
           </span>
