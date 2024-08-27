@@ -4,21 +4,22 @@ export const earlyToLateSequence: Sequence = [
     "title": "",
     "lines": [
       {
-        "content": "sista stöt",
+        "content": "en sista stöt",
         "links": [
           "slut"
         ],
         "index": 0
       },
       {
-        "content": "din utstötta massa",
+        "content": "din avlägsnade massa",
         "links": [
+          "utstött",
           "massa"
         ],
         "index": 1
       },
       {
-        "content": "en intakt kropp",
+        "content": "intakta kropp",
         "links": [
           "intakt",
           "sammanhållen"
@@ -33,7 +34,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 3
       },
       {
-        "content": "nedtrampat gräs",
+        "content": "i nedstampat gräs",
         "links": [
           "gräs",
           "nött"
@@ -41,7 +42,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 4
       },
       {
-        "content": "kvider och kippar",
+        "content": "du kvider och kippar",
         "links": [
           "kippa",
           "andas"
@@ -62,14 +63,14 @@ export const earlyToLateSequence: Sequence = [
         "index": 7
       },
       {
-        "content": "kväkande skri",
+        "content": "med kväkande skrik",
         "links": [
           "skrik"
         ],
         "index": 8
       },
       {
-        "content": "blind förvirring",
+        "content": "i blind förvirring",
         "links": [],
         "index": 9
       },
@@ -82,7 +83,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 10
       },
       {
-        "content": "ditt eget oljud",
+        "content": "och ditt eget oljud",
         "links": [
           "röst"
         ],
@@ -105,7 +106,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 13
       },
       {
-        "content": "skär genom sorlet",
+        "content": "skär genom sorl",
         "links": [
           "sorl",
           "social"
@@ -121,7 +122,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 15
       },
       {
-        "content": "söker syre och famnvärme",
+        "content": "hittar syre och en famn",
         "links": [
           "syre",
           "famn",
@@ -141,7 +142,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 17
       },
       {
-        "content": "organen ålar och maler",
+        "content": "organen vrider och maler",
         "links": [
           "mala",
           "rörelse",
@@ -158,14 +159,14 @@ export const earlyToLateSequence: Sequence = [
         "index": 19
       },
       {
-        "content": "rapar och skit",
+        "content": "rap och avföring",
         "links": [
           "skit"
         ],
         "index": 20
       },
       {
-        "content": "piss och spy",
+        "content": "piss och spya",
         "links": [
           "piss",
           "urin",
@@ -183,7 +184,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 22
       },
       {
-        "content": "flockens rörelse i ovan",
+        "content": "flockens rörelse i skyn",
         "links": [
           "form",
           "rörelse",
@@ -201,7 +202,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 24
       },
       {
-        "content": "sjunger för dig",
+        "content": "sjunger visor för dig",
         "links": [
           "sång",
           "musik"
@@ -209,7 +210,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 25
       },
       {
-        "content": "klär dig för framtid",
+        "content": "klär dig för framtiden",
         "links": [
           "kläder",
           "framtid"
@@ -225,7 +226,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 27
       },
       {
-        "content": "skavande saknad",
+        "content": "tomt skav",
         "links": [
           "saknad",
           "instinkt"
@@ -233,7 +234,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 28
       },
       {
-        "content": "nytt läte",
+        "content": "ett nytt läte",
         "links": [
           "skrik"
         ],
@@ -248,7 +249,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 30
       },
       {
-        "content": "spelar skuggspel",
+        "content": "spelar mörkerspel",
         "links": [
           "spel",
           "dröm"
@@ -256,14 +257,14 @@ export const earlyToLateSequence: Sequence = [
         "index": 31
       },
       {
-        "content": "i spegeln",
+        "content": "i spegelglas",
         "links": [
           "spegel"
         ],
         "index": 32
       },
       {
-        "content": "drömrummet igen",
+        "content": "öppnar drömrummet igen",
         "links": [
           "dröm",
           "rum",
@@ -273,7 +274,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 33
       },
       {
-        "content": "trygg betingning",
+        "content": "där trygg betingning",
         "links": [
           "återkoppla",
           "loop"
@@ -288,7 +289,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 35
       },
       {
-        "content": "surrad i perfekt substrat",
+        "content": "upphängd i perfekt substrat",
         "links": [
           "fåll",
           "fälla"
@@ -337,7 +338,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 41
       },
       {
-        "content": "dimmigt dis",
+        "content": "oljigt dis",
         "links": [
           "dimma",
           "blå",
@@ -366,14 +367,14 @@ export const earlyToLateSequence: Sequence = [
     "title": "",
     "lines": [
       {
-        "content": "tuftad matta",
+        "content": "på tuftad matta",
         "links": [
           "matta"
         ],
         "index": 44
       },
       {
-        "content": "och ekbord",
+        "content": "och under ekbord",
         "links": [
           "bord"
         ],
@@ -389,7 +390,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 46
       },
       {
-        "content": "skinnets korttidsminne",
+        "content": "se skinnets korttidsminne",
         "links": [
           "skinn",
           "hud",
@@ -410,7 +411,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 48
       },
       {
-        "content": "sorl överallt runt",
+        "content": "sorl runtom",
         "links": [
           "sorl",
           "vuxen",
@@ -421,7 +422,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 49
       },
       {
-        "content": "rummets oval",
+        "content": "i rummets oval",
         "links": [
           "rum"
         ],
@@ -510,7 +511,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 60
       },
       {
-        "content": "barn i andra kärl",
+        "content": "till barn i andra kärl",
         "links": [
           "barn",
           "kärl",
@@ -595,7 +596,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 69
       },
       {
-        "content": "och doft",
+        "content": "och en doft",
         "links": [
           "doft",
           "lukt",
@@ -629,7 +630,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 73
       },
       {
-        "content": "armar växer",
+        "content": "armar som växer",
         "links": [
           "arm",
           "växa",
@@ -655,7 +656,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 76
       },
       {
-        "content": "fönster mot kullen",
+        "content": "utsikt mot kullen",
         "links": [
           "fönster",
           "gräs",
@@ -674,7 +675,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 78
       },
       {
-        "content": "slänggungans gnissel",
+        "content": "gnissel från slänggungan",
         "links": [
           "dissociation",
           "verklighet",
@@ -684,7 +685,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 79
       },
       {
-        "content": "lager sand över sjudande panik",
+        "content": "sandlager döljer sjudande panik",
         "links": [
           "panik",
           "ångest"
@@ -709,7 +710,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 82
       },
       {
-        "content": "tänjer på blixtglömska",
+        "content": "tänjer ut blixtglömska",
         "links": [
           "elastisk",
           "förlängd",
@@ -729,7 +730,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 84
       },
       {
-        "content": "välkänd substans",
+        "content": "denna välkända substans",
         "links": [
           "substans",
           "minne"
@@ -778,7 +779,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 89
       },
       {
-        "content": "blir det kaviar",
+        "content": "blir till kaviar",
         "links": [],
         "index": 90
       },
@@ -802,7 +803,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 91
       },
       {
-        "content": "i träd och på mark",
+        "content": "i gårdens ekosystem",
         "links": [
           "träd",
           "mark"
@@ -810,7 +811,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 92
       },
       {
-        "content": "krälar ett knappt steg bort",
+        "content": "krälar knappt ett steg bort",
         "links": [
           "kräla",
           "dimension",
@@ -834,7 +835,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 95
       },
       {
-        "content": "bäckalivets vardag",
+        "content": "i bäckalivets vardag",
         "links": [
           "bäck",
           "liv",
@@ -875,7 +876,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 100
       },
       {
-        "content": "mellan flak",
+        "content": "från flak till flak",
         "links": [
           "is",
           "yta"
@@ -900,11 +901,19 @@ export const earlyToLateSequence: Sequence = [
         "index": 103
       },
       {
+        "content": "till botten",
+        "links": [
+          "botten",
+          "vatten"
+        ],
+        "index": 104
+      },
+      {
         "content": "men ni är odödliga",
         "links": [
           "död"
         ],
-        "index": 104
+        "index": 105
       },
       {
         "content": "fantasidjur på studsmattor",
@@ -912,19 +921,19 @@ export const earlyToLateSequence: Sequence = [
           "fantasi",
           "fantasidjur"
         ],
-        "index": 105
+        "index": 106
       },
       {
-        "content": "ni skriver regler",
+        "content": "komponerar regler",
         "links": [],
-        "index": 106
+        "index": 107
       },
       {
         "content": "dikterar",
         "links": [
           "diktera"
         ],
-        "index": 107
+        "index": 108
       },
       {
         "content": "bygger borg och lerkruka",
@@ -933,7 +942,7 @@ export const earlyToLateSequence: Sequence = [
           "kruka",
           "keramik"
         ],
-        "index": 108
+        "index": 109
       },
       {
         "content": "andas möglande hö",
@@ -943,40 +952,40 @@ export const earlyToLateSequence: Sequence = [
           "gräs",
           "spor"
         ],
-        "index": 109
+        "index": 110
       },
       {
-        "content": "vit dimma",
+        "content": "dammig sporslöja",
         "links": [
           "dis",
           "dimma",
           "spor"
         ],
-        "index": 110
+        "index": 111
       },
       {
-        "content": "sporer i sinusgångar",
+        "content": "växer i sinusgångar",
         "links": [
           "spor",
           "lunga",
           "andas",
           "andning"
         ],
-        "index": 111
+        "index": 112
       },
       {
         "content": "i ert blod",
         "links": [
           "blod"
         ],
-        "index": 112
+        "index": 113
       },
       {
         "content": "lager på lager",
         "links": [
           "lager"
         ],
-        "index": 113
+        "index": 114
       },
       {
         "content": "snö under hö",
@@ -985,15 +994,15 @@ export const earlyToLateSequence: Sequence = [
           "hö",
           "minne"
         ],
-        "index": 114
+        "index": 115
       },
       {
-        "content": "bevarat i månader",
+        "content": "bevaras i månader",
         "links": [
           "konserverad",
           "tid"
         ],
-        "index": 115
+        "index": 116
       },
       {
         "content": "aldrig provat kokain",
@@ -1002,19 +1011,19 @@ export const earlyToLateSequence: Sequence = [
           "knark",
           "drog"
         ],
-        "index": 116
+        "index": 117
       },
       {
         "content": "men ni kastar snöboll",
         "links": [
           "snö"
         ],
-        "index": 117
+        "index": 118
       },
       {
-        "content": "under sommar",
+        "content": "under sommaren",
         "links": [],
-        "index": 118
+        "index": 119
       },
       {
         "content": "",
@@ -1033,7 +1042,7 @@ export const earlyToLateSequence: Sequence = [
           "spillra",
           "jack"
         ],
-        "index": 119
+        "index": 120
       },
       {
         "content": "medicin och verktyg",
@@ -1042,7 +1051,7 @@ export const earlyToLateSequence: Sequence = [
           "våld",
           "medicin"
         ],
-        "index": 120
+        "index": 121
       },
       {
         "content": "outvecklad och inflammerad kuk",
@@ -1050,12 +1059,12 @@ export const earlyToLateSequence: Sequence = [
           "kuk",
           "penis"
         ],
-        "index": 121
+        "index": 122
       },
       {
         "content": "blind gråt",
         "links": [],
-        "index": 122
+        "index": 123
       },
       {
         "content": "lugna ord",
@@ -1063,19 +1072,19 @@ export const earlyToLateSequence: Sequence = [
           "lugn",
           "ord"
         ],
-        "index": 123
+        "index": 124
       },
       {
         "content": "*\"nästan* *klart\"*",
         "links": [],
-        "index": 124
+        "index": 125
       },
       {
         "content": "ett svepande ingrepp",
         "links": [
           "rörelse"
         ],
-        "index": 125
+        "index": 126
       },
       {
         "content": "steril vätska",
@@ -1083,26 +1092,28 @@ export const earlyToLateSequence: Sequence = [
           "ren",
           "smuts"
         ],
-        "index": 126
-      },
-      {
-        "content": "stöter ut",
-        "links": [],
         "index": 127
       },
       {
-        "content": "en ovälkommen flytning",
+        "content": "bortstötandet",
         "links": [
-          "flytning"
+          "utstött"
         ],
         "index": 128
       },
       {
-        "content": "minns inget",
+        "content": "av en ovälkommen flytning",
+        "links": [
+          "flytning"
+        ],
+        "index": 129
+      },
+      {
+        "content": "halvt undanstuvad",
         "links": [
           "minne"
         ],
-        "index": 129
+        "index": 130
       },
       {
         "content": "sjuk eller frisk",
@@ -1110,7 +1121,7 @@ export const earlyToLateSequence: Sequence = [
           "sjuk",
           "frisk"
         ],
-        "index": 130
+        "index": 131
       },
       {
         "content": "i stammens dis",
@@ -1119,27 +1130,27 @@ export const earlyToLateSequence: Sequence = [
           "hjärnstam",
           "hjärna"
         ],
-        "index": 131
+        "index": 132
       },
       {
         "content": "bedrövlig ytspänning",
         "links": [
           "yta"
         ],
-        "index": 132
+        "index": 133
       },
       {
-        "content": "frigjord",
+        "content": "nu frigjord",
         "links": [
           "frigörelse",
           "frihet"
         ],
-        "index": 133
+        "index": 134
       },
       {
         "content": "bedövad",
         "links": [],
-        "index": 134
+        "index": 135
       },
       {
         "content": "",
@@ -1152,12 +1163,12 @@ export const earlyToLateSequence: Sequence = [
     "title": "",
     "lines": [
       {
-        "content": "hon på trampolin",
+        "content": "hon står på trampolin",
         "links": [
           "träning",
           "diktera"
         ],
-        "index": 135
+        "index": 136
       },
       {
         "content": "trampar på plats",
@@ -1165,7 +1176,7 @@ export const earlyToLateSequence: Sequence = [
           "trampa",
           "träning"
         ],
-        "index": 136
+        "index": 137
       },
       {
         "content": "vi trampar vatten",
@@ -1173,7 +1184,7 @@ export const earlyToLateSequence: Sequence = [
           "trampa",
           "vatten"
         ],
-        "index": 137
+        "index": 138
       },
       {
         "content": "bröstvårtor över ytan",
@@ -1183,15 +1194,15 @@ export const earlyToLateSequence: Sequence = [
           "yta",
           "vatten"
         ],
-        "index": 138
+        "index": 139
       },
       {
-        "content": "mjölksyra i gommen",
+        "content": "mjölksyra i gomen",
         "links": [
           "mjölksyra",
           "mun"
         ],
-        "index": 139
+        "index": 140
       },
       {
         "content": "i kindernas hörn",
@@ -1199,14 +1210,14 @@ export const earlyToLateSequence: Sequence = [
           "käft",
           "bete"
         ],
-        "index": 140
+        "index": 141
       },
       {
         "content": "i tandkött",
         "links": [
           "tand"
         ],
-        "index": 141
+        "index": 142
       },
       {
         "content": "som du borstar sönder",
@@ -1216,7 +1227,7 @@ export const earlyToLateSequence: Sequence = [
           "tvång",
           "oro"
         ],
-        "index": 142
+        "index": 143
       },
       {
         "content": "malande rörelser",
@@ -1225,7 +1236,7 @@ export const earlyToLateSequence: Sequence = [
           "rörelse",
           "oro"
         ],
-        "index": 143
+        "index": 144
       },
       {
         "content": "tramp tramp tramp",
@@ -1233,7 +1244,7 @@ export const earlyToLateSequence: Sequence = [
           "trampa",
           "loop"
         ],
-        "index": 144
+        "index": 145
       },
       {
         "content": "sväller mellan benen",
@@ -1244,7 +1255,7 @@ export const earlyToLateSequence: Sequence = [
           "kuk",
           "penis"
         ],
-        "index": 145
+        "index": 146
       },
       {
         "content": "buken och skrevet",
@@ -1252,26 +1263,26 @@ export const earlyToLateSequence: Sequence = [
           "buk",
           "skrev"
         ],
-        "index": 146
+        "index": 147
       },
       {
         "content": "pressar närmare och ut",
         "links": [],
-        "index": 147
+        "index": 148
       },
       {
         "content": "ovälkommet skalv",
         "links": [
           "skälva"
         ],
-        "index": 148
+        "index": 149
       },
       {
         "content": "du kommer i poolen",
         "links": [
           "utlösning"
         ],
-        "index": 149
+        "index": 150
       },
       {
         "content": "en första orgasm",
@@ -1279,7 +1290,7 @@ export const earlyToLateSequence: Sequence = [
           "orgasm",
           "utlösning"
         ],
-        "index": 150
+        "index": 151
       },
       {
         "content": "tramp tramp tramp",
@@ -1288,14 +1299,14 @@ export const earlyToLateSequence: Sequence = [
           "loop",
           "återkoppla"
         ],
-        "index": 151
+        "index": 152
       },
       {
         "content": "späder ut din säd",
         "links": [
           "utlösning"
         ],
-        "index": 152
+        "index": 153
       },
       {
         "content": "säden dör i kloret",
@@ -1303,7 +1314,7 @@ export const earlyToLateSequence: Sequence = [
           "död",
           "vatten"
         ],
-        "index": 153
+        "index": 154
       },
       {
         "content": "",
@@ -1320,14 +1331,14 @@ export const earlyToLateSequence: Sequence = [
         "links": [
           "mardröm"
         ],
-        "index": 154
+        "index": 155
       },
       {
         "content": "förvrider kroppen",
         "links": [
           "förvränga"
         ],
-        "index": 155
+        "index": 156
       },
       {
         "content": "*videobiljardens* hemska sektion",
@@ -1336,7 +1347,7 @@ export const earlyToLateSequence: Sequence = [
           "ondska",
           "komponent"
         ],
-        "index": 156
+        "index": 157
       },
       {
         "content": "du vänder bort blicken",
@@ -1345,7 +1356,7 @@ export const earlyToLateSequence: Sequence = [
           "se",
           "öga"
         ],
-        "index": 157
+        "index": 158
       },
       {
         "content": "men ser ändå",
@@ -1354,7 +1365,7 @@ export const earlyToLateSequence: Sequence = [
           "se",
           "öga"
         ],
-        "index": 158
+        "index": 159
       },
       {
         "content": "skräck och kosmisk extas",
@@ -1365,7 +1376,7 @@ export const earlyToLateSequence: Sequence = [
           "extas",
           "orgasm"
         ],
-        "index": 159
+        "index": 160
       },
       {
         "content": "tortyr och massiva betar",
@@ -1376,37 +1387,29 @@ export const earlyToLateSequence: Sequence = [
           "best",
           "monster"
         ],
-        "index": 160
+        "index": 161
       },
       {
         "content": "ansikten som löses upp",
         "links": [
           "förvränga"
         ],
-        "index": 161
+        "index": 162
       },
       {
         "content": "zombie knycker med huvudet",
         "links": [
           "sjuk"
         ],
-        "index": 162
-      },
-      {
-        "content": "enorma ögon eller inga ögon",
-        "links": [
-          "öga",
-          "blick"
-        ],
         "index": 163
       },
       {
-        "content": "en mänsklig rosenbuske",
+        "content": "mänsklig rosenbuske",
         "links": [],
         "index": 164
       },
       {
-        "content": "ouroboros av kroppen",
+        "content": "kroppens ouroboros",
         "links": [
           "loop",
           "återkoppla"
@@ -1431,7 +1434,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 167
       },
       {
-        "content": "bor under ögonlock",
+        "content": "kryper in under ögonlock",
         "links": [
           "öga",
           "ögonlock"
@@ -1620,7 +1623,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 190
       },
       {
-        "content": "förblir en svart skåra",
+        "content": "en svart skåra",
         "links": [
           "intakt",
           "skåra",
@@ -1711,7 +1714,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 200
       },
       {
-        "content": "detta gör vi nu",
+        "content": "vi gör detta nu",
         "links": [],
         "index": 201
       },
@@ -1820,12 +1823,12 @@ export const earlyToLateSequence: Sequence = [
         "index": 213
       },
       {
-        "content": "två kroppars sökande",
+        "content": "två massor söker",
         "links": [],
         "index": 214
       },
       {
-        "content": "värme och smek",
+        "content": "värme och rörelse",
         "links": [
           "värme",
           "rörelse",
@@ -1839,7 +1842,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 216
       },
       {
-        "content": "det får inte ske",
+        "content": "det som inte får ske",
         "links": [
           "tvång"
         ],
@@ -1980,7 +1983,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 233
       },
       {
-        "content": "i kanalen hittar ni",
+        "content": "TV-kanalen rymmer",
         "links": [
           "kanal",
           "skåra",
@@ -2007,7 +2010,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 237
       },
       {
-        "content": "och blanka blickar",
+        "content": "och platta blickar",
         "links": [
           "blick",
           "öga"
@@ -2066,7 +2069,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 245
       },
       {
-        "content": "undanstuvade kanaler",
+        "content": "gömda kanaler",
         "links": [
           "kanal",
           "fåra",
@@ -2181,7 +2184,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 257
       },
       {
-        "content": "karusellen svajar och vrider",
+        "content": "karusellen svajar och snurrar",
         "links": [
           "gunga",
           "vrida",
@@ -2253,21 +2256,21 @@ export const earlyToLateSequence: Sequence = [
     "title": "",
     "lines": [
       {
-        "content": "kroppar i dis",
+        "content": "kropp i dis",
         "links": [
           "dimma"
         ],
         "index": 265
       },
       {
-        "content": "kroppar i väta",
+        "content": "kropp i väta",
         "links": [
           "vätska"
         ],
         "index": 266
       },
       {
-        "content": "kroppar i skärm",
+        "content": "kropp i skärm",
         "links": [
           "skärm",
           "mobil",
@@ -2276,14 +2279,14 @@ export const earlyToLateSequence: Sequence = [
         "index": 267
       },
       {
-        "content": "kroppar i maskin",
+        "content": "kropp i maskin",
         "links": [
           "maskin"
         ],
         "index": 268
       },
       {
-        "content": "kroppar i kropp",
+        "content": "kropp i kropp",
         "links": [
           "intimitet",
           "sex",
@@ -2292,14 +2295,14 @@ export const earlyToLateSequence: Sequence = [
         "index": 269
       },
       {
-        "content": "kroppar i kluster",
+        "content": "kropp i kluster",
         "links": [
           "konstellation"
         ],
         "index": 270
       },
       {
-        "content": "kroppar i andra",
+        "content": "kropp i andra",
         "links": [
           "sex",
           "intimitet"
@@ -2307,7 +2310,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 271
       },
       {
-        "content": "kroppar i älv",
+        "content": "kropp i älv",
         "links": [
           "vatten",
           "flöde"
@@ -2315,7 +2318,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 272
       },
       {
-        "content": "kroppar i fragment",
+        "content": "kropp i fragment",
         "links": [
           "fragment",
           "spillra",
@@ -2324,12 +2327,12 @@ export const earlyToLateSequence: Sequence = [
         "index": 273
       },
       {
-        "content": "kroppar i nystan",
+        "content": "kropp i nystan",
         "links": [],
         "index": 274
       },
       {
-        "content": "kroppar i gödsel",
+        "content": "kropp i gödsel",
         "links": [
           "gödsel",
           "göda",
@@ -2338,7 +2341,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 275
       },
       {
-        "content": "kroppar i sekvens",
+        "content": "kropp i sekvens",
         "links": [
           "serie",
           "process",
@@ -2348,7 +2351,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 276
       },
       {
-        "content": "kroppar i tecken",
+        "content": "kropp i tecken",
         "links": [
           "tecken",
           "mönster",
@@ -2357,17 +2360,21 @@ export const earlyToLateSequence: Sequence = [
         "index": 277
       },
       {
-        "content": "kroppar i tak",
-        "links": [],
+        "content": "kropp i tak",
+        "links": [
+          "skräck"
+        ],
         "index": 278
       },
       {
-        "content": "kroppar i golv",
-        "links": [],
+        "content": "kropp i golv",
+        "links": [
+          "skräck"
+        ],
         "index": 279
       },
       {
-        "content": "kroppar i nät",
+        "content": "kropp i nät",
         "links": [
           "mobil",
           "rhizome"
@@ -2375,7 +2382,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 280
       },
       {
-        "content": "kroppar i jord",
+        "content": "kropp i jord",
         "links": [
           "jord",
           "nedbrytare"
@@ -2383,7 +2390,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 281
       },
       {
-        "content": "kroppar i kropp",
+        "content": "kropp i kropp",
         "links": [
           "sex",
           "intimitet",
@@ -3508,6 +3515,7 @@ export const earlyToLateSequence: Sequence = [
         "content": "i hårbotten",
         "links": [
           "hår",
+          "botten",
           "huvud"
         ],
         "index": 410

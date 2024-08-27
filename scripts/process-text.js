@@ -50,7 +50,9 @@ const processField = async (name, path, outputPath) => {
 
 const processSequence = async path => {
   const data = await fs.readFile(path, "utf8");
-  const lines = data.split("\n");
+  const lines = data
+    .split("\n")
+    .filter(line => !line.startsWith("#"));
 
   const processLine = (rawLine, index) => {
     const trimmedLine = rawLine.trim();

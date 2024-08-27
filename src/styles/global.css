@@ -11,7 +11,16 @@
 
   --white: white;
   --black: black;
+
+  /*
   --yellow: rgb(207, 255, 16);
+  --shadow-yellow:rgba(79, 107, 2, 0.354);
+  --shadow-black: rgba(0, 0, 0, 0.588);
+  */
+  --yellow: rgb(224, 221, 189);
+
+  --shadow-yellow:rgba(112, 114, 104, 0.198);
+  --shadow-black: rgba(0, 0, 0, 0.407);
 
   --bg: var(--white);
   --fg: var(--black);
@@ -72,8 +81,8 @@ main {
   position: fixed;
   background-color: var(--primary);
   box-shadow: 
-    0.3em 0.2em 0.3em -0.1em rgba(0, 0, 0, 0.588),
-    0.0em 0.0em 0.2em 0.1em rgba(79, 107, 2, 0.354);
+    0.3em 0.2em 0.3em -0.1em var(--shadow-black),
+    0.0em 0.0em 0.2em 0.1em var(--shadow-yellow);
 
   font-style: italic;
 
@@ -271,7 +280,7 @@ aside button {
     inset 0px 0px 0.1em var(--fg);
 
   border: 1px solid var(--fg);
-  border-radius: 0.2em;
+  border-radius: 0.4em;
   position: relative;
 }
 
@@ -311,7 +320,7 @@ aside button {
   display: inline-block;
   position: absolute;
 
-  --margin: 0.12em;
+  --margin: 0.2em;
 
   margin: 0em var(--margin);
   height: 50%;
