@@ -311,11 +311,14 @@ aside button {
   display: inline-block;
   position: absolute;
 
+  --margin: 0.12em;
+
+  margin: 0em var(--margin);
   height: 50%;
   top: 50%;
   transform: translate(0, -50%);
 
-  width: calc(100% * var(--value));
+  width: calc((100% - 2 * var(--margin)) * var(--value));
   border: 0.05em solid var(--fg);
 
   transition: 0.15s, background-color 0.5s, box-shadow 0.5s;
