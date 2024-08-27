@@ -14,11 +14,9 @@ import { createLoops } from "~/utils/loop";
 import { sequenceChangeCallback } from "~/utils/sequence";
 import { indicesFromURL, indicesToUrlHash } from "~/utils/url";
 
-// TODO: make slower
-const sequenceSpeed = 5000;
-const fieldSpeed = 2500;
-// const linkProbability = 0.5;
-const linkProbability = 1.0;
+const sequenceSpeed = 6000;
+const fieldSpeed = sequenceSpeed / 2;
+const linkProbability = 0.5;
 
 export default function Root() {
   const startIndices = indicesFromURL();

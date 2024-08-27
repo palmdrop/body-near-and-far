@@ -1,15 +1,20 @@
 kropp
 kött
+protein
 fibrer
-mör
-utmattning
+mör / mörad
+utmattad
 svett
 mjölksyra
 kramp
 sendrag
 stretching
+elastisk
+amorf
 form
 kontur
+kärna
+fyllning
 innehåll
 intakt
 kompakt
@@ -18,28 +23,36 @@ utarmad / utmattad / urholkad
 ihålig
 porös
 tom
+eko
+grotta
+källare
+lager
+proviant
+konserver
+mättad
 fylld
 närhet
-sex
-gung
+samlag
 rytm
-upprepning / betona / pränta in / etsa
+gung
+upprepa / betona / pränta / etsa
 upprätthålla
 repetera
 återkoppla
 feedback
 cykel / kretslopp / spole
-reproduktion / överlevnad / underlevnad / sidoleva / föranleda
-expansion / utbredning / kolonisering / växa
-utrustning / kapprustning / avrustning
+reproducera / överleva / underleva / sidoleva / föranleda
+expandera / utbreda / kolonisera / växa
+utrusta / kapprusta / avrusta
 invasion
 invasiv
 överväldigande
 översålla / belamra / hopa
 myllra
+myra
 stack
 svärm
-brus / larm / sorl / slammer / buller / kakafoni
+brus / larm / sorl / slammer / buller
 skrammelspår
 stamma
 glappa
@@ -55,36 +68,42 @@ förstärka
 myelin
 nervväv
 nätverk 
-sammanfogning
-länk
-spår / fåra / kanal / backe
-återupprepning
+sammanfoga
+länka
+spåra
+spår / fåra / kanal
+återbesöka
 tvångstanke / tvång / oundviklighet
 spiral 
 motorväg
 avfart
-bryt / förskjutning / gungning / obalans
+brott / förskjuta / gunga / obalans
 korrosion / translation / transgression
 projektion
 bifurcation
+imbalans
+slump
 kaos
 oordning
+ostädat
 smuts
 bråte
 vrak / driva
+bös
 nedbrytare / berikare / förädlare
-tarmbakterier / tarmhjärna
+tarmbakterie / tarmhjärna
 avföring
 kloak
-kloaksystem
+avlopp
 katakomb
 råtta
 råttkung
 hårtest
 morrhår
 känselspröt
-flimmerhår / dallrande hår
+flimmerhår
 inåtväxt hår
+finne
 svullnad / svälla 
 uppsvälld
 förmultna
@@ -95,8 +114,8 @@ bäckahäst
 träsk
 myr
 mosslik / myrkropp
-konserverad
-bevarad
+konservera
+bevara
 relik
 fossil
 kvarlämning
@@ -106,17 +125,15 @@ mönster
 fåra / fåll / fäll
 form
 symbol
-mappning
-kartläggning
-simulering
-approximering
-hallucination
-generering
-alstring
-uralstring
+kartlägga
+simulera
+approximera
+hallucinera
+generera
+alstra
+uralstra
 spontanitet
 oförutsägbarhet
-kaos / kaosteori 
 komplexitet
 oöverskådlig
 agnostisk
@@ -127,7 +144,6 @@ acceptans
 följsam
 flöde
 vatten 
-strömmar
 ström
 stram
 tät

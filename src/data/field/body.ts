@@ -2,16 +2,24 @@ import { Field } from "~/types/field";
 export const bodyField: Field = [
   "kropp",
   "kött",
+  "protein",
   "fibrer",
-  "mör",
-  "utmattning",
+  [
+    "mör",
+    "mörad"
+  ],
+  "utmattad",
   "svett",
   "mjölksyra",
   "kramp",
   "sendrag",
   "stretching",
+  "elastisk",
+  "amorf",
   "form",
   "kontur",
+  "kärna",
+  "fyllning",
   "innehåll",
   "intakt",
   "kompakt",
@@ -24,15 +32,22 @@ export const bodyField: Field = [
   "ihålig",
   "porös",
   "tom",
+  "eko",
+  "grotta",
+  "källare",
+  "lager",
+  "proviant",
+  "konserver",
+  "mättad",
   "fylld",
   "närhet",
-  "sex",
-  "gung",
+  "samlag",
   "rytm",
+  "gung",
   [
-    "upprepning",
+    "upprepa",
     "betona",
-    "pränta in",
+    "pränta",
     "etsa"
   ],
   "upprätthålla",
@@ -45,22 +60,22 @@ export const bodyField: Field = [
     "spole"
   ],
   [
-    "reproduktion",
-    "överlevnad",
-    "underlevnad",
+    "reproducera",
+    "överleva",
+    "underleva",
     "sidoleva",
     "föranleda"
   ],
   [
-    "expansion",
-    "utbredning",
-    "kolonisering",
+    "expandera",
+    "utbreda",
+    "kolonisera",
     "växa"
   ],
   [
-    "utrustning",
-    "kapprustning",
-    "avrustning"
+    "utrusta",
+    "kapprusta",
+    "avrusta"
   ],
   "invasion",
   "invasiv",
@@ -71,6 +86,7 @@ export const bodyField: Field = [
     "hopa"
   ],
   "myllra",
+  "myra",
   "stack",
   "svärm",
   [
@@ -78,8 +94,7 @@ export const bodyField: Field = [
     "larm",
     "sorl",
     "slammer",
-    "buller",
-    "kakafoni"
+    "buller"
   ],
   "skrammelspår",
   "stamma",
@@ -108,15 +123,15 @@ export const bodyField: Field = [
   "myelin",
   "nervväv",
   "nätverk",
-  "sammanfogning",
-  "länk",
+  "sammanfoga",
+  "länka",
+  "spåra",
   [
     "spår",
     "fåra",
-    "kanal",
-    "backe"
+    "kanal"
   ],
-  "återupprepning",
+  "återbesöka",
   [
     "tvångstanke",
     "tvång",
@@ -126,9 +141,9 @@ export const bodyField: Field = [
   "motorväg",
   "avfart",
   [
-    "bryt",
-    "förskjutning",
-    "gungning",
+    "brott",
+    "förskjuta",
+    "gunga",
     "obalans"
   ],
   [
@@ -138,37 +153,39 @@ export const bodyField: Field = [
   ],
   "projektion",
   "bifurcation",
+  "imbalans",
+  "slump",
   "kaos",
   "oordning",
+  "ostädat",
   "smuts",
   "bråte",
   [
     "vrak",
     "driva"
   ],
+  "bös",
   [
     "nedbrytare",
     "berikare",
     "förädlare"
   ],
   [
-    "tarmbakterier",
+    "tarmbakterie",
     "tarmhjärna"
   ],
   "avföring",
   "kloak",
-  "kloaksystem",
+  "avlopp",
   "katakomb",
   "råtta",
   "råttkung",
   "hårtest",
   "morrhår",
   "känselspröt",
-  [
-    "flimmerhår",
-    "dallrande hår"
-  ],
+  "flimmerhår",
   "inåtväxt hår",
+  "finne",
   [
     "svullnad",
     "svälla"
@@ -185,8 +202,8 @@ export const bodyField: Field = [
     "mosslik",
     "myrkropp"
   ],
-  "konserverad",
-  "bevarad",
+  "konservera",
+  "bevara",
   "relik",
   "fossil",
   "kvarlämning",
@@ -200,20 +217,15 @@ export const bodyField: Field = [
   ],
   "form",
   "symbol",
-  "mappning",
-  "kartläggning",
-  "simulering",
-  "approximering",
-  "hallucination",
-  "generering",
-  "alstring",
-  "uralstring",
+  "kartlägga",
+  "simulera",
+  "approximera",
+  "hallucinera",
+  "generera",
+  "alstra",
+  "uralstra",
   "spontanitet",
   "oförutsägbarhet",
-  [
-    "kaos",
-    "kaosteori"
-  ],
   "komplexitet",
   "oöverskådlig",
   "agnostisk",
@@ -224,7 +236,6 @@ export const bodyField: Field = [
   "följsam",
   "flöde",
   "vatten",
-  "strömmar",
   "ström",
   "stram",
   "tät",
