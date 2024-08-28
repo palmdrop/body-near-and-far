@@ -4,7 +4,7 @@ export const loopToUnloopSequence: Sequence = [
     "title": "",
     "lines": [
       {
-        "content": "mörkerbrus i baksätet",
+        "content": "mörkertöcken i baksätet",
         "links": [
           "mörker",
           "brus",
@@ -23,7 +23,7 @@ export const loopToUnloopSequence: Sequence = [
         "index": 1
       },
       {
-        "content": "på vägen bort",
+        "content": "på vägen ut",
         "links": [
           "väg",
           "flöde",
@@ -32,7 +32,7 @@ export const loopToUnloopSequence: Sequence = [
         "index": 2
       },
       {
-        "content": "här skiftar",
+        "content": "för här skiftar",
         "links": [],
         "index": 3
       },
@@ -45,14 +45,14 @@ export const loopToUnloopSequence: Sequence = [
         "index": 4
       },
       {
-        "content": "sipprar in",
+        "content": "det sipprar in",
         "links": [
           "glapp"
         ],
         "index": 5
       },
       {
-        "content": "till fasansbilder",
+        "content": "blir fasansfulla bilder",
         "links": [
           "monster",
           "mardröm",
@@ -70,7 +70,7 @@ export const loopToUnloopSequence: Sequence = [
         "index": 7
       },
       {
-        "content": "giftiga drömfragment",
+        "content": "förgiftade drömfragment",
         "links": [
           "sjuk",
           "dröm",
@@ -102,14 +102,14 @@ export const loopToUnloopSequence: Sequence = [
         "index": 11
       },
       {
-        "content": "oro sätter sig",
+        "content": "oron sätter sig",
         "links": [
           "oro"
         ],
         "index": 12
       },
       {
-        "content": "i mage och ryggrad",
+        "content": "i ryggrad och bäcken",
         "links": [
           "rygg",
           "ryggrad",
@@ -118,7 +118,7 @@ export const loopToUnloopSequence: Sequence = [
         "index": 13
       },
       {
-        "content": "pressar mitt bröstben",
+        "content": "komprimerar mitt bröstben",
         "links": [
           "bröst",
           "skelett"
@@ -154,15 +154,17 @@ export const loopToUnloopSequence: Sequence = [
         "index": 18
       },
       {
-        "content": "mot bilens brum",
+        "content": "mot bilens malande",
         "links": [
           "brus",
-          "bil"
+          "bil",
+          "mala",
+          "mal"
         ],
         "index": 19
       },
       {
-        "content": "bara tillfälligt lugn",
+        "content": "bara tillfälligt lugnad",
         "links": [
           "frigörelse",
           "lugn",
@@ -189,7 +191,7 @@ export const loopToUnloopSequence: Sequence = [
         "index": 22
       },
       {
-        "content": "spolmask i spiral",
+        "content": "spolmaskens spiral",
         "links": [
           "spole",
           "spiral",
@@ -257,7 +259,7 @@ export const loopToUnloopSequence: Sequence = [
         "index": 30
       },
       {
-        "content": "även nu",
+        "content": "också just nu",
         "links": [],
         "index": 31
       },
@@ -272,7 +274,7 @@ export const loopToUnloopSequence: Sequence = [
     "title": "",
     "lines": [
       {
-        "content": "generera oro",
+        "content": "producerar oro",
         "links": [
           "alstra",
           "oro",
@@ -333,11 +335,18 @@ export const loopToUnloopSequence: Sequence = [
         "index": 38
       },
       {
+        "content": "lovar mig",
+        "links": [
+          "löfte"
+        ],
+        "index": 39
+      },
+      {
         "content": "oundviklig olycka inträffar",
         "links": [
           "omen"
         ],
-        "index": 39
+        "index": 40
       },
       {
         "content": "och om och om igen",
@@ -345,47 +354,47 @@ export const loopToUnloopSequence: Sequence = [
           "återkoppla",
           "loop"
         ],
-        "index": 40
+        "index": 41
       },
       {
         "content": "tiden spolas tillbaka",
         "links": [
           "tid"
         ],
-        "index": 41
+        "index": 42
       },
       {
         "content": "som i VHS",
         "links": [
           "dvd"
         ],
-        "index": 42
+        "index": 43
       },
       {
         "content": "jag blir sjuk",
         "links": [
           "sjuk"
         ],
-        "index": 43
+        "index": 44
       },
       {
         "content": "eller galen",
         "links": [
           "hjärna"
         ],
-        "index": 44
+        "index": 45
       },
       {
         "content": "eller tom",
         "links": [],
-        "index": 45
+        "index": 46
       },
       {
-        "content": "genomlider allt",
+        "content": "genomlider alltet",
         "links": [
           "smärta"
         ],
-        "index": 46
+        "index": 47
       },
       {
         "content": "omöjligt att lura",
@@ -393,12 +402,12 @@ export const loopToUnloopSequence: Sequence = [
           "omöjlig",
           "lura"
         ],
-        "index": 47
+        "index": 48
       },
       {
-        "content": "jag vet allt",
+        "content": "för jag känner alltet",
         "links": [],
-        "index": 48
+        "index": 49
       },
       {
         "content": "",
@@ -411,11 +420,11 @@ export const loopToUnloopSequence: Sequence = [
     "title": "",
     "lines": [
       {
-        "content": "jag odlar alg",
+        "content": "jag odlar alger",
         "links": [
           "växa"
         ],
-        "index": 49
+        "index": 50
       },
       {
         "content": "över ljum yta",
@@ -425,32 +434,32 @@ export const loopToUnloopSequence: Sequence = [
           "tanke",
           "rörelse"
         ],
-        "index": 50
+        "index": 51
       },
       {
         "content": "allt som är stilla",
         "links": [
           "rörelse"
         ],
-        "index": 51
+        "index": 52
       },
       {
-        "content": "täcks av grumligt",
+        "content": "täcks av det grumliga",
         "links": [
           "hinna",
           "hölje"
         ],
-        "index": 52
+        "index": 53
       },
       {
-        "content": "vidrigt skikt",
+        "content": "vidriga skikt",
         "links": [
           "hinna",
           "hölje",
           "skikt",
           "äckla"
         ],
-        "index": 53
+        "index": 54
       },
       {
         "content": "varje rörelse sabotage",
@@ -460,7 +469,7 @@ export const loopToUnloopSequence: Sequence = [
           "tvång",
           "motstånd"
         ],
-        "index": 54
+        "index": 55
       },
       {
         "content": "dödsdans vid läggdags",
@@ -471,7 +480,7 @@ export const loopToUnloopSequence: Sequence = [
           "ritual",
           "mantra"
         ],
-        "index": 55
+        "index": 56
       },
       {
         "content": "burk fylld med sårskorpor",
@@ -483,7 +492,7 @@ export const loopToUnloopSequence: Sequence = [
           "sår",
           "blod"
         ],
-        "index": 56
+        "index": 57
       },
       {
         "content": "bromskloss i varje beslut",
@@ -494,7 +503,7 @@ export const loopToUnloopSequence: Sequence = [
           "tvång",
           "friktion"
         ],
-        "index": 57
+        "index": 58
       },
       {
         "content": "det finns inga beslut",
@@ -504,7 +513,7 @@ export const loopToUnloopSequence: Sequence = [
           "tvång",
           "friktion"
         ],
-        "index": 58
+        "index": 59
       },
       {
         "content": "spegellandskap förföljer",
@@ -513,12 +522,12 @@ export const loopToUnloopSequence: Sequence = [
           "loop",
           "återkoppla"
         ],
-        "index": 59
+        "index": 60
       },
       {
         "content": "jag lyssnar bara",
         "links": [],
-        "index": 60
+        "index": 61
       },
       {
         "content": "till mantran",
@@ -527,7 +536,7 @@ export const loopToUnloopSequence: Sequence = [
           "ritual",
           "tvång"
         ],
-        "index": 61
+        "index": 62
       },
       {
         "content": "tvångets affirmation",
@@ -535,7 +544,7 @@ export const loopToUnloopSequence: Sequence = [
           "tvång",
           "mantra"
         ],
-        "index": 62
+        "index": 63
       },
       {
         "content": "orons knappa negation",
@@ -544,14 +553,14 @@ export const loopToUnloopSequence: Sequence = [
           "negation",
           "frigörelse"
         ],
-        "index": 63
+        "index": 64
       },
       {
         "content": "hemsk katharsis",
         "links": [
           "frigörelse"
         ],
-        "index": 64
+        "index": 65
       },
       {
         "content": "inverterad meditation",
@@ -560,7 +569,7 @@ export const loopToUnloopSequence: Sequence = [
           "ångest",
           "ritual"
         ],
-        "index": 65
+        "index": 66
       },
       {
         "content": "kroppen upprepar stress",
@@ -569,7 +578,7 @@ export const loopToUnloopSequence: Sequence = [
           "oro",
           "ångest"
         ],
-        "index": 66
+        "index": 67
       },
       {
         "content": "varje stopp",
@@ -577,21 +586,23 @@ export const loopToUnloopSequence: Sequence = [
           "motstånd",
           "friktion"
         ],
-        "index": 67
+        "index": 68
       },
       {
-        "content": "mardröms- *deadlock*",
+        "content": "nattmarans- *deadlock*",
         "links": [
+          "dröm",
           "mardröm",
           "deadlock",
           "fåll",
           "fälla",
-          "baklås"
+          "baklås",
+          "moloch"
         ],
-        "index": 68
+        "index": 69
       },
       {
-        "content": "värmedöd i dröm",
+        "content": "värmedöd i drömmen",
         "links": [
           "dröm",
           "värmedöd",
@@ -599,7 +610,7 @@ export const loopToUnloopSequence: Sequence = [
           "död",
           "värme"
         ],
-        "index": 69
+        "index": 70
       },
       {
         "content": "nednött av friktion",
@@ -610,10 +621,10 @@ export const loopToUnloopSequence: Sequence = [
           "friktion",
           "värme"
         ],
-        "index": 70
+        "index": 71
       },
       {
-        "content": "fängelse på slingan",
+        "content": "ett fängelse på slingan",
         "links": [
           "fåll",
           "baklås",
@@ -621,63 +632,63 @@ export const loopToUnloopSequence: Sequence = [
           "loop",
           "återkoppla"
         ],
-        "index": 71
+        "index": 72
       },
       {
-        "content": "säger och säger",
+        "content": "som säger och säger",
         "links": [
           "ord"
         ],
-        "index": 72
+        "index": 73
       },
       {
         "content": "måste säga det",
         "links": [
           "tvång"
         ],
-        "index": 73
+        "index": 74
       },
       {
         "content": "stanna här",
         "links": [
           "tvång"
         ],
-        "index": 74
+        "index": 75
       },
       {
         "content": "vänd om",
         "links": [
           "tvång"
         ],
-        "index": 75
+        "index": 76
       },
       {
         "content": "gå inte länge",
         "links": [
           "tvång"
         ],
-        "index": 76
+        "index": 77
       },
       {
         "content": "jag måste säga",
         "links": [
           "tvång"
         ],
-        "index": 77
+        "index": 78
       },
       {
         "content": "säga och säga",
         "links": [
           "tvång"
         ],
-        "index": 78
+        "index": 79
       },
       {
         "content": "så här gammal är jag",
         "links": [
           "tvång"
         ],
-        "index": 79
+        "index": 80
       },
       {
         "content": "det är lugnt",
@@ -685,7 +696,7 @@ export const loopToUnloopSequence: Sequence = [
           "tvång",
           "frigörelse"
         ],
-        "index": 80
+        "index": 81
       },
       {
         "content": "det ska inte ske",
@@ -693,38 +704,38 @@ export const loopToUnloopSequence: Sequence = [
           "tvång",
           "frigörelse"
         ],
-        "index": 81
+        "index": 82
       },
       {
         "content": "jag vet att",
         "links": [],
-        "index": 82
+        "index": 83
       },
       {
         "content": "det inte kommer ske",
         "links": [
           "tvång"
         ],
-        "index": 83
+        "index": 84
       },
       {
         "content": "detta är min ålder",
         "links": [
           "tvång"
         ],
-        "index": 84
+        "index": 85
       },
       {
         "content": "jag räknar upp",
         "links": [],
-        "index": 85
+        "index": 86
       },
       {
         "content": "utvärderar",
         "links": [
           "återkoppla"
         ],
-        "index": 86
+        "index": 87
       },
       {
         "content": "med blixtkoppling",
@@ -733,19 +744,19 @@ export const loopToUnloopSequence: Sequence = [
           "instinkt",
           "återkoppla"
         ],
-        "index": 87
+        "index": 88
       },
       {
         "content": "räknar jag upp igen",
         "links": [
           "tvång"
         ],
-        "index": 88
+        "index": 89
       },
       {
         "content": "jag vet",
         "links": [],
-        "index": 89
+        "index": 90
       },
       {
         "content": "",
@@ -759,8 +770,10 @@ export const loopToUnloopSequence: Sequence = [
     "lines": [
       {
         "content": "jag ser",
-        "links": [],
-        "index": 90
+        "links": [
+          "öga"
+        ],
+        "index": 91
       },
       {
         "content": "i takets spiral",
@@ -770,49 +783,51 @@ export const loopToUnloopSequence: Sequence = [
           "återkoppla",
           "projektion"
         ],
-        "index": 91
+        "index": 92
       },
       {
-        "content": "spole skär betong",
+        "content": "spolen skär betong",
         "links": [
           "spole",
           "stråle",
           "betong"
         ],
-        "index": 92
+        "index": 93
       },
       {
-        "content": "följ ekonomins axel",
+        "content": "följer ekonomins axel",
         "links": [
           "ekonomi",
           "axel",
           "följa",
           "kedja"
         ],
-        "index": 93
+        "index": 94
       },
       {
-        "content": "krök och förvrid",
+        "content": "krökt och förvriden",
         "links": [
           "rörelse",
           "förvränga"
         ],
-        "index": 94
+        "index": 95
       },
       {
-        "content": "fylld i Moloch",
+        "content": "uppfylld i Moloch",
         "links": [
-          "moloch"
+          "moloch",
+          "mardröm"
         ],
-        "index": 95
+        "index": 96
       },
       {
         "content": "fri från ondska",
         "links": [
           "ondska",
-          "god"
+          "god",
+          "frigörelse"
         ],
-        "index": 96
+        "index": 97
       },
       {
         "content": "fylld med obönhörligt tvång",
@@ -820,24 +835,24 @@ export const loopToUnloopSequence: Sequence = [
           "obeveklig",
           "tvång"
         ],
-        "index": 97
-      },
-      {
-        "content": "allt insprängt våld",
-        "links": [
-          "våld"
-        ],
         "index": 98
       },
       {
-        "content": "sitter i fett",
+        "content": "all insprängd brutalitet",
+        "links": [
+          "våld"
+        ],
+        "index": 99
+      },
+      {
+        "content": "sitter i fettet",
         "links": [
           "fett",
           "kött",
           "stress",
           "oro"
         ],
-        "index": 99
+        "index": 100
       },
       {
         "content": "jack i ben",
@@ -848,7 +863,7 @@ export const loopToUnloopSequence: Sequence = [
           "ben",
           "skelett"
         ],
-        "index": 100
+        "index": 101
       },
       {
         "content": "spole i ryggrad",
@@ -857,7 +872,7 @@ export const loopToUnloopSequence: Sequence = [
           "ryggrad",
           "tvång"
         ],
-        "index": 101
+        "index": 102
       },
       {
         "content": "död man på snurr",
@@ -866,29 +881,29 @@ export const loopToUnloopSequence: Sequence = [
           "spiral",
           "spole"
         ],
-        "index": 102
+        "index": 103
       },
       {
-        "content": "svällda mellanspel",
+        "content": "uppsvällda mellanspel",
         "links": [
           "våld",
           "explodera",
           "spel",
           "spegel"
         ],
-        "index": 103
+        "index": 104
       },
       {
         "content": "dömd till förvirring",
         "links": [
           "obegripligt"
         ],
-        "index": 104
+        "index": 105
       },
       {
-        "content": "utarmad kamp",
+        "content": "min utarmade kamp",
         "links": [],
-        "index": 105
+        "index": 106
       },
       {
         "content": "mot blint *måste*",
@@ -897,7 +912,7 @@ export const loopToUnloopSequence: Sequence = [
           "öga",
           "tvång"
         ],
-        "index": 106
+        "index": 107
       },
       {
         "content": "som också måste",
@@ -905,7 +920,7 @@ export const loopToUnloopSequence: Sequence = [
           "omen",
           "obeveklig"
         ],
-        "index": 107
+        "index": 108
       },
       {
         "content": "vittra snart",
@@ -915,22 +930,22 @@ export const loopToUnloopSequence: Sequence = [
           "förfall",
           "frigörelse"
         ],
-        "index": 108
+        "index": 109
       },
       {
-        "content": "projektionen är omöjlig",
+        "content": "projektionen är absurd",
         "links": [
           "projektion",
           "omöjlig"
         ],
-        "index": 109
+        "index": 110
       },
       {
         "content": "parametrar går",
         "links": [
           "komponent"
         ],
-        "index": 110
+        "index": 111
       },
       {
         "content": "mot en slutpunkt",
@@ -939,7 +954,7 @@ export const loopToUnloopSequence: Sequence = [
           "slut",
           "punkt"
         ],
-        "index": 111
+        "index": 112
       },
       {
         "content": "grafen slirar",
@@ -950,15 +965,15 @@ export const loopToUnloopSequence: Sequence = [
           "kaos",
           "karta"
         ],
-        "index": 112
+        "index": 113
       },
       {
-        "content": "bryter spår",
+        "content": "byter spår",
         "links": [
           "kaos",
           "spegel"
         ],
-        "index": 113
+        "index": 114
       },
       {
         "content": "linje slår om",
@@ -967,7 +982,7 @@ export const loopToUnloopSequence: Sequence = [
           "graf",
           "projektion"
         ],
-        "index": 114
+        "index": 115
       },
       {
         "content": "till godartat flimmer",
@@ -978,7 +993,7 @@ export const loopToUnloopSequence: Sequence = [
           "frigörelse",
           "rhizome"
         ],
-        "index": 115
+        "index": 116
       },
       {
         "content": "spolens rubbade projektion",
@@ -987,7 +1002,7 @@ export const loopToUnloopSequence: Sequence = [
           "projektion",
           "frigörelse"
         ],
-        "index": 116
+        "index": 117
       },
       {
         "content": "",
@@ -1007,14 +1022,14 @@ export const loopToUnloopSequence: Sequence = [
           "rörelse",
           "projektion"
         ],
-        "index": 117
+        "index": 118
       },
       {
         "content": "med exponentiellt motstånd",
         "links": [
           "motstånd"
         ],
-        "index": 118
+        "index": 119
       },
       {
         "content": "även i arbete",
@@ -1022,7 +1037,7 @@ export const loopToUnloopSequence: Sequence = [
           "arbete",
           "jobb"
         ],
-        "index": 119
+        "index": 120
       },
       {
         "content": "anspänd luft",
@@ -1030,17 +1045,17 @@ export const loopToUnloopSequence: Sequence = [
           "syre",
           "andas"
         ],
-        "index": 120
+        "index": 121
       },
       {
-        "content": "sug mot fönster",
+        "content": "sug mot utsidan",
         "links": [
           "sug",
           "fönster",
           "instinkt",
           "verklighet"
         ],
-        "index": 121
+        "index": 122
       },
       {
         "content": "flöde i flöde",
@@ -1050,16 +1065,16 @@ export const loopToUnloopSequence: Sequence = [
           "flöde",
           "ström"
         ],
-        "index": 122
+        "index": 123
       },
       {
-        "content": "urinets minimala frigörelse",
+        "content": "urinets minimala befrielse",
         "links": [
           "urin",
           "piss",
           "frigörelse"
         ],
-        "index": 123
+        "index": 124
       },
       {
         "content": "nästa öppna flik",
@@ -1069,7 +1084,7 @@ export const loopToUnloopSequence: Sequence = [
           "maskin",
           "minne"
         ],
-        "index": 124
+        "index": 125
       },
       {
         "content": "fönster bakom fönster",
@@ -1079,7 +1094,7 @@ export const loopToUnloopSequence: Sequence = [
           "dator",
           "maskin"
         ],
-        "index": 125
+        "index": 126
       },
       {
         "content": "tangenternas ljud",
@@ -1087,7 +1102,7 @@ export const loopToUnloopSequence: Sequence = [
           "maskin",
           "dator"
         ],
-        "index": 126
+        "index": 127
       },
       {
         "content": "smatter och rytm",
@@ -1095,21 +1110,21 @@ export const loopToUnloopSequence: Sequence = [
           "rytm",
           "musik"
         ],
-        "index": 127
+        "index": 128
       },
       {
         "content": "i nästa låt",
         "links": [
           "musik"
         ],
-        "index": 128
+        "index": 129
       },
       {
         "content": "mer passande musik",
         "links": [
           "musik"
         ],
-        "index": 129
+        "index": 130
       },
       {
         "content": "tematiskt lämplig",
@@ -1118,12 +1133,12 @@ export const loopToUnloopSequence: Sequence = [
           "skriva",
           "narrativ"
         ],
-        "index": 130
+        "index": 131
       },
       {
         "content": "och noggrant kultiverad",
         "links": [],
-        "index": 131
+        "index": 132
       },
       {
         "content": "för djupt arbete",
@@ -1132,15 +1147,15 @@ export const loopToUnloopSequence: Sequence = [
           "jobb",
           "fokus"
         ],
-        "index": 132
+        "index": 133
       },
       {
-        "content": "tusende reflexiva återblicken",
+        "content": "den tusende reflexiva återblicken",
         "links": [
           "spegel",
           "återkoppla"
         ],
-        "index": 133
+        "index": 134
       },
       {
         "content": "träder ofrivilligt fram",
@@ -1148,19 +1163,19 @@ export const loopToUnloopSequence: Sequence = [
           "motstånd",
           "tvång"
         ],
-        "index": 134
+        "index": 135
       },
       {
-        "content": "och självförhärligande",
+        "content": "och en självförhärligande",
         "links": [],
-        "index": 135
+        "index": 136
       },
       {
         "content": "intervju i huvudet",
         "links": [
           "rikedom"
         ],
-        "index": 136
+        "index": 137
       },
       {
         "content": "prisad eller ökänd",
@@ -1170,7 +1185,7 @@ export const loopToUnloopSequence: Sequence = [
           "media",
           "mobil"
         ],
-        "index": 137
+        "index": 138
       },
       {
         "content": "den andres begär",
@@ -1178,7 +1193,7 @@ export const loopToUnloopSequence: Sequence = [
           "andre",
           "begär"
         ],
-        "index": 138
+        "index": 139
       },
       {
         "content": "i spegelsal",
@@ -1186,19 +1201,22 @@ export const loopToUnloopSequence: Sequence = [
           "spegel",
           "återkoppla"
         ],
-        "index": 139
+        "index": 140
       },
       {
         "content": "presentera för mig",
-        "links": [],
-        "index": 140
+        "links": [
+          "se",
+          "öga"
+        ],
+        "index": 141
       },
       {
         "content": "bild på råttkung",
         "links": [
           "rhizome"
         ],
-        "index": 141
+        "index": 142
       },
       {
         "content": "spretig improvisation",
@@ -1206,7 +1224,7 @@ export const loopToUnloopSequence: Sequence = [
           "rhizome",
           "musik"
         ],
-        "index": 142
+        "index": 143
       },
       {
         "content": "jubel och skrik",
@@ -1214,7 +1232,7 @@ export const loopToUnloopSequence: Sequence = [
           "skrik",
           "röst"
         ],
-        "index": 143
+        "index": 144
       },
       {
         "content": "på sunkhak och i jobbchatt",
@@ -1227,7 +1245,7 @@ export const loopToUnloopSequence: Sequence = [
           "social",
           "mobil"
         ],
-        "index": 144
+        "index": 145
       },
       {
         "content": "glapp i mobilen",
@@ -1237,7 +1255,7 @@ export const loopToUnloopSequence: Sequence = [
           "telefon",
           "skärm"
         ],
-        "index": 145
+        "index": 146
       },
       {
         "content": "sömnlös och vaksam",
@@ -1245,7 +1263,7 @@ export const loopToUnloopSequence: Sequence = [
           "vaken",
           "oro"
         ],
-        "index": 146
+        "index": 147
       },
       {
         "content": "kontinuiteten mellan tänder",
@@ -1256,7 +1274,7 @@ export const loopToUnloopSequence: Sequence = [
           "ångest",
           "sjuk"
         ],
-        "index": 147
+        "index": 148
       },
       {
         "content": "tandlinjens glapp",
@@ -1265,10 +1283,10 @@ export const loopToUnloopSequence: Sequence = [
           "sjuk",
           "glapp"
         ],
-        "index": 148
+        "index": 149
       },
       {
-        "content": "i reflektionen spår jag gränser",
+        "content": "i reflektionen ser jag gränser",
         "links": [
           "spegel",
           "spåra",
@@ -1277,31 +1295,31 @@ export const loopToUnloopSequence: Sequence = [
           "mönster",
           "sjuk"
         ],
-        "index": 149
+        "index": 150
       },
       {
         "content": "dricker nästa kopp te",
         "links": [
           "ritual"
         ],
-        "index": 150
+        "index": 151
       },
       {
         "content": "läser utan att läsa",
         "links": [
           "prosa"
         ],
-        "index": 151
+        "index": 152
       },
       {
-        "content": "vandrar i cirkel",
+        "content": "vandrar i cirklar",
         "links": [
           "gå",
           "cirkel",
           "loop",
           "återkoppla"
         ],
-        "index": 152
+        "index": 153
       },
       {
         "content": "faller i grop",
@@ -1309,16 +1327,16 @@ export const loopToUnloopSequence: Sequence = [
           "grotta",
           "hål"
         ],
-        "index": 153
+        "index": 154
       },
       {
-        "content": "jacken i asfalt",
+        "content": "jacken i asfalten",
         "links": [
           "jack",
           "spillra",
           "väg"
         ],
-        "index": 154
+        "index": 155
       },
       {
         "content": "gatans minnesenhet",
@@ -1327,21 +1345,23 @@ export const loopToUnloopSequence: Sequence = [
           "komponent",
           "väg"
         ],
-        "index": 155
-      },
-      {
-        "content": "återvänd snart hem",
-        "links": [],
         "index": 156
       },
       {
-        "content": "se samma video igen",
+        "content": "återvänd snart hem",
+        "links": [
+          "återkoppla"
+        ],
+        "index": 157
+      },
+      {
+        "content": "se om samma video",
         "links": [
           "loop",
           "återkoppla",
           "motstånd"
         ],
-        "index": 157
+        "index": 158
       },
       {
         "content": "jag ser flimmer",
@@ -1350,37 +1370,37 @@ export const loopToUnloopSequence: Sequence = [
           "brus",
           "se"
         ],
-        "index": 158
+        "index": 159
       },
       {
         "content": "krafsar ner i en lista",
         "links": [
           "skriva"
         ],
-        "index": 159
+        "index": 160
       },
       {
         "content": "utan ansträngning",
         "links": [],
-        "index": 160
+        "index": 161
       },
       {
-        "content": "känn med tunga",
+        "content": "känn med tungan",
         "links": [
           "tunga",
           "mun",
           "spåra"
         ],
-        "index": 161
+        "index": 162
       },
       {
-        "content": "följ en krypande linje",
+        "content": "följ den krypande linjen",
         "links": [
           "följa",
           "kräla",
           "tid"
         ],
-        "index": 162
+        "index": 163
       },
       {
         "content": "pissa fast jag inte behöver",
@@ -1388,14 +1408,14 @@ export const loopToUnloopSequence: Sequence = [
           "piss",
           "urin"
         ],
-        "index": 163
+        "index": 164
       },
       {
         "content": "snurrar runt",
         "links": [
           "loop"
         ],
-        "index": 164
+        "index": 165
       },
       {
         "content": "händer på skrev",
@@ -1405,12 +1425,12 @@ export const loopToUnloopSequence: Sequence = [
           "penis",
           "kuk"
         ],
-        "index": 165
+        "index": 166
       },
       {
         "content": "det sitter i kroppen",
         "links": [],
-        "index": 166
+        "index": 167
       },
       {
         "content": "",
@@ -1425,7 +1445,7 @@ export const loopToUnloopSequence: Sequence = [
       {
         "content": "bara i kroppen nu",
         "links": [],
-        "index": 167
+        "index": 168
       },
       {
         "content": "led som spänner",
@@ -1436,16 +1456,16 @@ export const loopToUnloopSequence: Sequence = [
           "spänd",
           "fält"
         ],
-        "index": 168
+        "index": 169
       },
       {
-        "content": "sena krymper",
+        "content": "senor krymper",
         "links": [
           "sena",
           "växa",
           "smärta"
         ],
-        "index": 169
+        "index": 170
       },
       {
         "content": "jag går i cirklar",
@@ -1453,12 +1473,12 @@ export const loopToUnloopSequence: Sequence = [
           "cirkel",
           "loop"
         ],
-        "index": 170
+        "index": 171
       },
       {
         "content": "bland lägenhetens rum",
         "links": [],
-        "index": 171
+        "index": 172
       },
       {
         "content": "i tinnitus betryggad",
@@ -1467,7 +1487,7 @@ export const loopToUnloopSequence: Sequence = [
           "sus",
           "frigörelse"
         ],
-        "index": 172
+        "index": 173
       },
       {
         "content": "det sympatiska nervsystemet",
@@ -1477,7 +1497,7 @@ export const loopToUnloopSequence: Sequence = [
           "oro",
           "ångest"
         ],
-        "index": 173
+        "index": 174
       },
       {
         "content": "ska låta mig somna igen",
@@ -1485,7 +1505,7 @@ export const loopToUnloopSequence: Sequence = [
           "sömn",
           "frigörelse"
         ],
-        "index": 174
+        "index": 175
       },
       {
         "content": "för cykelns ärrvävnad",
@@ -1496,7 +1516,7 @@ export const loopToUnloopSequence: Sequence = [
           "vävnad",
           "kött"
         ],
-        "index": 175
+        "index": 176
       },
       {
         "content": "fylls av mjuk vätska",
@@ -1504,16 +1524,16 @@ export const loopToUnloopSequence: Sequence = [
           "mjuk",
           "vätska"
         ],
-        "index": 176
+        "index": 177
       },
       {
-        "content": "melatonin sprids i mig",
+        "content": "melatonin utsöndras",
         "links": [
           "signalsubstans",
           "hormon",
           "körtel"
         ],
-        "index": 177
+        "index": 178
       },
       {
         "content": "sippra ut i svärta",
@@ -1522,12 +1542,12 @@ export const loopToUnloopSequence: Sequence = [
           "glida",
           "glapp"
         ],
-        "index": 178
+        "index": 179
       },
       {
         "content": "där jag aldrig",
         "links": [],
-        "index": 179
+        "index": 180
       },
       {
         "content": "kan sova på sidan",
@@ -1535,7 +1555,7 @@ export const loopToUnloopSequence: Sequence = [
           "sova",
           "sömn"
         ],
-        "index": 180
+        "index": 181
       },
       {
         "content": "men tyngden vaggar mig",
@@ -1543,7 +1563,7 @@ export const loopToUnloopSequence: Sequence = [
           "rytm",
           "rörelse"
         ],
-        "index": 181
+        "index": 182
       },
       {
         "content": "jag lämnar länken",
@@ -1551,7 +1571,7 @@ export const loopToUnloopSequence: Sequence = [
           "länk",
           "kedja"
         ],
-        "index": 182
+        "index": 183
       },
       {
         "content": "glider ut på",
@@ -1560,7 +1580,7 @@ export const loopToUnloopSequence: Sequence = [
           "motstånd",
           "frigörelse"
         ],
-        "index": 183
+        "index": 184
       },
       {
         "content": "mörk och språklös yta",
@@ -1570,14 +1590,14 @@ export const loopToUnloopSequence: Sequence = [
           "språk",
           "sömn"
         ],
-        "index": 184
+        "index": 185
       },
       {
         "content": "här finns inga problem",
         "links": [
           "frigörelse"
         ],
-        "index": 185
+        "index": 186
       },
       {
         "content": "inga otankar att återbesöka",
@@ -1586,26 +1606,26 @@ export const loopToUnloopSequence: Sequence = [
           "återkoppla",
           "loop"
         ],
-        "index": 186
+        "index": 187
       },
       {
-        "content": "bara statisk tankebild",
+        "content": "bara statisk tankebilder",
         "links": [
           "statisk",
           "brus",
           "sus",
           "tanke"
         ],
-        "index": 187
+        "index": 188
       },
       {
-        "content": "glider till sömns",
+        "content": "gnider mig till sömns",
         "links": [
           "glida",
           "sömn",
           "sova"
         ],
-        "index": 188
+        "index": 189
       },
       {
         "content": "",
@@ -1623,26 +1643,26 @@ export const loopToUnloopSequence: Sequence = [
           "kött",
           "hormon"
         ],
-        "index": 189
+        "index": 190
       },
       {
         "content": "i sin frånvaro",
         "links": [],
-        "index": 190
+        "index": 191
       },
       {
         "content": "eller närvaro",
         "links": [],
-        "index": 191
+        "index": 192
       },
       {
-        "content": "bli till smuts",
+        "content": "bli smuts",
         "links": [
           "smuts",
           "äckla",
           "sjuk"
         ],
-        "index": 192
+        "index": 193
       },
       {
         "content": "mentalt väckt",
@@ -1650,7 +1670,7 @@ export const loopToUnloopSequence: Sequence = [
           "hallucination",
           "alstra"
         ],
-        "index": 193
+        "index": 194
       },
       {
         "content": "när jag rör vid ytan",
@@ -1658,17 +1678,17 @@ export const loopToUnloopSequence: Sequence = [
           "yta",
           "beröring"
         ],
-        "index": 194
+        "index": 195
       },
       {
         "content": "jag försöker skaka",
         "links": [
           "skaka"
         ],
-        "index": 195
+        "index": 196
       },
       {
-        "content": "men smuts biter",
+        "content": "men smutset biter",
         "links": [
           "smuts",
           "bit",
@@ -1676,7 +1696,7 @@ export const loopToUnloopSequence: Sequence = [
           "mun",
           "parasit"
         ],
-        "index": 196
+        "index": 197
       },
       {
         "content": "kilar in sig mellan",
@@ -1685,12 +1705,12 @@ export const loopToUnloopSequence: Sequence = [
           "fåll",
           "fälla"
         ],
-        "index": 197
+        "index": 198
       },
       {
         "content": "kropp och kropp",
         "links": [],
-        "index": 198
+        "index": 199
       },
       {
         "content": "på fingertoppar",
@@ -1700,28 +1720,28 @@ export const loopToUnloopSequence: Sequence = [
           "hud",
           "skinn"
         ],
-        "index": 199
+        "index": 200
       },
       {
         "content": "mellan yta och yta",
         "links": [
           "yta"
         ],
-        "index": 200
+        "index": 201
       },
       {
         "content": "blir hägrade spänningsfält",
         "links": [
           "spänd"
         ],
-        "index": 201
+        "index": 202
       },
       {
         "content": "från andra människor",
         "links": [
           "andre"
         ],
-        "index": 202
+        "index": 203
       },
       {
         "content": "deras sekret",
@@ -1731,35 +1751,35 @@ export const loopToUnloopSequence: Sequence = [
           "sjuk",
           "utlösning"
         ],
-        "index": 203
+        "index": 204
       },
       {
         "content": "sjukdom och spott",
         "links": [
           "sjuk"
         ],
-        "index": 204
+        "index": 205
       },
       {
-        "content": "stelkramp i jord",
+        "content": "stelkramp i jorden",
         "links": [
           "led",
           "jord",
           "sjuk"
         ],
-        "index": 205
+        "index": 206
       },
       {
         "content": "golv och ledstång",
         "links": [],
-        "index": 206
+        "index": 207
       },
       {
         "content": "laddad metall",
         "links": [
           "laddning"
         ],
-        "index": 207
+        "index": 208
       },
       {
         "content": "håller statiska grepp",
@@ -1769,7 +1789,7 @@ export const loopToUnloopSequence: Sequence = [
           "hulling",
           "fåll"
         ],
-        "index": 208
+        "index": 209
       },
       {
         "content": "laddad skit",
@@ -1777,25 +1797,25 @@ export const loopToUnloopSequence: Sequence = [
           "smuts",
           "laddning"
         ],
-        "index": 209
+        "index": 210
       },
       {
-        "content": "allt äckligt",
+        "content": "allt det äckliga",
         "links": [
           "äckla",
           "sjuk"
         ],
-        "index": 210
+        "index": 211
       },
       {
-        "content": "neutraliseras av ritual",
+        "content": "neutraliseras av en ritual",
         "links": [
           "frigörelse",
           "ritual",
           "mantra",
           "tvång"
         ],
-        "index": 211
+        "index": 212
       },
       {
         "content": "perfekt koreografi",
@@ -1803,7 +1823,7 @@ export const loopToUnloopSequence: Sequence = [
           "koreografi",
           "dans"
         ],
-        "index": 212
+        "index": 213
       },
       {
         "content": "rena preparat",
@@ -1811,14 +1831,14 @@ export const loopToUnloopSequence: Sequence = [
           "substans",
           "ritual"
         ],
-        "index": 213
+        "index": 214
       },
       {
         "content": "ska frigöra denna",
         "links": [
           "frigörelse"
         ],
-        "index": 214
+        "index": 215
       },
       {
         "content": "surrande bakgrundsprocess",
@@ -1827,7 +1847,7 @@ export const loopToUnloopSequence: Sequence = [
           "oro",
           "ångest"
         ],
-        "index": 215
+        "index": 216
       },
       {
         "content": "med ansvar för att minnas",
@@ -1836,10 +1856,10 @@ export const loopToUnloopSequence: Sequence = [
           "oro",
           "ångest"
         ],
-        "index": 216
+        "index": 217
       },
       {
-        "content": "alla befläckade områden",
+        "content": "varje befläckat område",
         "links": [
           "hallucination",
           "ångest",
@@ -1849,7 +1869,7 @@ export const loopToUnloopSequence: Sequence = [
           "märke",
           "tecken"
         ],
-        "index": 217
+        "index": 218
       },
       {
         "content": "",
@@ -1873,7 +1893,7 @@ export const loopToUnloopSequence: Sequence = [
           "tecken",
           "ren"
         ],
-        "index": 218
+        "index": 219
       },
       {
         "content": "kilhål genom spegel",
@@ -1883,10 +1903,10 @@ export const loopToUnloopSequence: Sequence = [
           "glapp",
           "spegel"
         ],
-        "index": 219
+        "index": 220
       },
       {
-        "content": "jacken på länk",
+        "content": "jacken i kedjan",
         "links": [
           "jack",
           "länk",
@@ -1894,7 +1914,7 @@ export const loopToUnloopSequence: Sequence = [
           "tecken",
           "spår"
         ],
-        "index": 220
+        "index": 221
       },
       {
         "content": "allt ska vittra",
@@ -1903,21 +1923,21 @@ export const loopToUnloopSequence: Sequence = [
           "förfall",
           "dekomposition"
         ],
-        "index": 221
+        "index": 222
       },
       {
         "content": "bortom din person",
         "links": [
           "individ"
         ],
-        "index": 222
+        "index": 223
       },
       {
         "content": "du bygger ett jag",
         "links": [
           "individ"
         ],
-        "index": 223
+        "index": 224
       },
       {
         "content": "genom smuts",
@@ -1925,7 +1945,7 @@ export const loopToUnloopSequence: Sequence = [
           "smuts",
           "ren"
         ],
-        "index": 224
+        "index": 225
       },
       {
         "content": "oro till ro",
@@ -1933,12 +1953,12 @@ export const loopToUnloopSequence: Sequence = [
           "oro",
           "ro"
         ],
-        "index": 225
+        "index": 226
       },
       {
         "content": "hävda kroppen",
         "links": [],
-        "index": 226
+        "index": 227
       },
       {
         "content": "tugga valkar",
@@ -1949,7 +1969,7 @@ export const loopToUnloopSequence: Sequence = [
           "bita",
           "frigörelse"
         ],
-        "index": 227
+        "index": 228
       },
       {
         "content": "riv upp sår",
@@ -1958,7 +1978,7 @@ export const loopToUnloopSequence: Sequence = [
           "skada",
           "frigörelse"
         ],
-        "index": 228
+        "index": 229
       },
       {
         "content": "smaka blod",
@@ -1966,7 +1986,7 @@ export const loopToUnloopSequence: Sequence = [
           "blod",
           "frigörelse"
         ],
-        "index": 229
+        "index": 230
       },
       {
         "content": "torka anus",
@@ -1977,7 +1997,7 @@ export const loopToUnloopSequence: Sequence = [
           "ren",
           "frigörelse"
         ],
-        "index": 230
+        "index": 231
       },
       {
         "content": "skit under naglarna",
@@ -1988,7 +2008,7 @@ export const loopToUnloopSequence: Sequence = [
           "finger",
           "frigörelse"
         ],
-        "index": 231
+        "index": 232
       },
       {
         "content": "och lukta",
@@ -1996,20 +2016,20 @@ export const loopToUnloopSequence: Sequence = [
           "lukt",
           "sinne"
         ],
-        "index": 232
+        "index": 233
       },
       {
         "content": "kom närmare",
         "links": [],
-        "index": 233
+        "index": 234
       },
       {
-        "content": "öppningen är jag",
+        "content": "öppningen är du",
         "links": [
           "öppning",
           "kloak"
         ],
-        "index": 234
+        "index": 235
       },
       {
         "content": "urmunnens arv",
@@ -2018,7 +2038,7 @@ export const loopToUnloopSequence: Sequence = [
           "kloak",
           "anus"
         ],
-        "index": 235
+        "index": 236
       },
       {
         "content": "inget sekret",
@@ -2028,14 +2048,16 @@ export const loopToUnloopSequence: Sequence = [
           "smuts",
           "frigörelse"
         ],
-        "index": 236
+        "index": 237
       },
       {
-        "content": "ingen process",
+        "content": "ingen oro",
         "links": [
-          "process"
+          "process",
+          "oro",
+          "ångest"
         ],
-        "index": 237
+        "index": 238
       },
       {
         "content": "eller klaff",
@@ -2043,7 +2065,7 @@ export const loopToUnloopSequence: Sequence = [
           "fåll",
           "fälla"
         ],
-        "index": 238
+        "index": 239
       },
       {
         "content": "eller flytning",
@@ -2053,7 +2075,7 @@ export const loopToUnloopSequence: Sequence = [
           "sjuk",
           "utlösning"
         ],
-        "index": 239
+        "index": 240
       },
       {
         "content": "eller utlösning",
@@ -2061,14 +2083,14 @@ export const loopToUnloopSequence: Sequence = [
           "utlösning",
           "orgasm"
         ],
-        "index": 240
+        "index": 241
       },
       {
         "content": "kan äckla dig",
         "links": [
           "äckla"
         ],
-        "index": 241
+        "index": 242
       },
       {
         "content": "inget kan besudla",
@@ -2077,7 +2099,7 @@ export const loopToUnloopSequence: Sequence = [
           "frigörelse",
           "ren"
         ],
-        "index": 242
+        "index": 243
       },
       {
         "content": "jorden är ren",
@@ -2086,7 +2108,7 @@ export const loopToUnloopSequence: Sequence = [
           "ren",
           "frisk"
         ],
-        "index": 243
+        "index": 244
       },
       {
         "content": "",
@@ -2101,7 +2123,7 @@ export const loopToUnloopSequence: Sequence = [
       {
         "content": "jag skakar det",
         "links": [],
-        "index": 244
+        "index": 245
       },
       {
         "content": "jag glömmer",
@@ -2109,31 +2131,31 @@ export const loopToUnloopSequence: Sequence = [
           "glömma",
           "minne"
         ],
-        "index": 245
+        "index": 246
       },
       {
         "content": "kroppen gör sig påmind",
         "links": [
           "minne"
         ],
-        "index": 246
+        "index": 247
       },
       {
-        "content": "tid får gå",
+        "content": "tiden får gå",
         "links": [
           "tid"
         ],
-        "index": 247
+        "index": 248
       },
       {
         "content": "jag ruskar på mig",
         "links": [],
-        "index": 248
+        "index": 249
       },
       {
         "content": "skakar det",
         "links": [],
-        "index": 249
+        "index": 250
       },
       {
         "content": "glömmer",
@@ -2141,21 +2163,21 @@ export const loopToUnloopSequence: Sequence = [
           "glömma",
           "minne"
         ],
-        "index": 250
+        "index": 251
       },
       {
         "content": "låter minnet",
         "links": [
           "minne"
         ],
-        "index": 251
+        "index": 252
       },
       {
         "content": "laddas ur",
         "links": [
           "frigörelse"
         ],
-        "index": 252
+        "index": 253
       },
       {
         "content": "blundar i bilen",
@@ -2165,7 +2187,7 @@ export const loopToUnloopSequence: Sequence = [
           "brus",
           "dröm"
         ],
-        "index": 253
+        "index": 254
       }
     ]
   }
