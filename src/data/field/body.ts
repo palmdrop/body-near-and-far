@@ -153,7 +153,7 @@ export const bodyField: Field = [
   ],
   "projektion",
   "bifurcation",
-  "imbalans",
+  "inbalans",
   "slump",
   "kaos",
   "oordning",

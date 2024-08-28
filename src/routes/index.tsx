@@ -58,8 +58,6 @@ export default function Root() {
         callback: delta => {
           linkedSequenceIterator.update();
           fieldIterator.update();
-
-          setDelta(delta / sequenceSpeed);
         },
         rate: sequenceSpeed
       },

@@ -525,7 +525,7 @@ export const nearToFarSequence: Sequence = [
         "index": 63
       },
       {
-        "content": "i din *genomes* nät",
+        "content": "i *genomens* nät",
         "links": [
           "gen"
         ],
@@ -541,7 +541,7 @@ export const nearToFarSequence: Sequence = [
         "index": 65
       },
       {
-        "content": "glasklar bergsbäck",
+        "content": "glasklar bergbäck",
         "links": [
           "glas",
           "bäck"
@@ -682,7 +682,7 @@ export const nearToFarSequence: Sequence = [
         "index": 85
       },
       {
-        "content": "markandens inre liv",
+        "content": "marknadens inre liv",
         "links": [
           "marknad"
         ],
@@ -1064,7 +1064,7 @@ export const nearToFarSequence: Sequence = [
         "index": 133
       },
       {
-        "content": "för stadssanktionerad krigföring",
+        "content": "för statssanktionerad krigföring",
         "links": [
           "stat",
           "våld"
@@ -1506,7 +1506,7 @@ export const nearToFarSequence: Sequence = [
         "index": 190
       },
       {
-        "content": "din egna singularitet",
+        "content": "din egen singularitet",
         "links": [
           "singularitet",
           "skärningspunkt",

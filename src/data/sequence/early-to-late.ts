@@ -1198,7 +1198,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 139
       },
       {
-        "content": "mjölksyra i gomen",
+        "content": "mjölksyra i gommen",
         "links": [
           "mjölksyra",
           "mun"
@@ -1551,7 +1551,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 182
       },
       {
-        "content": "allt kommer blir bra",
+        "content": "allt kommer bli bra",
         "links": [
           "frigörelse"
         ],
@@ -2067,7 +2067,9 @@ export const earlyToLateSequence: Sequence = [
       },
       {
         "content": "bland hotellets",
-        "links": [],
+        "links": [
+          "hotell"
+        ],
         "index": 245
       },
       {
@@ -2379,7 +2381,7 @@ export const earlyToLateSequence: Sequence = [
         "content": "kropp i nät",
         "links": [
           "mobil",
-          "rhizome"
+          "rhizom"
         ],
         "index": 280
       },
@@ -2550,7 +2552,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 298
       },
       {
-        "content": "kaleidoskop i mellangrunden",
+        "content": "kalejdoskop i mellangrunden",
         "links": [
           "hallucination",
           "dröm",
@@ -3271,7 +3273,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 380
       },
       {
-        "content": "utomjordislig ögonmask",
+        "content": "utomjordlig ögonmask",
         "links": [
           "dimension",
           "verklighet",
@@ -3594,7 +3596,7 @@ export const earlyToLateSequence: Sequence = [
         "links": [
           "förfall",
           "förvränga",
-          "rhizome"
+          "rhizom"
         ],
         "index": 416
       },
@@ -3604,7 +3606,7 @@ export const earlyToLateSequence: Sequence = [
           "fåra",
           "skåra",
           "fåll",
-          "rhizome"
+          "rhizom"
         ],
         "index": 417
       },
@@ -3676,7 +3678,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 425
       },
       {
-        "content": "varslade dekomposition",
+        "content": "varslade sönderfall",
         "links": [
           "omen",
           "dekomposition",
@@ -3794,7 +3796,7 @@ export const earlyToLateSequence: Sequence = [
         "index": 440
       },
       {
-        "content": "dekomposition",
+        "content": "sönderfall",
         "links": [
           "dekomposition",
           "nedbrytare"

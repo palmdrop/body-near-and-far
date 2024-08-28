@@ -991,7 +991,7 @@ export const loopToUnloopSequence: Sequence = [
           "flimmer",
           "brus",
           "frigörelse",
-          "rhizome"
+          "rhizom"
         ],
         "index": 116
       },
@@ -1068,7 +1068,7 @@ export const loopToUnloopSequence: Sequence = [
         "index": 123
       },
       {
-        "content": "urinets minimala befrielse",
+        "content": "urinens minimala befrielse",
         "links": [
           "urin",
           "piss",
@@ -1214,14 +1214,14 @@ export const loopToUnloopSequence: Sequence = [
       {
         "content": "bild på råttkung",
         "links": [
-          "rhizome"
+          "rhizom"
         ],
         "index": 142
       },
       {
         "content": "spretig improvisation",
         "links": [
-          "rhizome",
+          "rhizom",
           "musik"
         ],
         "index": 143
@@ -1609,7 +1609,7 @@ export const loopToUnloopSequence: Sequence = [
         "index": 187
       },
       {
-        "content": "bara statisk tankebilder",
+        "content": "bara statiska tankebilder",
         "links": [
           "statisk",
           "brus",
@@ -1688,7 +1688,7 @@ export const loopToUnloopSequence: Sequence = [
         "index": 196
       },
       {
-        "content": "men smutset biter",
+        "content": "men smutsen biter",
         "links": [
           "smuts",
           "bit",
@@ -1896,7 +1896,7 @@ export const loopToUnloopSequence: Sequence = [
         "index": 219
       },
       {
-        "content": "kilhål genom spegel",
+        "content": "kikhål genom spegel",
         "links": [
           "hål",
           "öppning",
@@ -1917,7 +1917,7 @@ export const loopToUnloopSequence: Sequence = [
         "index": 221
       },
       {
-        "content": "allt ska vittra",
+        "content": "allt ska förfalla",
         "links": [
           "vittra",
           "förfall",
