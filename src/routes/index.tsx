@@ -101,6 +101,7 @@ export default function Root() {
 
     onCleanup(() => {
       window.removeEventListener("keydown", keyboardListener);
+      stop();
     });
   });
 
@@ -115,10 +116,6 @@ export default function Root() {
       setDelta(1);
     }
   }
-
-  onCleanup(() => {
-    stop();
-  });
 
   const indices = createMemo(
     () => linkedSequenceIterator.lineIndices.map(i => i())
