@@ -37,6 +37,10 @@ export const SequenceRenderer: Component<Props> = (props) => {
           {lineEntry => (
             <li
               ref={element => lines[lineEntry.index] = element}
+              classList={{
+                line: true,
+                active: props.activeIndex() === lineEntry.index
+              }}
             >
               { renderLineEntry(lineEntry) }
             </li>
