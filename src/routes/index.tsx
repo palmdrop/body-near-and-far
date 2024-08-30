@@ -5,6 +5,7 @@ import { Filter } from "~/assets/MorphFilter";
 import { Composite } from "~/components/composite/Composite";
 import Controller from "~/components/controller/Controller";
 import { SequenceRenderer } from "~/components/sequence/SequenceRenderer";
+import { APP_TITLE } from "~/constant";
 import { createLinkedIterator } from "~/core";
 import { bodyField } from "~/data/field/body";
 import { sequenceLinks, sequences } from "~/data/sequence";
@@ -149,7 +150,7 @@ export default function Root() {
     >
       <Filter />
       <main>
-        <Title>{`${fieldIterator.word()?.toUpperCase()} | Nära och långt från kroppen`}</Title> 
+        <Title>{`${fieldIterator.word()?.toUpperCase()} | ${APP_TITLE}`}</Title> 
         <div class="center-piece">
           <Composite 
             lines={linkedSequenceIterator.lines()} 
