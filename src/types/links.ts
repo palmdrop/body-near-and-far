@@ -13,3 +13,9 @@ export type SequenceLinks = Map<
 export type SequenceLineVisits = Set<
   `${number}.${number}` // #sequence.#line
 >;
+
+export type FollowedLink = Link & {
+  key: string
+  originSequence: number,
+  originLine: number,
+}

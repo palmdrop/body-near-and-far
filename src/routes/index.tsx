@@ -7,6 +7,7 @@ import Controller from "~/components/controller/Controller";
 import { SequenceRenderer } from "~/components/sequence/SequenceRenderer";
 import { APP_TITLE } from "~/constant";
 import { createLinkedIterator } from "~/core";
+import { createCanvas } from "~/core/canvas";
 import { bodyField } from "~/data/field/body";
 import { sequenceLinks, sequences } from "~/data/sequence";
 import { easeInOutQuart } from "~/utils/easing";
@@ -22,6 +23,9 @@ const linkProbability = 0.5;
 const randomInteger = (max: number) => Math.floor(Math.random() * max);
 
 export default function Root() {
+  let canvas: HTMLCanvasElement;
+  let main: HTMLElement;
+
   const startIndices = indicesFromURL(
     [
       ...sequences.map(sequence => randomInteger(getMaxIndex(sequence))),
@@ -48,6 +52,8 @@ export default function Root() {
     startIndices[sequences.length], 
   );
 
+  let canvasRenderer: ReturnType<typeof createCanvas>;
+
   const [delta, setDelta] = createSignal(0);
 
   const { start, stop } = createLoops(
@@ -65,8 +71,12 @@ export default function Root() {
       // Linked sequence loop
       {
         callback: () => {
-          linkedSequenceIterator.update();
           fieldIterator.update();
+          const links = linkedSequenceIterator.update();
+
+          if(links?.length) {
+            console.log(links);
+          }
         },
         rate: sequenceSpeed
       },
@@ -93,6 +103,8 @@ export default function Root() {
     const isRunning = searchParams["running"] !== "false"
     setIsRunning(isRunning);
     setVisible(true);
+
+    canvasRenderer = createCanvas(canvas);
 
     if(isRunning) start();
 
@@ -157,8 +169,12 @@ export default function Root() {
       }}
     >
       <Filter />
-      <main>
-        <Title>{`${fieldIterator.word()?.toUpperCase()} | ${APP_TITLE}`}</Title> 
+      <Title>{`${fieldIterator.word()?.toUpperCase()} | ${APP_TITLE}`}</Title> 
+      <main ref={element => main = element}>
+        <canvas 
+          id="body-link-canvas"
+          ref={element => canvas = element}
+        />
         <div class="center-piece">
           <Composite 
             lines={linkedSequenceIterator.lines()} 

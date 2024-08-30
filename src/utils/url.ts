@@ -30,7 +30,6 @@ export const indicesFromURL = (defaultIndices?: [number, number, number, number]
   try {
     return parseIndicesFromString(window.location.hash.slice(1));
   } catch(_) {
-    console.log(defaultIndices)
     return defaultIndices ?? [0, 0, 0, 0];
   }
 }

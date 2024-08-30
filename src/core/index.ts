@@ -1,5 +1,5 @@
 import { createMemo, createSignal, onMount } from "solid-js";
-import { Link, SequenceLineVisits, SequenceLinks } from "~/types/links"
+import { FollowedLink, Link, SequenceLineVisits, SequenceLinks } from "~/types/links"
 import { Sequence } from "~/types/sequence"
 import { randomElement } from "~/utils/array";
 import { getLine, getLineEntry, getMaxIndex } from "~/utils/sequence";
@@ -43,7 +43,7 @@ const followLink = (
   lineIndex: number,
   visitedSequences: number[],
   visitedLines: SequenceLineVisits
-) => {
+): FollowedLink | undefined => {
   const sequence = sequences[sequenceIndex];
   const lineEntry = getLineEntry(sequence, lineIndex);
   const lineLinks = lineEntry?.links;
@@ -54,13 +54,13 @@ const followLink = (
 
   while(linksToTry.length) {
     const index = Math.floor(Math.random() * linksToTry.length);
-    const linkKey = linksToTry[index];
+    const key = linksToTry[index];
 
     linksToTry.splice(index, 1);
 
-    if(!linkKey) continue;
+    if(!key) continue;
 
-    const sequenceLinks = links.get(linkKey);
+    const sequenceLinks = links.get(key);
 
     if(!sequenceLinks) continue;
 
@@ -78,7 +78,9 @@ const followLink = (
 
     return {
       ...link,
-      linkKey
+      originSequence: sequenceIndex,
+      originLine: lineIndex,
+      key
     }
   }
 
@@ -126,7 +128,9 @@ export const createLinkedIterator = (
     const visitedSequences: number[] = [];
     let availableSequences = [...SEQUENCE_INDICES];
 
-    let link: ReturnType<typeof followLink> = undefined;
+    const followedLink: FollowedLink[] = [];
+    let link: FollowedLink | undefined = undefined;
+
     while(visitedSequences.length !== sequences.length) {
       const sequenceIndex = !!link
         ? link.sequence 
@@ -151,7 +155,13 @@ export const createLinkedIterator = (
         visitedSequences,
         visitedLines
       );
+
+      if(link) {
+        followedLink.push(link);
+      }
     }
+
+    return followedLink
   }
 
   const lines = createMemo(
