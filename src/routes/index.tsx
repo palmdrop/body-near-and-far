@@ -26,6 +26,8 @@ export default function Root() {
   let canvas: HTMLCanvasElement;
   let main: HTMLElement;
 
+  let activeElements: (HTMLLIElement | undefined)[] = [undefined, undefined, undefined];
+
   const startIndices = indicesFromURL(
     [
       ...sequences.map(sequence => randomInteger(getMaxIndex(sequence))),
@@ -56,48 +58,54 @@ export default function Root() {
 
   const [delta, setDelta] = createSignal(0);
 
-  const { start, stop } = createLoops(
-    [
-      // Delta loop
-      {
-        callback: delta => {
-          setDelta(
-            Math.min(Math.max(easeInOutQuart(delta / sequenceSpeed), 0), 1)
-          );
-        },
-        rate: sequenceSpeed,
-        constant: true
-      },
-      // Linked sequence loop
-      {
-        callback: () => {
-          fieldIterator.update();
-          const links = linkedSequenceIterator.update();
+  const { 
+    start, 
+    stop 
+  } = createLoops([
+    // Delta loop
+    {
+      callback: delta => {
+        setDelta(
+          Math.min(Math.max(easeInOutQuart(delta / sequenceSpeed), 0), 1)
+        );
 
-          if(links?.length) {
-            console.log(links);
-          }
-        },
-        rate: sequenceSpeed
+        canvasRenderer?.draw(activeElements as HTMLLIElement[]);
       },
-      // Main field loop
-      {
-        callback: () => {
-          if(fieldIterator.inSubField()) return;
-          fieldIterator.update();
-        },
-        rate: fieldSpeed
+      rate: sequenceSpeed,
+      constant: true
+    },
+    // Linked sequence loop
+    {
+      callback: () => {
+        fieldIterator.update();
+        const links = linkedSequenceIterator.update();
+
+        if(links?.length) {
+          console.log(links);
+          canvasRenderer?.setLinks(links)
+        } else {
+          canvasRenderer?.clearLinks();
+        }
       },
-      // Sub field loop
-      {
-        callback: () => {
-          if(!fieldIterator.inSubField()) return;
-          fieldIterator.update();
-        },
-        rate: fieldSpeed / 2
-      }
-    ]
-  );
+      rate: sequenceSpeed
+    },
+    // Main field loop
+    {
+      callback: () => {
+        if(fieldIterator.inSubField()) return;
+        fieldIterator.update();
+      },
+      rate: fieldSpeed
+    },
+    // Sub field loop
+    {
+      callback: () => {
+        if(!fieldIterator.inSubField()) return;
+        fieldIterator.update();
+      },
+      rate: fieldSpeed / 2
+    }
+  ]);
 
   onMount(() => {
     const isRunning = searchParams["running"] !== "false"
@@ -118,10 +126,16 @@ export default function Root() {
       return;
     }
 
+    const onResize = () => {
+      canvasRenderer.resize(main);
+    }
+
     window.addEventListener("keydown", keyboardListener);
+    window.addEventListener("resize", onResize);
 
     onCleanup(() => {
       window.removeEventListener("keydown", keyboardListener);
+      window.removeEventListener("resize", onResize);
       stop();
     });
   });
@@ -139,7 +153,7 @@ export default function Root() {
   }
 
   const indices = createMemo(
-    () => linkedSequenceIterator.lineIndices.map(i => i())
+    () => linkedSequenceIterator.lineIndices.map(index => index())
   );
 
   const fieldLine = createMemo(
@@ -187,7 +201,10 @@ export default function Root() {
             <SequenceRenderer
               sequence={sequence}
               activeIndex={linkedSequenceIterator.lineIndices[i]}
-              activeElementCallback={sequenceChangeCallback}
+              activeElementCallback={(element, root) => {
+                activeElements[i] = element;
+                sequenceChangeCallback(element, root);
+              }}
             />
           )) }
         </div>
