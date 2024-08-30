@@ -1,6 +1,6 @@
 import { Title } from "@solidjs/meta";
 import { useSearchParams } from "@solidjs/router";
-import { createEffect, createMemo, createSignal, onCleanup, onMount, Show } from "solid-js";
+import { createEffect, createMemo, createSignal, onCleanup, onMount } from "solid-js";
 import { Filter } from "~/assets/MorphFilter";
 import { Composite } from "~/components/composite/Composite";
 import Controller from "~/components/controller/Controller";
@@ -12,15 +12,23 @@ import { sequenceLinks, sequences } from "~/data/sequence";
 import { easeInOutQuart } from "~/utils/easing";
 import { createFieldIterator } from "~/utils/field";
 import { createLoops } from "~/utils/loop";
-import { sequenceChangeCallback } from "~/utils/sequence";
+import { getMaxIndex, sequenceChangeCallback } from "~/utils/sequence";
 import { indicesFromURL, indicesToUrlHash } from "~/utils/url";
 
 const sequenceSpeed = 6000;
 const fieldSpeed = sequenceSpeed / 2;
 const linkProbability = 0.5;
 
+const randomInteger = (max: number) => Math.floor(Math.random() * max);
+
 export default function Root() {
-  const startIndices = indicesFromURL();
+  const startIndices = indicesFromURL(
+    [
+      ...sequences.map(sequence => randomInteger(getMaxIndex(sequence))),
+      randomInteger(bodyField.length)
+    ] as [number, number, number, number]
+  );
+
   const [searchParams, setSearchParams] = useSearchParams();
 
   const [isRunning, setIsRunning] = createSignal(true);
@@ -56,7 +64,7 @@ export default function Root() {
       },
       // Linked sequence loop
       {
-        callback: delta => {
+        callback: () => {
           linkedSequenceIterator.update();
           fieldIterator.update();
         },

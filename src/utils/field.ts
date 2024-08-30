@@ -1,4 +1,4 @@
-import { createEffect, createMemo, createSignal, onCleanup, onMount } from "solid-js";
+import { createMemo, createSignal, onMount } from "solid-js";
 import { Field } from "~/types/field";
 
 const getWord = (field: Field, index: number, subIndex: number): string => {
@@ -17,12 +17,9 @@ const isSubField = (line: Field[number]): line is string[] => {
 export const createFieldIterator = (
   field: Field,
   startIndex: number,
-  // delay: number,
-  // subDelay: number
 ) => {
   const [index, setIndex] = createSignal(0);
   const [subIndex, setSubIndex] = createSignal(0);
-  // const [isRunning, setIsRunning] = createSignal(true);
 
   onMount(() => {
     setIndex(startIndex % field.length);
@@ -39,43 +36,6 @@ export const createFieldIterator = (
   const word = createMemo(() => {
     return getWord(field, index(), subIndex());
   });
-
-  /*
-  createEffect(() => {
-    if(!isRunning()) return;
-
-    let interval: NodeJS.Timeout;
-    if(!inSubField()) {
-      interval = setInterval(() => {
-        setIndex(i => (i + 1) % field.length);
-        setSubIndex(0);
-      }, delay);
-    }
-
-    onCleanup(() => {
-      clearInterval(interval);
-    });
-  });
-
-  createEffect(() => {
-    if(!inSubField() || !isRunning()) return;
-
-    const interval = setInterval(() => {
-      setSubIndex(i => {
-        if(i + 1 >= line().length) {
-          setIndex(i => (i + 1) % field.length);
-          return 0;
-        }
-
-        return i + 1;
-      });
-    }, subDelay);
-
-    onCleanup(() => {
-      clearInterval(interval);
-    });
-  });
-  */
 
   const incrementMainIndex = () => {
     setIndex(i => (i + 1) % field.length);
@@ -102,6 +62,5 @@ export const createFieldIterator = (
     inSubField,
     index,
     update,
-    // setIsRunning
   }
 }

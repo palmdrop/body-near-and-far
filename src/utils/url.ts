@@ -26,10 +26,11 @@ export const parseIndicesFromString = (indicesString: string) => {
   return indices;
 }
 
-export const indicesFromURL = () => {
+export const indicesFromURL = (defaultIndices?: [number, number, number, number]) => {
   try {
     return parseIndicesFromString(window.location.hash.slice(1));
   } catch(_) {
-    return [0, 0, 0, 0];
+    console.log(defaultIndices)
+    return defaultIndices ?? [0, 0, 0, 0];
   }
 }
