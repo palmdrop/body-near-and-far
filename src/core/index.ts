@@ -32,7 +32,6 @@ const getAvailableLinks = (
     ({ sequence, line }) => visitedLines.delete(`${sequence}.${line}`)
   );
 
-
   return availableLinks;
 }
 

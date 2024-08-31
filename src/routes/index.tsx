@@ -13,14 +13,13 @@ import { sequenceLinks, sequences } from "~/data/sequence";
 import { easeInOutQuart } from "~/utils/easing";
 import { createFieldIterator } from "~/utils/field";
 import { createLoops } from "~/utils/loop";
+import { randomInteger } from "~/utils/random";
 import { getMaxIndex, sequenceChangeCallback } from "~/utils/sequence";
 import { indicesFromURL, indicesToUrlHash } from "~/utils/url";
 
 const sequenceSpeed = 6000;
 const fieldSpeed = sequenceSpeed / 2;
 const linkProbability = 0.5;
-
-const randomInteger = (max: number) => Math.floor(Math.random() * max);
 
 export default function Root() {
   let canvas: HTMLCanvasElement;
@@ -113,6 +112,7 @@ export default function Root() {
     setVisible(true);
 
     canvasRenderer = createCanvas(canvas);
+    canvasRenderer.resize(main);
 
     if(isRunning) start();
 
@@ -183,7 +183,9 @@ export default function Root() {
       }}
     >
       <Filter />
-      <Title>{`${fieldIterator.word()?.toUpperCase()} | ${APP_TITLE}`}</Title> 
+      <Title>
+        {`${fieldIterator.word()?.toUpperCase()} | ${APP_TITLE}`}
+      </Title> 
       <main ref={element => main = element}>
         <canvas 
           id="body-link-canvas"
