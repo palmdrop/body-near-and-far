@@ -1,5 +1,10 @@
 import { FollowedLink } from "~/types/links";
 
+type Point = {
+  x: number,
+  y: number
+}
+
 export const createCanvas = (
   canvas: HTMLCanvasElement, 
 ) => {
@@ -8,7 +13,7 @@ export const createCanvas = (
   let links: FollowedLink[] | undefined = undefined;
   let elements: HTMLLIElement[] | undefined = undefined;
 
-  const getRelativePosition = (element: HTMLLIElement) => {
+  const getRelativePosition = (element: HTMLLIElement): Point => {
     const elementRect = element.getBoundingClientRect();
     const canvasRect = canvas.getBoundingClientRect();
 
@@ -16,6 +21,20 @@ export const createCanvas = (
       x: elementRect.left - canvasRect.left + elementRect.width / 2,
       y: elementRect.top - canvasRect.top + elementRect.height / 2
     }
+  }
+
+  const drawLine = (from: Point, to: Point) => {
+      context.filter = "blur(5px)";
+
+      context.beginPath();
+      context.moveTo(from.x, from.y);
+      context.lineTo(to.x, to.y);
+
+      context.strokeStyle = "black";
+      context.lineWidth = 5;
+      context.lineCap = "round";
+
+      context.stroke();
   }
 
   const draw = (activeElements: HTMLLIElement[]) => {
@@ -33,17 +52,13 @@ export const createCanvas = (
       const from = getRelativePosition(fromElement);
       const to = getRelativePosition(toElement);
 
-      context.filter = "blur(5px)";
-
-      context.beginPath();
-      context.moveTo(from.x, from.y);
-      context.lineTo(to.x, to.y);
-
-      context.strokeStyle = "#efcf70";
-      context.lineWidth = 5;
-      context.lineCap = "round";
-
-      context.stroke();
+      if(link.originSequence === 0 || link.sequence === 0) {
+        drawLine(from, { x: from.x, y: to.y });
+        drawLine({ x: from.x, y: to.y }, to);
+      } else {
+        drawLine(from, { x: to.x, y: from.y });
+        drawLine({ x: to.x, y: from.y }, to);
+      }
     });
   }
 
