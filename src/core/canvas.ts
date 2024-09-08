@@ -13,6 +13,9 @@ export const createCanvas = (
   let links: FollowedLink[] | undefined = undefined;
   let elements: HTMLLIElement[] | undefined = undefined;
 
+  const computedStyle = window.getComputedStyle(document.body);
+  const color = computedStyle.getPropertyValue("--yellow");
+
   const getRelativePosition = (element: HTMLLIElement): Point => {
     const elementRect = element.getBoundingClientRect();
     const canvasRect = canvas.getBoundingClientRect();
@@ -25,12 +28,16 @@ export const createCanvas = (
 
   const drawLine = (from: Point, to: Point) => {
       context.filter = "blur(5px)";
+      context.shadowBlur = 3;
+      context.shadowOffsetX = 5;
+      context.shadowOffsetY = 5;
+      context.shadowColor = "gray";
 
       context.beginPath();
       context.moveTo(from.x, from.y);
       context.lineTo(to.x, to.y);
 
-      context.strokeStyle = "black";
+      context.strokeStyle = color;
       context.lineWidth = 5;
       context.lineCap = "round";
 
@@ -43,7 +50,6 @@ export const createCanvas = (
     context.clearRect(0, 0, canvas.width, canvas.height);
 
     links?.forEach(link => {
-    // [{ originSequence: 0, sequence: 1 }, { originSequence: 1, sequence: 2 }].forEach(link => {
       const fromElement = activeElements.at(link.originSequence);
       const toElement = activeElements.at(link.sequence);
 
@@ -52,12 +58,28 @@ export const createCanvas = (
       const from = getRelativePosition(fromElement);
       const to = getRelativePosition(toElement);
 
-      if(link.originSequence === 0 || link.sequence === 0) {
-        drawLine(from, { x: from.x, y: to.y });
-        drawLine({ x: from.x, y: to.y }, to);
-      } else {
-        drawLine(from, { x: to.x, y: from.y });
+      let mode: 'center' | 'edge' = 'center';
+      if(
+        (link.originSequence === 1 && link.sequence === 0) ||
+        (link.originSequence === 1 && link.sequence === 2) ||
+        (link.originSequence === 2 && link.sequence === 0) 
+      ) {
+        mode = 'edge';
+      }
+
+      const fromRect = fromElement.getBoundingClientRect();
+      const toRect = toElement.getBoundingClientRect();
+
+      if(mode === 'edge') {
+        const fromX = from.x + (from.x < to.x ? 1 : -1) * fromRect.width / 2;
+
+        drawLine({ x: fromX, y: from.y }, { x: to.x, y: from.y });
         drawLine({ x: to.x, y: from.y }, to);
+      } else {
+        const toX = to.x + (to.x < from.x ? 1 : -1) * toRect.width / 2;
+
+        drawLine(from, { x: from.x, y: to.y });
+        drawLine({ x: from.x, y: to.y }, { x: toX, y: to.y });
       }
     });
   }

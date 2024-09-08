@@ -4,7 +4,6 @@ type Loop = {
   constant?: boolean
 }
 
-// If paused for a while, immediately move to next frame... but if first, wait for appropriate time
 export const createLoops = (loops: Loop[]) => {
   let animationFrame: number;
   let thens: number[];
@@ -35,7 +34,6 @@ export const createLoops = (loops: Loop[]) => {
   }
 
   const start = (thenAspect?: number) => {
-    // TODO: Store delta? make sure timer is preserved between pauses?
     setThens(thenAspect);
     animate();
   }

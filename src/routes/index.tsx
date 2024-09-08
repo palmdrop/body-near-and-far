@@ -19,7 +19,9 @@ import { indicesFromURL, indicesToUrlHash } from "~/utils/url";
 
 const sequenceSpeed = 6000;
 const fieldSpeed = sequenceSpeed / 2;
-const linkProbability = 0.5;
+const linkProbability = 0.75;
+
+const showCanvas = true;
 
 export default function Root() {
   let canvas: HTMLCanvasElement;
@@ -57,6 +59,17 @@ export default function Root() {
 
   const [delta, setDelta] = createSignal(0);
 
+  const canvasLoop = showCanvas ? createLoops([
+    // Canvas render loop
+    {
+      callback: () => {
+        canvasRenderer?.draw(activeElements as HTMLLIElement[]);
+      },
+      rate: sequenceSpeed,
+      constant: true
+    }
+  ]) : undefined;
+
   const { 
     start, 
     stop 
@@ -67,8 +80,6 @@ export default function Root() {
         setDelta(
           Math.min(Math.max(easeInOutQuart(delta / sequenceSpeed), 0), 1)
         );
-
-        canvasRenderer?.draw(activeElements as HTMLLIElement[]);
       },
       rate: sequenceSpeed,
       constant: true
@@ -80,7 +91,6 @@ export default function Root() {
         const links = linkedSequenceIterator.update();
 
         if(links?.length) {
-          console.log(links);
           canvasRenderer?.setLinks(links)
         } else {
           canvasRenderer?.clearLinks();
@@ -111,10 +121,13 @@ export default function Root() {
     setIsRunning(isRunning);
     setVisible(true);
 
-    canvasRenderer = createCanvas(canvas);
-    canvasRenderer.resize(main);
+    if(showCanvas) {
+      canvasRenderer = createCanvas(canvas);
+      canvasRenderer.resize(main);
+    }
 
     if(isRunning) start();
+    canvasLoop?.start();
 
     const keyboardListener = (event: KeyboardEvent) => {
       event.preventDefault();
@@ -137,6 +150,7 @@ export default function Root() {
       window.removeEventListener("keydown", keyboardListener);
       window.removeEventListener("resize", onResize);
       stop();
+      canvasLoop?.start();
     });
   });
 
@@ -187,10 +201,10 @@ export default function Root() {
         {`${fieldIterator.word()?.toUpperCase()} | ${APP_TITLE}`}
       </Title> 
       <main ref={element => main = element}>
-        <canvas 
+        { showCanvas && <canvas 
           id="body-link-canvas"
           ref={element => canvas = element}
-        />
+        />}
         <div class="center-piece">
           <Composite 
             lines={linkedSequenceIterator.lines()} 
