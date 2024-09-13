@@ -17,11 +17,13 @@ import { randomInteger } from "~/utils/random";
 import { getMaxIndex, sequenceChangeCallback } from "~/utils/sequence";
 import { indicesFromURL, indicesToUrlHash } from "~/utils/url";
 
-const sequenceSpeed = 6000;
+const sequenceSpeed = 8500;
 const fieldSpeed = sequenceSpeed / 2;
 const linkProbability = 0.75;
 
 const showCanvas = true;
+
+const compositeFadeInTimeout = 2000;
 
 export default function Root() {
   let canvas: HTMLCanvasElement;
@@ -40,6 +42,7 @@ export default function Root() {
 
   const [isRunning, setIsRunning] = createSignal(true);
   const [visible, setVisible] = createSignal(false);
+  const [showComposite, setShowComposite] = createSignal(true);
 
   const linkedSequenceIterator = createLinkedIterator(
     sequences, 
@@ -143,14 +146,37 @@ export default function Root() {
       canvasRenderer.resize(main);
     }
 
+    let interactionTimeout: NodeJS.Timeout | undefined = undefined;
+    
+    const onInteract = () => {
+      if(interactionTimeout) {
+        clearTimeout(interactionTimeout);
+      }
+
+      setShowComposite(false);
+      interactionTimeout = setTimeout(() => {
+        setShowComposite(true);
+        interactionTimeout = undefined;
+      }, compositeFadeInTimeout);
+    }
+
     window.addEventListener("keydown", keyboardListener);
     window.addEventListener("resize", onResize);
+
+    main.addEventListener("wheel", onInteract);
+    main.addEventListener("touchmove", onInteract);
 
     onCleanup(() => {
       window.removeEventListener("keydown", keyboardListener);
       window.removeEventListener("resize", onResize);
+
+      main.removeEventListener("wheel", onInteract);
+      main.removeEventListener("touchmove", onInteract);
+
       stop();
       canvasLoop?.start();
+
+      clearTimeout(interactionTimeout);
     });
   });
 
@@ -205,7 +231,7 @@ export default function Root() {
           id="body-link-canvas"
           ref={element => canvas = element}
         />}
-        <div class="center-piece">
+        <div class="center-piece" classList={{ visible: showComposite() }}>
           <Composite 
             lines={linkedSequenceIterator.lines()} 
             index={index()}

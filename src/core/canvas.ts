@@ -26,11 +26,12 @@ export const createCanvas = (
     }
   }
 
-  const drawLine = (from: Point, to: Point) => {
-      context.filter = "blur(5px)";
-      context.shadowBlur = 3;
-      context.shadowOffsetX = 5;
-      context.shadowOffsetY = 5;
+
+  const drawLine = (from: Point, to: Point, lineSize: number) => {
+      context.filter = `blur(${lineSize}px)`;
+      context.shadowBlur = lineSize / 1.5;
+      context.shadowOffsetX = lineSize / 3;
+      context.shadowOffsetY = lineSize / 3;
       context.shadowColor = "gray";
 
       context.beginPath();
@@ -38,13 +39,15 @@ export const createCanvas = (
       context.lineTo(to.x, to.y);
 
       context.strokeStyle = color;
-      context.lineWidth = 5;
+      context.lineWidth = lineSize;
       context.lineCap = "round";
 
       context.stroke();
   }
 
   const draw = (activeElements: HTMLLIElement[]) => {
+    const lineSize = 0.25 * parseFloat(getComputedStyle(document.body).fontSize);
+
     elements = activeElements;
 
     context.clearRect(0, 0, canvas.width, canvas.height);
@@ -73,13 +76,13 @@ export const createCanvas = (
       if(mode === 'edge') {
         const fromX = from.x + (from.x < to.x ? 1 : -1) * fromRect.width / 2;
 
-        drawLine({ x: fromX, y: from.y }, { x: to.x, y: from.y });
-        drawLine({ x: to.x, y: from.y }, to);
+        drawLine({ x: fromX, y: from.y }, { x: to.x, y: from.y }, lineSize);
+        drawLine({ x: to.x, y: from.y }, to, lineSize);
       } else {
         const toX = to.x + (to.x < from.x ? 1 : -1) * toRect.width / 2;
 
-        drawLine(from, { x: from.x, y: to.y });
-        drawLine({ x: from.x, y: to.y }, { x: toX, y: to.y });
+        drawLine(from, { x: from.x, y: to.y }, lineSize);
+        drawLine({ x: from.x, y: to.y }, { x: toX, y: to.y }, lineSize);
       }
     });
   }
