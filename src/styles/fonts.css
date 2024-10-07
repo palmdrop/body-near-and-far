@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'brush script mt';
-  src: url('/fonts/cursive/brushscript.otf') format('opentype');
+  src: url('/body/fonts/cursive/brushscript.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Helvetica';
-  src: url('/fonts/sans/Helvetica.ttf') format('truetype');
+  src: url('/body/fonts/sans/Helvetica.ttf') format('truetype');
 }
