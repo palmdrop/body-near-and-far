@@ -1,4 +1,6 @@
 # Body: near and far
+*[Live at palmdrop.github.io](https://palmdrop.github.io/body)*
+
 Swedish title: "Nära och långt från kroppen"
 
 An experimental, living poetry piece that explores the body, it's borders and transitions. Released as part of the [fourth edition](https://kontradiktion.fi/#4) of [Kontradiktion](https://kontradiktion.fi/), a digital publication for experimental, multimedia and online poetry.
