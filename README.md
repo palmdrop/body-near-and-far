@@ -1,9 +1,9 @@
 # Body: near and far
-Swedish title: "Nära och långt från kroppen*
+Swedish title: "Nära och långt från kroppen"
 
-An experimental, living poetry piece that explores the body, it's borders and transitions. Released as part of the [fourth edition](https://kontradiktion.fi/nrfyra) of [Kontradiktion](https://kontradiktion.fi/), a digital publication for experimental, multimedia and online poetry.
+An experimental, living poetry piece that explores the body, it's borders and transitions. Released as part of the [fourth edition](https://kontradiktion.fi/#4) of [Kontradiktion](https://kontradiktion.fi/), a digital publication for experimental, multimedia and online poetry.
 
-The project is available on [kontradiktion.fi/body](https://kontradiktion.fi/body) and [palmdrop.github.io/body](https://palmdrop.github.io/body-near-and-far).
+The project is available on [kontradiktion.fi/body](https://kontradiktion.fi/body) and [palmdrop.github.io/body](https://palmdrop.github.io/body).
 
 ---
 
